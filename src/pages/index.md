@@ -1,4 +1,7 @@
 ---
+intro_text: Oz is an award winning designgineer who works at the intersection of
+  graphic design, human centered design (UX), web design (UI), and software
+  engineering.
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 templateKey: index-page
@@ -44,8 +47,8 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
-title: Index
 sections: []
+title: Index
 main:
   heading: Great coffee with no compromises
   description: >
