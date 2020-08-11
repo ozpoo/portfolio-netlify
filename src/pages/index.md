@@ -23,7 +23,7 @@ sections:
         description: hi
       - title: Photography
         description: hi
-  - image: /img/coffee-gear.png
+  - image: /img/dsc_0914-copy_600x1800.jpg
     title: Research
     text: >
       We offer a small, but carefully curated selection of brewing gear and
