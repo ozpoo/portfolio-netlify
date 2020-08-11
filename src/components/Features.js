@@ -8,13 +8,13 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 const FeatureGrid = ({ gridItems }) => (
   <Row>
     {gridItems.map((item) => (
-      <Col xs={12} md={6} key={item.text} className='mb-4'>
+      <Col xs={12} md={6} lg={4} key={item.text} className='mb-4'>
         <Card>
           <Card.Header>{item.title}</Card.Header>
+          <div style={{borderBottom: '1px solid black'}}>
+            <PreviewCompatibleImage imageInfo={item}/>
+          </div>
           <Card.Body>
-            <div className='mb-3'>
-              <PreviewCompatibleImage imageInfo={item} />
-            </div>
             <p>{item.text}</p>
             <Accordion>
               {item.list.map((item, index) => (

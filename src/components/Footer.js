@@ -6,7 +6,7 @@ import { Container, ListGroup, Row, Col } from 'react-bootstrap'
 const Footer = class extends React.Component {
   render() {
     return (
-      <Container>
+      <Container className='pb-5'>
         <Row>
           <Col xs={12} md={4}>
             <ListGroup variant='flush'>
@@ -15,6 +15,9 @@ const Footer = class extends React.Component {
               </ListGroup.Item>
               <ListGroup.Item>
                 <Link to='/about'>About</Link>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <Link to='/work'>Work</Link>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Link to='/products'>Products</Link>

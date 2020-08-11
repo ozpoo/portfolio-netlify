@@ -2,9 +2,8 @@
 templateKey: 'product-page'
 path: /products
 title: Our Coffee
-image: /img/jumbotron.jpg
 sections:
-  - image: /img/coffee.png
+  - image: /img/barc_nelson1601_0083_low_600x1800.jpg
     title: Work
     text: >
       We sell green and roasted coffee beans that are sourced directly from
@@ -23,7 +22,7 @@ sections:
         description: hi
       - title: Photography
         description: hi
-  - image: /img/coffee-gear.png
+  - image: /img/dsc_0914-copy_600x1800.jpg
     title: Research
     text: >
       We offer a small, but carefully curated selection of brewing gear and
@@ -35,7 +34,7 @@ sections:
         description: hi
       - title: two
         description: hi
-  - image: /img/tutorials.png
+  - image: /img/flyp-1-1-1200x800_600x1800.jpg
     title: Process
     text: >
       Love a great cup of coffee, but never knew how to make one? Bought a
@@ -48,7 +47,7 @@ sections:
         description: hi
       - title: two
         description: hi
-  - image: /img/meeting-space.png
+  - image: /img/layout-02_600x1800.jpg
     title: News
     text: >
       We believe that good coffee has the power to bring people together.

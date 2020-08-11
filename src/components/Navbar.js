@@ -9,10 +9,11 @@ const MainNav = () => {
       <Navbar.Brand as={Link} to='/' className='d-flex align-items-center'>
         Oz Design & Dev
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls='basic-navbar-nav' />
+      <Navbar.Toggle aria-controls='basic-navbar-nav'>Menu</Navbar.Toggle>
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto'>
           <Nav.Link as={Link} to='/about'>About</Nav.Link>
+          <Nav.Link as={Link} to='/work'>Work</Nav.Link>
           <Nav.Link as={Link} to='/products'>Products</Nav.Link>
           <Nav.Link as={Link} to='/blog'>Blog</Nav.Link>
           <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
