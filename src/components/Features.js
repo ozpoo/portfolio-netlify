@@ -12,13 +12,13 @@ const FeatureGrid = ({ gridItems }) => (
         <Card>
           <Card.Header>{item.title}</Card.Header>
           <Card.Body>
-            <div className='mx-auto my-5 w-25'>
+            <div className='mb-3'>
               <PreviewCompatibleImage imageInfo={item} />
             </div>
             <p>{item.text}</p>
             <Accordion>
               {item.list.map((item, index) => (
-                <Card className={index}>
+                <Card key={item.title} className={index}>
                   <Accordion.Toggle as={Card.Header} eventKey={index.toString()}>
                     {item.title}
                   </Accordion.Toggle>

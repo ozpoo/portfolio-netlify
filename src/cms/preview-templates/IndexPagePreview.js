@@ -8,8 +8,8 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   if (data) {
     return (
       <IndexPageTemplate
-        intro_text={frontmatter.intro_text}
-        sections={frontmatter.sections}
+        intro_text={data.intro_text}
+        sections={data.sections}
       />
     )
   } else {
