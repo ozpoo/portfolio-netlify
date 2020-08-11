@@ -6,7 +6,7 @@ import { Container, ListGroup, Row, Col } from 'react-bootstrap'
 const Footer = class extends React.Component {
   render() {
     return (
-      <Container fluid>
+      <Container>
         <Row>
           <Col xs={12} md={4}>
             <ListGroup variant='flush'>
