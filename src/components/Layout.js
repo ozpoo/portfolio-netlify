@@ -1,15 +1,18 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import './all.sass'
+import './../style/index.sass'
+
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+
+import { Helmet } from 'react-helmet'
+
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <div>
+    <div className='global layout'>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>

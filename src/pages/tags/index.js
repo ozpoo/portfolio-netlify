@@ -4,6 +4,8 @@ import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 
+import { Container, ListGroup } from 'react-bootstrap'
+
 const TagsPage = ({
   data: {
     allMarkdownRemark: { group },
@@ -13,28 +15,23 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
-    <section className="section">
+    <Container className='pt-4'>
       <Helmet title={`Tags | ${title}`} />
-      <div className="container content">
-        <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: '6rem' }}
-          >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
-              {group.map((tag) => (
-                <li key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    {tag.fieldValue} ({tag.totalCount})
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+      <section className='mb-4'>
+        <h1>Tags</h1>
+      </section>
+      <section className='mb-4'>
+        <ListGroup>
+          {group.map((tag) => (
+            <ListGroup.Item key={tag.fieldValue}>
+              <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                {tag.fieldValue} ({tag.totalCount})
+              </Link>
+            </ListGroup.Item>
+          ))}
+        </ListGroup>
+      </section>
+    </Container>
   </Layout>
 )
 

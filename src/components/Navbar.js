@@ -1,98 +1,37 @@
 import React from 'react'
+
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
 
-const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false,
-      navBarActiveClass: '',
-    }
-  }
-
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
-  }
-
-  render() {
-    return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    )
-  }
+const MainNav = () => {
+  return (
+    <Navbar bg='light' expand='lg' fixed='top'>
+      <Navbar.Brand as={Link} to='/' className='d-flex align-items-center'>
+        Oz Design & Dev
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls='basic-navbar-nav' />
+      <Navbar.Collapse id='basic-navbar-nav'>
+        <Nav className='mr-auto'>
+          <Nav.Link as={Link} to='/about'>About</Nav.Link>
+          <Nav.Link as={Link} to='/products'>Products</Nav.Link>
+          <Nav.Link as={Link} to='/blog'>Blog</Nav.Link>
+          <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
+          <Nav.Link as={Link} to='/contact/examples'>Forms</Nav.Link>
+          <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
+            <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
+            <NavDropdown.Item href='#action/3.2'>Another action</NavDropdown.Item>
+            <NavDropdown.Item href='#action/3.3'>Something</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href='#action/3.4'>Separated link</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+        <Form inline>
+          <FormControl type='text' placeholder='Search' className='mr-sm-2 mb-sm-0 mb-2' />
+          <Button variant='outline-success'>Search</Button>
+        </Form>
+      </Navbar.Collapse>
+    </Navbar>
+  )
 }
 
-export default Navbar
+export default MainNav

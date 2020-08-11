@@ -1,107 +1,54 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
+import { Container, Card } from 'react-bootstrap'
+
 export const ProductPageTemplate = ({
   image,
   title,
-  heading,
-  description,
-  intro,
-  main,
+  sections,
   testimonials,
   fullImage,
   pricing,
 }) => (
-  <div className="content">
-    <div
-      className="full-width-image-container margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-      }}
-    >
-      <h2
-        className="has-text-weight-bold is-size-1"
-        style={{
-          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
-          color: 'white',
-          padding: '1rem',
-        }}
-      >
-        {title}
-      </h2>
-    </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-7 is-offset-1">
-              <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-              <p>{description}</p>
-            </div>
-          </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <Features gridItems={intro.blurbs} />
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-3">
-                    {main.heading}
-                  </h3>
-                  <p>{main.description}</p>
-                </div>
-              </div>
-              <div className="tile is-ancestor">
-                <div className="tile is-vertical">
-                  <div className="tile">
-                    <div className="tile is-parent is-vertical">
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image1} />
-                      </article>
-                    </div>
-                    <div className="tile is-parent">
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image2} />
-                      </article>
-                    </div>
-                  </div>
-                  <div className="tile is-parent">
-                    <article className="tile is-child">
-                      <PreviewCompatibleImage imageInfo={main.image3} />
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <Testimonials testimonials={testimonials} />
-              <div
-                className="full-width-image-container"
-                style={{
-                  backgroundImage: `url(${
-                    fullImage.childImageSharp
-                      ? fullImage.childImageSharp.fluid.src
-                      : fullImage
-                  })`,
-                }}
-              />
-              <h2 className="has-text-weight-semibold is-size-2">
-                {pricing.heading}
-              </h2>
-              <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} />
-            </div>
-          </div>
-        </div>
-      </div>
+  <Container className='pt-5'>
+
+    <section className='mb-5'>
+      <h1>{title}</h1>
     </section>
-  </div>
+
+    <section className='mb-5'>
+      <Features gridItems={sections} />
+    </section>
+
+    <section className='mb-5'>
+      <Testimonials testimonials={testimonials} />
+    </section>
+
+    <section className='mb-5'>
+      <Card className='mb-4'>
+        <Card.Header as='h2'>
+          {pricing.heading}
+        </Card.Header>
+        <Card.Body>
+          <div className='mb-4'>
+            {pricing.description}
+          </div>
+          <Pricing data={pricing.plans} />
+        </Card.Body>
+      </Card>
+    </section>
+
+  </Container>
 )
 
 ProductPageTemplate.propTypes = {
@@ -109,16 +56,7 @@ ProductPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-  main: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  }),
+  sections: PropTypes.array,
   testimonials: PropTypes.array,
   fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   pricing: PropTypes.shape({
@@ -138,10 +76,8 @@ const ProductPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
-        intro={frontmatter.intro}
-        main={frontmatter.main}
+        sections={frontmatter.sections}
         testimonials={frontmatter.testimonials}
-        fullImage={frontmatter.full_image}
         pricing={frontmatter.pricing}
       />
     </Layout>
@@ -170,66 +106,24 @@ export const productPageQuery = graphql`
             }
           }
         }
-        heading
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
-        main {
-          heading
-          description
-          image1 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid
-                }
+        sections {
+          title
+          image {
+            childImageSharp {
+              fluid(maxWidth: 240, quality: 64) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
-          image2 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          image3 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1075, quality: 72) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
+          text
+          list {
+            title
+            description
           }
         }
         testimonials {
           author
           quote
-        }
-        full_image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
         }
         pricing {
           heading
