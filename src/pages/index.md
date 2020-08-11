@@ -35,7 +35,7 @@ sections:
         description: hi
       - title: two
         description: hi
-  - image: /img/tutorials.png
+  - image: /img/flyp-1-1-1200x800_600x1800.jpg
     title: Process
     text: >
       Love a great cup of coffee, but never knew how to make one? Bought a fancy
@@ -48,7 +48,7 @@ sections:
         description: hi
       - title: two
         description: hi
-  - image: /img/meeting-space.png
+  - image: /img/layout-02_600x1800.jpg
     title: News
     text: >
       We believe that good coffee has the power to bring people together. That’s
