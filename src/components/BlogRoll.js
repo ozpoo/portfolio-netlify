@@ -5,8 +5,9 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 import { Card, Row, Col, Button } from 'react-bootstrap'
 
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import AnimateIn from './AnimateIn'
 
-import AnimateIn from './../components/AnimateIn'
+import Tilt from 'react-tilt'
 
 class BlogRoll extends React.Component {
   render() {
@@ -18,27 +19,41 @@ class BlogRoll extends React.Component {
         {posts && posts.map(({ node: post }) => (
           <Col xs={12} md={6} lg={4} key={post.id}>
             <AnimateIn>
-              <Card as='article' className={post.frontmatter.featuredpost ? 'is-featured' : ''}>
-                <Card.Header as='header'>
-                  <Link to={post.fields.slug}>{post.frontmatter.title}</Link> &mdash; {post.frontmatter.date}
-                </Card.Header>
-                {post.frontmatter.featuredimage ? (
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: post.frontmatter.featuredimage,
-                      alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                    }}
-                  />
-                ) : null}
-                <Card.Body>
-                  {post.excerpt}
-                </Card.Body>
-                <Card.Footer>
-                  <Button as={Link} to={post.fields.slug}>
-                    Keep Reading &rarr;
-                  </Button>
-                </Card.Footer>
-              </Card>
+              <Tilt
+                className='tilt'
+                options={{
+                  reverse:        false,  // reverse the tilt direction
+                  max:            15,     // max tilt rotation (degrees)
+                  perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
+                  scale:          1.04,      // 2 = 200%, 1.5 = 150%, etc..
+                  speed:          300,    // Speed of the enter/exit transition
+                  transition:     true,   // Set a transition on enter/exit.
+                  axis:           null,   // What axis should be disabled. Can be X or Y.
+                  reset:          true,    // If the tilt effect has to be reset on exit.
+                  easing:         'cubic-bezier(.03,.98,.52,.99)',    // Easing on enter/exit.
+                }}>
+                <Card as='article' className={post.frontmatter.featuredpost ? 'is-featured' : ''}>
+                  <Card.Header as='header'>
+                    <Link to={post.fields.slug}>{post.frontmatter.title}</Link> &mdash; {post.frontmatter.date}
+                  </Card.Header>
+                  {post.frontmatter.featuredimage ? (
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: post.frontmatter.featuredimage,
+                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                      }}
+                    />
+                  ) : null}
+                  <Card.Body>
+                    {post.excerpt}
+                  </Card.Body>
+                  <Card.Footer>
+                    <Button as={Link} to={post.fields.slug}>
+                      Keep Reading &rarr;
+                    </Button>
+                  </Card.Footer>
+                </Card>
+              </Tilt>
             </AnimateIn>
           </Col>
         ))}

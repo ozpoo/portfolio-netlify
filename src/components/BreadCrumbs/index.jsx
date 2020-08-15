@@ -7,7 +7,7 @@ import {
 
 const BreadCrumbs = (props) => {
   return (
-    <Container className='px-4 py-3'>
+    <Container className='py-3'>
       <div className='global-breadcrumbs'>
         <div className='d-flex'>
           {props.crumbs.map((crumb, index) => (
