@@ -3,10 +3,12 @@ import PropTypes from 'prop-types'
 
 import { graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
+import Layout from './../components/Layout'
+import Features from './../components/Features'
+import Testimonials from './../components/Testimonials'
+import Pricing from './../components/Pricing'
+
+import AnimateIn from './../components/AnimateIn'
 
 import { Container, Card } from 'react-bootstrap'
 
@@ -17,11 +19,11 @@ export const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <Container className='pt-5'>
+  <Container className='pt-4'>
 
-    <section className='mb-5'>
+    <AnimateIn className='mb-5'>
       <h1>{title}</h1>
-    </section>
+    </AnimateIn>
 
     <section className='mb-5'>
       <Features gridItems={sections} />
@@ -66,7 +68,11 @@ const ProductPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
-    <Layout>
+    <Layout
+      crumbs={[
+        {label: 'Index', path: '/'},
+        {label: 'Products', path: '/products'},
+      ]}>
       <ProductPageTemplate
         title={frontmatter.title}
         heading={frontmatter.heading}

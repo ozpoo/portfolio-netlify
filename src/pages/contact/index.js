@@ -37,8 +37,12 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      <Layout>
-        <Container className='pt-5'>
+      <Layout
+        crumbs={[
+          {label: 'Index', path: '/'},
+          {label: 'Contact', path: '/contact'},
+        ]}>
+        <Container className='pt-4'>
           <section className='mb-5'>
             <h1>Contact</h1>
           </section>

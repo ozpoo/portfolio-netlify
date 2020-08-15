@@ -9,10 +9,10 @@ import useDarkMode from 'use-dark-mode'
 
 const MainNav = () => {
   const darkMode = useDarkMode(false)
-  
+
   return (
     <>
-      <div className='global-nav px-3 py-3 flex-column justify-content-between'>
+      <div className='global-nav px-3 py-3 d-flex flex-sm-column justify-content-between'>
         <div>
           <Link to='/'>
             <Logo />
@@ -69,24 +69,25 @@ const MainNav = () => {
           </ul>
         </div>
 
-        <Switch
-          className='float-left'
-          handleDiameter={26}
-          uncheckedIcon={false}
-          checkedIcon={false}
-          height={16}
-          width={42}
-          onColor='#aaa'
-          onHandleColor='#fff'
-          offColor='#aaa'
-          offHandleColor='#fff'
-          boxShadow='0px 1px 5px rgba(0, 0, 0, 0.2)'
-          activeBoxShadow='0px 0px 1px 5px rgba(0, 0, 0, 0.2)'
-          id='toggle-theme'
-          checked={darkMode.value}
-          onChange={darkMode.toggle}
-          aria-label='Toggle dark mode'
-        />
+        <div>
+          <Switch
+            handleDiameter={26}
+            uncheckedIcon={false}
+            checkedIcon={false}
+            height={16}
+            width={42}
+            onColor='#aaa'
+            onHandleColor='#fff'
+            offColor='#aaa'
+            offHandleColor='#fff'
+            boxShadow='0px 1px 5px rgba(0, 0, 0, 0.2)'
+            activeBoxShadow='0px 0px 1px 5px rgba(0, 0, 0, 0.2)'
+            id='toggle-theme'
+            checked={darkMode.value}
+            onChange={darkMode.toggle}
+            aria-label='Toggle dark mode'
+          />
+        </div>
       </div>
     </>
   )

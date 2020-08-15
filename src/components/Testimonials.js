@@ -2,18 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
 
+import AnimateIn from './AnimateIn'
+
 const Testimonials = ({ testimonials }) => (
-  <div>
-    {testimonials.map((testimonial) => (
-      <article key={v4()} className='message'>
-        <div className='message-body'>
-          {testimonial.quote}
-          <br />
-          <cite> – {testimonial.author}</cite>
-        </div>
-      </article>
-    ))}
-  </div>
+  testimonials.map((testimonial) => (
+    <AnimateIn key={v4()} className='mb-4'>
+      {testimonial.quote}
+      <br />
+      <cite> – {testimonial.author}</cite>
+    </AnimateIn>
+  ))
 )
 
 Testimonials.propTypes = {

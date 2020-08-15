@@ -18,7 +18,7 @@ class BlogRoll extends React.Component {
       <Row>
         {posts && posts.map(({ node: post }) => (
           <Col xs={12} md={6} lg={4} key={post.id}>
-            <AnimateIn>
+            <AnimateIn className='mb-4'>
               <Tilt
                 className='tilt'
                 options={{

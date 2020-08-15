@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 
 import { graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import Layout from './../components/Layout'
+import Content, { HTMLContent } from './../components/Content'
+import AnimateIn from './../components/AnimateIn'
 
 import { Container } from 'react-bootstrap'
 
@@ -12,13 +13,13 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <Container className='pt-5'>
-      <section className='mb-5'>
+    <Container className='pt-4'>
+      <AnimateIn className='mb-5'>
         <h1>{title}</h1>
-      </section>
-      <section className='mb-5'>
+      </AnimateIn>
+      <AnimateIn className='mb-5'>
         <PageContent content={content} />
-      </section>
+      </AnimateIn>
     </Container>
   )
 }

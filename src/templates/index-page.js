@@ -15,7 +15,7 @@ export const IndexPageTemplate = ({
   intro_text,
   sections,
 }) => (
-  <Container className='pt-5'>
+  <Container className='pt-4'>
     <AnimateIn className='mb-5'>
       <h1>{intro_text}</h1>
     </AnimateIn>
