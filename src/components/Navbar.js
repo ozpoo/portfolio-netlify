@@ -1,37 +1,94 @@
 import React from 'react'
 
 import { Link } from 'gatsby'
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+
+import Switch from 'react-switch'
+import Logo from './Logo'
+
+import useDarkMode from 'use-dark-mode'
 
 const MainNav = () => {
+  const darkMode = useDarkMode(false)
+  
   return (
-    <Navbar bg='light' expand='lg' fixed='top'>
-      <Navbar.Brand as={Link} to='/' className='d-flex align-items-center'>
-        Oz Design & Dev
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls='basic-navbar-nav'>Menu</Navbar.Toggle>
-      <Navbar.Collapse id='basic-navbar-nav'>
-        <Nav className='mr-auto'>
-          <Nav.Link as={Link} to='/about'>About</Nav.Link>
-          <Nav.Link as={Link} to='/work'>Work</Nav.Link>
-          <Nav.Link as={Link} to='/products'>Products</Nav.Link>
-          <Nav.Link as={Link} to='/blog'>Blog</Nav.Link>
-          <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
-          <Nav.Link as={Link} to='/contact/examples'>Forms</Nav.Link>
-          <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
-            <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
-            <NavDropdown.Item href='#action/3.2'>Another action</NavDropdown.Item>
-            <NavDropdown.Item href='#action/3.3'>Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href='#action/3.4'>Separated link</NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-        <Form inline>
-          <FormControl type='text' placeholder='Search' className='mr-sm-2 mb-sm-0 mb-2' />
-          <Button variant='outline-success'>Search</Button>
-        </Form>
-      </Navbar.Collapse>
-    </Navbar>
+    <>
+      <div className='global-nav px-3 py-3 flex-column justify-content-between'>
+        <div>
+          <Link to='/'>
+            <Logo />
+          </Link>
+
+          <ul className='global-nav-list list-unstyled pt-5'>
+            <li>
+              <Link activeClassName='active' to='/'>Index</Link>
+            </li>
+          </ul>
+
+          <ul className='global-nav-list list-unstyled mt-4'>
+            <li>
+              <Link activeClassName='active' to='/about' partiallyActive={true}>About</Link>
+            </li>
+            <li>
+              <Link activeClassName='active' to='/products' partiallyActive={true}>Products</Link>
+            </li>
+            <li>
+              <Link activeClassName='active' to='/blog'>Blog</Link>
+            </li>
+            <li>
+              <Link activeClassName='active' to='/contact'>Contact</Link>
+            </li>
+            <li>
+              <Link activeClassName='active' to='/forms'>Forms</Link>
+            </li>
+          </ul>
+
+          <ul className='global-nav-list list-unstyled mt-4'>
+            <li>
+              <Link activeClassName='active' to='/work' partiallyActive={true}>Work</Link>
+            </li>
+            <li>
+              <Link activeClassName='active' to='/process' partiallyActive={true}>Process</Link>
+            </li>
+            <li>
+              <Link activeClassName='active' to='/thesis'>Thesis</Link>
+            </li>
+            <li>
+              <Link activeClassName='active' to='/resume'>Resume</Link>
+            </li>
+          </ul>
+          <ul className='global-nav-list list-unstyled mt-4'>
+            <li>
+              <Link activeClassName='active' to='/news' partiallyActive={true}>News</Link>
+            </li>
+            <li>
+              <Link activeClassName='active' to='/journal' partiallyActive={true}>Journal</Link>
+            </li>
+            <li>
+              <Link activeClassName='active' to='/signin'>Sign In</Link>
+            </li>
+          </ul>
+        </div>
+
+        <Switch
+          className='float-left'
+          handleDiameter={26}
+          uncheckedIcon={false}
+          checkedIcon={false}
+          height={16}
+          width={42}
+          onColor='#aaa'
+          onHandleColor='#fff'
+          offColor='#aaa'
+          offHandleColor='#fff'
+          boxShadow='0px 1px 5px rgba(0, 0, 0, 0.2)'
+          activeBoxShadow='0px 0px 1px 5px rgba(0, 0, 0, 0.2)'
+          id='toggle-theme'
+          checked={darkMode.value}
+          onChange={darkMode.toggle}
+          aria-label='Toggle dark mode'
+        />
+      </div>
+    </>
   )
 }
 

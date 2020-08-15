@@ -5,17 +5,19 @@ import { Accordion, Card, Row, Col } from 'react-bootstrap'
 
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
+import AnimateIn from './../components/AnimateIn'
+
 const FeatureGrid = ({ gridItems }) => (
   <Row>
     {gridItems.map((item) => (
       <Col xs={12} md={6} lg={4} key={item.text} className='mb-4'>
-        <Card>
-          <Card.Header>{item.title}</Card.Header>
-          <div style={{borderBottom: '1px solid black'}}>
+        <AnimateIn>
+          <Card>
+            <Card.Header>{item.title}</Card.Header>
             <PreviewCompatibleImage imageInfo={item}/>
-          </div>
-          <Card.Body>
-            <p>{item.text}</p>
+            <Card.Body>
+              {item.text}
+            </Card.Body>
             <Accordion>
               {item.list.map((item, index) => (
                 <Card key={item.title} className={index}>
@@ -28,8 +30,8 @@ const FeatureGrid = ({ gridItems }) => (
                 </Card>
               ))}
             </Accordion>
-          </Card.Body>
-        </Card>
+          </Card>
+        </AnimateIn>
       </Col>
     ))}
   </Row>

@@ -1,0 +1,46 @@
+.fadeIn
+  transition: opacity 660ms ease
+  opacity: 0
+
+.fadeIn.enter
+  transition: opacity 660ms ease
+  opacity: 1
+
+.slideLeft
+  transition: opacity 660ms ease, transform 660ms ease
+  opacity: 0
+  transform: translateX(100%)
+
+.slideLeft.enter
+  transition: opacity 660ms ease, transform 660ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  opacity: 1
+  transform: translateX(0)
+
+.slideUp
+  transition: opacity 660ms ease, transform 660ms ease
+  opacity: 0
+  transform: translateY(20px)
+
+.slideUp.enter
+  transition: opacity 660ms ease, transform 660ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  opacity: 1
+  transform: translateY(0)
+
+@media (print), (prefers-reduced-motion: reduce)
+  .fadeIn,
+  .slideLeft,
+  .slideUp
+    transition: none
+    opacity: 1
+    transform: none
+
+body.no-js .fadeIn
+  opacity: 1
+
+body.no-js .slideLeft
+  opacity: 1
+  transform: none
+
+body.no-js .slideUp
+  opacity: 1
+  transform: none

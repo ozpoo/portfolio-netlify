@@ -19,17 +19,15 @@ class WorkRoll extends React.Component {
               <Card.Header as='header'>
                 <Link to={post.fields.slug}>{post.frontmatter.title}</Link> &mdash; {post.frontmatter.date}
               </Card.Header>
+              {post.frontmatter.featuredimage ? (
+                <PreviewCompatibleImage
+                  imageInfo={{
+                    image: post.frontmatter.featuredimage,
+                    alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                  }}
+                />
+              ) : null}
               <Card.Body>
-                {post.frontmatter.featuredimage ? (
-                  <div className='pb-3 w-100'>
-                    <PreviewCompatibleImage
-                      imageInfo={{
-                        image: post.frontmatter.featuredimage,
-                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                      }}
-                    />
-                  </div>
-                ) : null}
                 {post.excerpt}
               </Card.Body>
               <Card.Footer>

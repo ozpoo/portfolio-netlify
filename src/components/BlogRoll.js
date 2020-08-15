@@ -6,6 +6,8 @@ import { Card, Row, Col, Button } from 'react-bootstrap'
 
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
+import AnimateIn from './../components/AnimateIn'
+
 class BlogRoll extends React.Component {
   render() {
     const { data } = this.props
@@ -15,29 +17,29 @@ class BlogRoll extends React.Component {
       <Row>
         {posts && posts.map(({ node: post }) => (
           <Col xs={12} md={6} lg={4} key={post.id}>
-            <Card as='article' className={post.frontmatter.featuredpost ? 'is-featured' : ''}>
-              <Card.Header as='header'>
-                <Link to={post.fields.slug}>{post.frontmatter.title}</Link> &mdash; {post.frontmatter.date}
-              </Card.Header>
-              {post.frontmatter.featuredimage ? (
-                <div style={{borderBottom: '1px solid black'}}>
+            <AnimateIn>
+              <Card as='article' className={post.frontmatter.featuredpost ? 'is-featured' : ''}>
+                <Card.Header as='header'>
+                  <Link to={post.fields.slug}>{post.frontmatter.title}</Link> &mdash; {post.frontmatter.date}
+                </Card.Header>
+                {post.frontmatter.featuredimage ? (
                   <PreviewCompatibleImage
                     imageInfo={{
                       image: post.frontmatter.featuredimage,
                       alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                     }}
                   />
-                </div>
-              ) : null}
-              <Card.Body>
-                {post.excerpt}
-              </Card.Body>
-              <Card.Footer>
-                <Button as={Link} to={post.fields.slug}>
-                  Keep Reading &rarr;
-                </Button>
-              </Card.Footer>
-            </Card>
+                ) : null}
+                <Card.Body>
+                  {post.excerpt}
+                </Card.Body>
+                <Card.Footer>
+                  <Button as={Link} to={post.fields.slug}>
+                    Keep Reading &rarr;
+                  </Button>
+                </Card.Footer>
+              </Card>
+            </AnimateIn>
           </Col>
         ))}
       </Row>

@@ -1,0 +1,15 @@
+@import './../fonts/InterUI/stylesheet.css'
+
+.light-mode
+  $body-bg: darken(white, 6%)
+  $body-color: lighten(black, 6%)
+
+  $card-border-color: $body-color
+  $card-bg: lighten($body-bg, 6%)
+
+  @import './../../node_modules/bootstrap/scss/bootstrap'
+
+  .global-nav
+    .global-nav-list
+      a
+        color: $body-color

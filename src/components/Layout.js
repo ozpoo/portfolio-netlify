@@ -6,13 +6,15 @@ import { withPrefix } from 'gatsby'
 
 import { Helmet } from 'react-helmet'
 
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import Footer from './Footer'
+import Navbar from './Navbar'
+import BreadCrumbs from './BreadCrumbs'
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, crumbs }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <div className='global layout'>
+    <div className='global-nav-offset'>
+      {crumbs && <BreadCrumbs crumbs={crumbs} />}
       <Helmet>
         <html lang="en" />
         <title>{title}</title>

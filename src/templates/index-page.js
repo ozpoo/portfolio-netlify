@@ -3,9 +3,11 @@ import PropTypes from 'prop-types'
 
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import Layout from './../components/Layout'
+import Features from './../components/Features'
+import BlogRoll from './../components/BlogRoll'
+
+import AnimateIn from './../components/AnimateIn'
 
 import { Container } from 'react-bootstrap'
 
@@ -14,26 +16,30 @@ export const IndexPageTemplate = ({
   sections,
 }) => (
   <Container className='pt-5'>
-    <section className='mb-5'>
+    <AnimateIn className='mb-5'>
       <h1>{intro_text}</h1>
-    </section>
+    </AnimateIn>
 
-    <section className='mb-5'>
-      <Features gridItems={sections} />
+    <Features gridItems={sections} />
+    <AnimateIn className='mb-5'>
       <Link to='/products'>See all products</Link>
-    </section>
+    </AnimateIn>
 
-    <section className='mb-5'>
+    <AnimateIn>
       <h3>Recent Projects</h3>
-      <BlogRoll />
+    </AnimateIn>
+    <BlogRoll />
+    <AnimateIn className='mb-5'>
       <Link to='/work'>Read more</Link>
-    </section>
+    </AnimateIn>
 
-    <section className='mb-5'>
+    <AnimateIn>
       <h3>Latest News</h3>
-      <BlogRoll />
+    </AnimateIn>
+    <BlogRoll />
+    <AnimateIn>
       <Link to='/blog'>Read more</Link>
-    </section>
+    </AnimateIn>
   </Container>
 )
 
@@ -46,7 +52,7 @@ const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
-    <Layout>
+    <Layout crumbs={[{label: 'Index', path: '/'}]}>
       <IndexPageTemplate
         intro_text={frontmatter.intro_text}
         sections={frontmatter.sections}

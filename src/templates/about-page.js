@@ -33,7 +33,11 @@ const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout
+      crumbs={[
+        {label: 'Index', path: '/'},
+        {label: 'About', path: '/about'},
+      ]}>
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
