@@ -9,7 +9,7 @@ import BlogRoll from './../components/BlogRoll'
 
 import AnimateIn from './../components/AnimateIn'
 
-import { Container } from 'react-bootstrap'
+import { Container, Card, Row, Col } from 'react-bootstrap'
 
 export const IndexPageTemplate = ({
   intro_text,
@@ -19,6 +19,39 @@ export const IndexPageTemplate = ({
     <AnimateIn className='mb-5'>
       <h1>{intro_text}</h1>
     </AnimateIn>
+
+    <AnimateIn className='mb-5'>
+      <Card>
+        <Card.Img style={{height: '420px', objectFit: 'cover'}} src='img/chemex.jpg' alt='Card image' />
+        <Card.ImgOverlay>
+          <Card.Title>Card title</Card.Title>
+          <Card.Text>
+            This is a wider card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.
+          </Card.Text>
+          <Card.Text>Last updated 3 mins ago</Card.Text>
+        </Card.ImgOverlay>
+      </Card>
+    </AnimateIn>
+
+    <Row>
+      <Col xs={12} md={6} lg={8}>
+        <AnimateIn className='mb-5'>
+          <Card>
+            <Card.Header className='text-monospace'>Card title</Card.Header>
+            <Card.Img variant='bottom' style={{height: '320px', objectFit: 'cover'}} src='img/chemex.jpg' alt='Card image' />
+          </Card>
+        </AnimateIn>
+      </Col>
+      <Col xs={12} md={6} lg={4}>
+        <AnimateIn className='mb-5'>
+          <Card>
+            <Card.Header className='text-monospace'>Card title</Card.Header>
+            <Card.Img variant='bottom' style={{height: '320px', objectFit: 'cover'}} src='img/chemex.jpg' alt='Card image' />
+          </Card>
+        </AnimateIn>
+      </Col>
+    </Row>
 
     <Features gridItems={sections} />
     <AnimateIn className='mb-5'>
