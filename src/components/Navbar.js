@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import Switch from 'react-switch'
 import Logo from './Logo'
 
-import useDarkMode from 'use-dark-mode'
+import useDarkMode from './useDarkMode'
 
 const MainNav = () => {
   const darkMode = useDarkMode(false)
