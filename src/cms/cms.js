@@ -39,16 +39,16 @@ CMS.registerEditorComponent({
     {name: 'column_one', label: 'Content', widget: 'markdown'},
     {name: 'column_two', label: 'Content', widget: 'markdown'}
   ],
-  pattern: /^`two_column: (\S+)`$/,
+  pattern: /`column:(\S)\w+ column:(\S)\w+`/g,
   fromBlock: function(match) {
     return {
       column_one: match[1],
-      column_two: match[1]
+      column_two: match[2]
     };
   },
   toBlock: function(obj) {
     return (
-      'two_column: -' + obj.column_one + ' -' + obj.column_two
+      'column:' + obj.column_one + ' column:' + obj.column_two
     );
   },
   // Preview output for this component. Can either be a string or a React component
