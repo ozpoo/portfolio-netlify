@@ -6,6 +6,6 @@ description: Yeeeehow
 ---
 `youtube: EUqw4I6lzZ8`
 
-\[[column:dfss] \[column:fds]]
+`[[column:kkkk] [column:jkknb]]`
 
 ![](/img/bcard_03_600x1800.jpg)
