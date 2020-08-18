@@ -5,7 +5,8 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from './../components/Layout'
 import Features from './../components/Features'
-import BlogRoll from './../components/BlogRoll'
+import WorkRoll from './../components/WorkRoll'
+import JournalRoll from './../components/JournalRoll'
 
 import AnimateIn from './../components/AnimateIn'
 
@@ -61,7 +62,7 @@ export const IndexPageTemplate = ({
     <AnimateIn>
       <h3>Recent Projects</h3>
     </AnimateIn>
-    <BlogRoll />
+    <WorkRoll />
     <AnimateIn className='mb-5'>
       <Link to='/work'>Read more</Link>
     </AnimateIn>
@@ -69,7 +70,7 @@ export const IndexPageTemplate = ({
     <AnimateIn>
       <h3>Latest News</h3>
     </AnimateIn>
-    <BlogRoll />
+    <JournalRoll />
     <AnimateIn>
       <Link to='/blog'>Read more</Link>
     </AnimateIn>

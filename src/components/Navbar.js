@@ -29,24 +29,13 @@ const MainNav = () => {
               <Link activeClassName='active' to='/work' partiallyActive={true}>Work</Link>
             </li>
             <li>
-              <Link activeClassName='active' to='/process' partiallyActive={true}>Process</Link>
+              <Link activeClassName='active' to='/studies' partiallyActive={true}>Studies</Link>
             </li>
-            <li>
-              <Link activeClassName='active' to='/thesis'>Thesis</Link>
-            </li>
-            <li>
-              <Link activeClassName='active' to='/resume'>Resume</Link>
-            </li>
-          </ul>
-          <ul className='global-nav-list list-unstyled mt-4'>
             <li>
               <Link activeClassName='active' to='/news' partiallyActive={true}>News</Link>
             </li>
             <li>
               <Link activeClassName='active' to='/journal' partiallyActive={true}>Journal</Link>
-            </li>
-            <li>
-              <Link activeClassName='active' to='/contact'>Contact</Link>
             </li>
           </ul>
 
@@ -54,6 +43,12 @@ const MainNav = () => {
             <li>
               <Link activeClassName='active' to='/about' partiallyActive={true}>About</Link>
             </li>
+            <li>
+              <Link activeClassName='active' to='/contact'>Contact</Link>
+            </li>
+          </ul>
+
+          <ul className='global-nav-list list-unstyled mt-4'>
             <li>
               <Link activeClassName='active' to='/products' partiallyActive={true}>Products</Link>
             </li>
