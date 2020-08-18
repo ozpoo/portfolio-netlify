@@ -8,6 +8,4 @@ description: Yeeeehow
 
 ``
 
-`[[column:jkkbgjbjb] [column:khjjhjhjhj]]`
-
 ![](/img/bcard_03_600x1800.jpg)
