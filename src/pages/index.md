@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-intro_text: '# Oz <span className="text-muted">is an</span> award winning
+intro_text: Oz <span className="text-muted">is an</span> award winning
   design-gineer who works at the intersection of graphic design, human centered
-  design (UX), web design (UI), and software engineering.'
+  design (UX), web design (UI), and software engineering.
 sections:
   - image: /img/barc_nelson1601_0083_low_600x1800.jpg
     title: Work
