@@ -32,6 +32,34 @@ CMS.registerEditorComponent({
   }
 });
 
+CMS.registerEditorComponent({
+  id: 'two_column',
+  label: '2 Column',
+  fields: [
+    {name: 'column_one', label: 'Content', widget: 'markdown'},
+    {name: 'column_two', label: 'Content', widget: 'markdown'}
+  ],
+  pattern: /^`two_column: (\S+)`$/,
+  fromBlock: function(match) {
+    return {
+      column_one: match[1],
+      column_two: match[1]
+    };
+  },
+  toBlock: function(obj) {
+    return (
+      'two_column: -' + obj.column_one + ' -' + obj.column_two
+    );
+  },
+  // Preview output for this component. Can either be a string or a React component
+  // (component gives better render performance)
+  toPreview: function(obj) {
+    return (
+      '<div className="d-flex"><div>' + obj.column_one + '</div><div>' + obj.column_two + '</div></div>'
+    );
+  }
+});
+
 CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
 
