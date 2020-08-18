@@ -23,6 +23,7 @@ export const IndexPageTemplate = ({
       <h1>{intro_text}</h1>
     </AnimateIn>
 
+    {/*
     <AnimateIn className='mb-5'>
       <Card>
         <Card.Img style={{height: '420px', objectFit: 'cover'}} src='img/chemex.jpg' alt='Card image' />
@@ -55,6 +56,7 @@ export const IndexPageTemplate = ({
         </AnimateIn>
       </Col>
     </Row>
+    */}
 
     <Features gridItems={sections} />
     <AnimateIn className='mb-5'>
