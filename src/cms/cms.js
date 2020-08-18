@@ -39,22 +39,34 @@ CMS.registerEditorComponent({
     {name: 'column_one', label: 'Content', widget: 'markdown'},
     {name: 'column_two', label: 'Content', widget: 'markdown'}
   ],
-  pattern: /^`columns: (\S+)`$/,
+  pattern: /^`columns: (?:column:\[??[^]*?\])`$/g,
   fromBlock: function(match) {
+
+    console.log('match: ' + match)
+
+    const pat = /(\[(?:\[??[^\[]*?\]))/g
+    const columns = match.toString().search(pat) : null
+
+    console.log('columns: ' + columns)
+
+    const column_one = columns ? columns[1] : ''
+    const column_two = columns ? columns[2] : ''
+
     return {
-      columns: match[1]
+      column_one: columns[1],
+      column_two: columns[2]
     };
   },
   toBlock: function(obj) {
     return (
-      '`columns: column:' + obj.column_one + ' column:' + obj.column_two`'
+      '`columns: column:[' + obj.column_one + '] column:[' + obj.column_two + ']`'
     );
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
     return (
-      '<div className="d-flex"><div>' + obj.columns + '</div><div>' + obj.columns + '</div></div>'
+      '<div className="d-flex"><div>' + obj.column_one + '</div><div>' + obj.column_two + '</div></div>'
     );
   }
 });
