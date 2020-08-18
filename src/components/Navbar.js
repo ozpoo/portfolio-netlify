@@ -8,7 +8,7 @@ import Logo from './Logo'
 import useDarkMode from './use-dark-mode'
 
 const MainNav = () => {
-  const darkMode = useDarkMode(false)
+  const darkMode = useDarkMode(true)
 
   return (
     <>
@@ -48,6 +48,7 @@ const MainNav = () => {
             </li>
           </ul>
 
+          {/*
           <ul className='global-nav-list list-unstyled mt-4'>
             <li>
               <Link activeClassName='active' to='/products' partiallyActive={true}>Products</Link>
@@ -56,6 +57,7 @@ const MainNav = () => {
               <Link activeClassName='active' to='/forms'>Forms</Link>
             </li>
           </ul>
+          */}
         </div>
 
         <div>

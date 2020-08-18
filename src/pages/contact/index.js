@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
-import Layout from '../../components/Layout'
+import Layout from './../../components/Layout'
+import AnimateIn from '../../components/AnimateIn'
 
 import { Container } from 'react-bootstrap'
 
@@ -43,10 +44,10 @@ export default class Index extends React.Component {
           {label: 'Contact', path: '/contact'},
         ]}>
         <Container className='pt-4'>
-          <section className='mb-5'>
+          <AnimateIn className='mb-5'>
             <h1>Contact</h1>
-          </section>
-          <section className='mb-5'>
+          </AnimateIn>
+          <AnimateIn className='mb-5'>
             <form
               name="contact"
               method="post"
@@ -113,7 +114,7 @@ export default class Index extends React.Component {
                 </button>
               </div>
             </form>
-          </section>
+          </AnimateIn>
         </Container>
       </Layout>
     )

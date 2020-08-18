@@ -6,6 +6,8 @@ import { Link, graphql } from 'gatsby'
 import Layout from './../components/Layout'
 import Features from './../components/Features'
 import WorkRoll from './../components/WorkRoll'
+import StudiesRoll from './../components/StudiesRoll'
+import NewsRoll from './../components/NewsRoll'
 import JournalRoll from './../components/JournalRoll'
 
 import AnimateIn from './../components/AnimateIn'
@@ -60,19 +62,35 @@ export const IndexPageTemplate = ({
     </AnimateIn>
 
     <AnimateIn>
-      <h3>Recent Projects</h3>
+      <h2>01 — Work</h2>
     </AnimateIn>
     <WorkRoll />
-    <AnimateIn className='mb-5'>
-      <Link to='/work'>Read more</Link>
+    <AnimateIn className='mt-2 mb-5'>
+      <Link to='/work'>See all</Link>
     </AnimateIn>
 
     <AnimateIn>
-      <h3>Latest News</h3>
+      <h3>02 — Studies</h3>
+    </AnimateIn>
+    <StudiesRoll />
+    <AnimateIn className='mt-2 mb-5'>
+      <Link to='/studies'>See all</Link>
+    </AnimateIn>
+
+    <AnimateIn>
+      <h3>03 — News</h3>
+    </AnimateIn>
+    <NewsRoll />
+    <AnimateIn className='mt-2 mb-5'>
+      <Link to='/news'>See all</Link>
+    </AnimateIn>
+
+    <AnimateIn>
+      <h3>04 — Journal</h3>
     </AnimateIn>
     <JournalRoll />
-    <AnimateIn>
-      <Link to='/blog'>Read more</Link>
+    <AnimateIn className='mt-2 mb-5'>
+      <Link to='/journal'>See all</Link>
     </AnimateIn>
   </Container>
 )
