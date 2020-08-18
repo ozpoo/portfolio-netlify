@@ -16,60 +16,20 @@ CMS.registerEditorComponent({
   fields: [{name: 'id', label: 'Youtube Video ID', widget: 'string'}],
   pattern: /^`youtube: (\S+)`$/,
   fromBlock: function(match) {
-    console.log('youtube: fromBlock')
     return {
       id: match[1]
-    };
+    }
   },
   toBlock: function(obj) {
     console.log('youtube: toBlock')
-    return '`youtube: ' + obj.id + '`';
+    return '`youtube: ' + obj.id + '`'
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
-    console.log('youtube: toPreview')
-    return (
-      '<img src="http://img.youtube.com/vi/' + obj.id + '/maxresdefault.jpg" alt="Youtube Video"/>'
-    );
+    return '<img src="http://img.youtube.com/vi/' + obj.id + '/maxresdefault.jpg" alt="Youtube Video"/>'
   }
-});
-
-CMS.registerEditorComponent({
-  id: 'two_column',
-  label: '2 Column',
-  fields: [
-    {name: 'column_one', label: 'Content', widget: 'markdown'},
-    {name: 'column_two', label: 'Content', widget: 'markdown'}
-  ],
-  pattern: /^`columns: (\S+)`$/,
-  fromBlock: function(match) {
-    console.log('column: fromBlock')
-    console.log('match: ' + match)
-
-    const pat = /(\[(?:\[??[^\[]*?\]))/g
-    const columns = match.toString().search(pat) : null
-
-    return {
-      column_one: columns ? columns[1] : '',
-      column_two: columns ? columns[2] : ''
-    };
-  },
-  toBlock: function(obj) {
-    console.log('column: toBlock')
-    return (
-      '`columns: [[' + obj.column_one + '][' + obj.column_two + ']]`'
-    );
-  },
-  // Preview output for this component. Can either be a string or a React component
-  // (component gives better render performance)
-  toPreview: function(obj) {
-    console.log('column: toPreview')
-    return (
-      '<div className="d-flex"><div>' + obj.column_one + '</div><div>' + obj.column_two + '</div></div>'
-    );
-  }
-});
+})
 
 CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
