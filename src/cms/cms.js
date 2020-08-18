@@ -39,15 +39,17 @@ CMS.registerEditorComponent({
     {name: 'column_one', label: 'Content', widget: 'markdown'},
     {name: 'column_two', label: 'Content', widget: 'markdown'}
   ],
-  pattern: /^`columns: (?:column:\[??[^]*?\])`$/g,
+  pattern: /^'columns: (?:column:\[??[^]*?\])'$/g,
   fromBlock: function(match) {
 
     console.log('match: ' + match)
 
-    const pat = /(\[(?:\[??[^\[]*?\]))/g
-    const columns = match.toString().search(pat) : null
+    // const pat = /(\[(?:\[??[^\[]*?\]))/g
+    // const columns = match.toString().search(pat) : null
+    //
+    // console.log('columns: ' + columns)
 
-    console.log('columns: ' + columns)
+    const columns = null
 
     const column_one = columns ? columns[1] : ''
     const column_two = columns ? columns[2] : ''
