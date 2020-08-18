@@ -4,8 +4,6 @@ title: Newsy Floozy
 date: 2020-08-18T02:50:00.908Z
 description: Yeeeehow
 ---
-
-
-[[column:dfss] [column:fds]]
+columns: [[column:khh] [column:knv]]
 
 ![](/img/bcard_03_600x1800.jpg)
