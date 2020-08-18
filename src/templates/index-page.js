@@ -12,7 +12,7 @@ import JournalRoll from './../components/JournalRoll'
 
 import AnimateIn from './../components/AnimateIn'
 
-import { Container, Card, Row, Col } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 
 export const IndexPageTemplate = ({
   intro_text,
