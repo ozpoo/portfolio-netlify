@@ -32,7 +32,7 @@ const MainNav = () => {
               <Link activeClassName='active' to='/products' partiallyActive={true}>Products</Link>
             </li>
             <li>
-              <Link activeClassName='active' to='/blog'>Blog</Link>
+              <Link activeClassName='active' to='/journal'>Journal</Link>
             </li>
             <li>
               <Link activeClassName='active' to='/contact'>Contact</Link>
