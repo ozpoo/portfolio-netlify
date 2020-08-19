@@ -14,7 +14,7 @@ export default class JournalIndexPage extends React.Component {
           {label: 'Index', path: '/'},
           {label: 'Journal', path: '/journal'},
         ]}>
-        <Container className='pt-4'>
+        <Container className='py-4 px-3'>
           <AnimateIn className='mb-5'>
             <h1>Journal</h1>
           </AnimateIn>

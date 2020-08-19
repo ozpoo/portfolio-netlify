@@ -6,10 +6,10 @@ import { Container, ListGroup, Row, Col } from 'react-bootstrap'
 const Footer = class extends React.Component {
   render() {
     return (
-      <Container className='py-5'>
+      <Container className='py-4 px-3'>
         <Row>
           <Col xs={12} md={4}>
-            <ListGroup variant='flush'>
+            <ListGroup>
               <ListGroup.Item>
                 <Link to='/'>Home</Link>
               </ListGroup.Item>
@@ -38,7 +38,7 @@ const Footer = class extends React.Component {
             </ListGroup>
           </Col>
           <Col xs={12} md={4}>
-            <ListGroup variant='flush'>
+            <ListGroup>
               <ListGroup.Item>
                 <Link to='/blog'>Latest Stories</Link>
               </ListGroup.Item>
@@ -48,7 +48,7 @@ const Footer = class extends React.Component {
             </ListGroup>
           </Col>
           <Col xs={12} md={4}>
-            <ListGroup variant='flush'>
+            <ListGroup>
               <ListGroup.Item>
                 <a title='facebook' href='https://facebook.com'>Facebook</a>
               </ListGroup.Item>

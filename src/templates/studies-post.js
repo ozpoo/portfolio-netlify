@@ -21,7 +21,7 @@ export const StudiesPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <Container className='pt-5'>
+    <Container className='py-4 px-3'>
       {helmet || ''}
 
       <section className='mb-5'>
@@ -63,7 +63,12 @@ const StudiesPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout
+      crumbs={[
+        {label: 'Index', path: '/'},
+        {label: 'Studies', path: '/studies'},
+        {label: post.frontmatter.title, path: '/studies/' + post.frontmatter.title},
+      ]}>
       <StudiesPostTemplate
         content={post.html}
         contentComponent={HTMLContent}

@@ -2,7 +2,9 @@ import React from 'react'
 import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
-import Layout from '../../components/Layout'
+
+import Layout from './../../components/Layout'
+import AnimateIn from '../../components/AnimateIn'
 
 import { Container, ListGroup } from 'react-bootstrap'
 
@@ -15,12 +17,12 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
-    <Container className='pt-4'>
+    <Container className='py-4 px-3'>
       <Helmet title={`Tags | ${title}`} />
-      <section className='mb-4'>
+      <AnimateIn className='mb-5'>
         <h1>Tags</h1>
-      </section>
-      <section className='mb-4'>
+      </AnimateIn>
+      <AnimateIn className='mb-5'>
         <ListGroup>
           {group.map((tag) => (
             <ListGroup.Item key={tag.fieldValue}>
@@ -30,7 +32,7 @@ const TagsPage = ({
             </ListGroup.Item>
           ))}
         </ListGroup>
-      </section>
+      </AnimateIn>
     </Container>
   </Layout>
 )

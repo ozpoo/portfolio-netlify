@@ -26,7 +26,7 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Tags", name: "tags", widget: "list", required: false}
-      
+
   - name: "journal"
     label: "Journal"
     folder: "src/pages/journal"

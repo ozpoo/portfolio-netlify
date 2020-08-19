@@ -24,7 +24,7 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <Container className='pt-5'>
+        <Container className='py-4 px-3'>
           <Helmet title={`${tag} | ${title}`} />
           <section className='mb-5'>
             <h1>{tagHeader}</h1>

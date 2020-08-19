@@ -17,7 +17,7 @@ class NewsRoll extends React.Component {
     return (
       <Row>
         {posts && posts.map(({ node: post }) => (
-          <Col xs={12} md={6} lg={4} key={post.id}>
+          <Col xs={6} lg={4} xl={3} key={post.id}>
             <AnimateIn className='mb-4'>
               <Tilt
                 className='tilt'

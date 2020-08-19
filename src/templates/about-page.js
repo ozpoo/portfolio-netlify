@@ -13,7 +13,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <Container className='pt-4'>
+    <Container className='py-4 px-3'>
       <AnimateIn className='mb-5'>
         <h1>{title}</h1>
       </AnimateIn>

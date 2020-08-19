@@ -14,7 +14,7 @@ export default class NewsIndexPage extends React.Component {
           {label: 'Index', path: '/'},
           {label: 'News', path: '/news'},
         ]}>
-        <Container className='pt-4'>
+        <Container className='py-4 px-3'>
           <AnimateIn className='mb-5'>
             <h1>News</h1>
           </AnimateIn>

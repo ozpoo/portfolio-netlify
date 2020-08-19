@@ -11,7 +11,7 @@ import Tilt from 'react-tilt'
 const FeatureGrid = ({ gridItems }) => (
   <Row>
     {gridItems.map((item) => (
-      <Col xs={12} md={6} lg={4} key={item.text}>
+      <Col xs={6} lg={4} xl={3} key={item.text}>
         <AnimateIn className='mb-4'>
           <Tilt
             className='tilt'

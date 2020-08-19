@@ -18,9 +18,9 @@ export const IndexPageTemplate = ({
   intro_text,
   sections,
 }) => (
-  <Container className='pt-4'>
+  <Container className='py-4 px-3'>
     <AnimateIn className='mb-5'>
-      <h1>{intro_text}</h1>
+      <h1 dangerouslySetInnerHTML={{__html: intro_text}} />
     </AnimateIn>
 
     {/*

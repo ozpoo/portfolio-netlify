@@ -14,7 +14,7 @@ export default class StudiesIndexPage extends React.Component {
           {label: 'Index', path: '/'},
           {label: 'Studies', path: '/studies'},
         ]}>
-        <Container className='pt-4'>
+        <Container className='py-4 px-3'>
           <AnimateIn className='mb-5'>
             <h1>Case Studies</h1>
           </AnimateIn>

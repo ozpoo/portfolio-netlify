@@ -5,14 +5,16 @@ import { Link } from 'gatsby'
 import Switch from 'react-switch'
 import Logo from './Logo'
 
+import { Container } from 'react-bootstrap'
+
 import useDarkMode from './use-dark-mode'
 
 const MainNav = () => {
   const darkMode = useDarkMode(true)
 
   return (
-    <>
-      <div className='global-nav px-3 py-3 d-flex flex-sm-column justify-content-between'>
+    <div className='global-nav'>
+      <Container className='px-3 py-3 d-flex flex-md-column justify-content-between h-100'>
         <div>
           <Link to='/'>
             <Logo />
@@ -79,8 +81,8 @@ const MainNav = () => {
             aria-label='Toggle dark mode'
           />
         </div>
-      </div>
-    </>
+      </Container>
+    </div>
   )
 }
 
