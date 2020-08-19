@@ -34,13 +34,13 @@ sections:
     text: Love a great cup of coffee, but never knew how to make one? Bought a fancy
       new Chemex but have no.
     list:
-      - title: Discover
+      - title: 01 — Discover
         description: hi
-      - title: Define
+      - title: 02 — Define
         description: hi
-      - title: Design
+      - title: 03 — Design
         description: hi
-      - title: Deliver
+      - title: 04 — Deliver
         description: hi
   - image: /img/layout-02_600x1800.jpg
     title: News
