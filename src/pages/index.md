@@ -16,16 +16,14 @@ sections:
         description: hi
       - title: Web UX/UI
         description: hi
-      - title: Data Cognition
-        description: hi
-      - title: Print
+      - title: Projects
         description: hi
   - image: /img/flyp-1-1-1200x800_600x1800.jpg
     title: Process
     text: Love a great cup of coffee, but never knew how to make one? Bought a fancy
       new Chemex but have no.
     list:
-      - title: 01 — Discover
+      - title: 01 — Discovery
         description: hi
       - title: 02 — Define
         description: hi
