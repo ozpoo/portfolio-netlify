@@ -64,7 +64,7 @@ export const IndexPageTemplate = ({
     </AnimateIn>
 
     <AnimateIn>
-      <h2>01 — Work</h2>
+      <h2>01 <span className='text-muted'>— Work</span></h2>
     </AnimateIn>
     <WorkRoll />
     <AnimateIn className='mt-2 mb-5'>
@@ -72,7 +72,7 @@ export const IndexPageTemplate = ({
     </AnimateIn>
 
     <AnimateIn>
-      <h3>02 — Studies</h3>
+      <h2>02 <span className='text-muted'>— Studies</span></h2>
     </AnimateIn>
     <StudiesRoll />
     <AnimateIn className='mt-2 mb-5'>
@@ -80,7 +80,7 @@ export const IndexPageTemplate = ({
     </AnimateIn>
 
     <AnimateIn>
-      <h3>03 — News</h3>
+      <h2>03 <span className='text-muted'>— News</span></h2>
     </AnimateIn>
     <NewsRoll />
     <AnimateIn className='mt-2 mb-5'>
@@ -88,7 +88,7 @@ export const IndexPageTemplate = ({
     </AnimateIn>
 
     <AnimateIn>
-      <h3>04 — Journal</h3>
+      <h2>04 <span className='text-muted'>— Journal</span></h2>
     </AnimateIn>
     <JournalRoll />
     <AnimateIn className='mt-2 mb-5'>
