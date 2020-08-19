@@ -16,7 +16,7 @@ sections:
         description: hi
       - title: Web UX/UI
         description: hi
-      - title: Projects
+      - title: All Projects
         description: hi
   - image: /img/flyp-1-1-1200x800_600x1800.jpg
     title: Process
