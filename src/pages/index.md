@@ -42,7 +42,7 @@ sections:
         description: hi
       - title: Bolt — Web UI/UX
         description: hi
-      - title: Babienko Architects — Brand Identity + Web
+      - title: Babienko Architects — Identity + Web
         description: hi
   - image: /img/layout-02_600x1800.jpg
     title: News
