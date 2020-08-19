@@ -38,12 +38,12 @@ sections:
     text: We offer a small, but carefully curated selection of brewing gear and
       tools for every taste and experience level.
     list:
-      - title: RisingSun — Brand Identity
-        description: hi
-      - title: Bolt — Web UI/UX
-        description: hi
-      - title: Babienko Architects — Identity + Web
-        description: hi
+      - title: Brand Identity
+        description: RisingSun
+      - title: Web UI/UX
+        description: Bolt
+      - title: Identity + Web
+        description: Babienko Architects
   - image: /img/layout-02_600x1800.jpg
     title: News
     text: We believe that good coffee has the power to bring people together. That’s
