@@ -23,47 +23,9 @@ export const IndexPageTemplate = ({
       <h1 dangerouslySetInnerHTML={{__html: intro_text}} />
     </AnimateIn>
 
-    {/*
-    <AnimateIn className='mb-5'>
-      <Card>
-        <Card.Img style={{height: '420px', objectFit: 'cover'}} src='img/chemex.jpg' alt='Card image' />
-        <Card.ImgOverlay>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer.
-          </Card.Text>
-          <Card.Text>Last updated 3 mins ago</Card.Text>
-        </Card.ImgOverlay>
-      </Card>
-    </AnimateIn>
-
-    <Row>
-      <Col xs={12} md={6} lg={8}>
-        <AnimateIn className='mb-5'>
-          <Card>
-            <Card.Header className='text-monospace'>Card title</Card.Header>
-            <Card.Img variant='bottom' style={{height: '320px', objectFit: 'cover'}} src='img/chemex.jpg' alt='Card image' />
-          </Card>
-        </AnimateIn>
-      </Col>
-      <Col xs={12} md={6} lg={4}>
-        <AnimateIn className='mb-5'>
-          <Card>
-            <Card.Header className='text-monospace'>Card title</Card.Header>
-            <Card.Img variant='bottom' style={{height: '320px', objectFit: 'cover'}} src='img/chemex.jpg' alt='Card image' />
-          </Card>
-        </AnimateIn>
-      </Col>
-    </Row>
-    */}
-
     <Features gridItems={sections} />
-    <AnimateIn className='mb-5'>
-      <Link to='/products'>See all products</Link>
-    </AnimateIn>
 
-    <AnimateIn>
+    <AnimateIn className='mt-5'>
       <h2>01 <span className='text-muted'>— Work</span></h2>
     </AnimateIn>
     <WorkRoll />
