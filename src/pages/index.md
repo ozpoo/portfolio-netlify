@@ -23,7 +23,7 @@ sections:
     text: Love a great cup of coffee, but never knew how to make one? Bought a fancy
       new Chemex but have no.
     list:
-      - title: 01 — Discovery
+      - title: 01 — Discover
         description: hi
       - title: 02 — Define
         description: hi
