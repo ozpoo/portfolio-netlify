@@ -20,15 +20,6 @@ sections:
         description: hi
       - title: Print
         description: hi
-  - image: /img/dsc_0914-copy_600x1800.jpg
-    title: Research
-    text: We offer a small, but carefully curated selection of brewing gear and
-      tools for every taste and experience level.
-    list:
-      - title: one
-        description: hi
-      - title: two
-        description: hi
   - image: /img/flyp-1-1-1200x800_600x1800.jpg
     title: Process
     text: Love a great cup of coffee, but never knew how to make one? Bought a fancy
@@ -41,6 +32,17 @@ sections:
       - title: 03 — Design
         description: hi
       - title: 04 — Deliver
+        description: hi
+  - image: /img/dsc_0914-copy_600x1800.jpg
+    title: Case Studies
+    text: We offer a small, but carefully curated selection of brewing gear and
+      tools for every taste and experience level.
+    list:
+      - title: RisingSun — Brand Identity
+        description: hi
+      - title: Bolt — Web UI/UX
+        description: hi
+      - title: Babienko Architects — Brand Identity + Web
         description: hi
   - image: /img/layout-02_600x1800.jpg
     title: News
