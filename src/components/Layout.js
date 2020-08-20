@@ -12,6 +12,7 @@ import BreadCrumbs from './BreadCrumbs'
 
 const TemplateWrapper = ({ children, crumbs }) => {
   const { title, description } = useSiteMetadata()
+
   return (
     <div className='global-nav-offset'>
       {crumbs && <BreadCrumbs crumbs={crumbs} />}

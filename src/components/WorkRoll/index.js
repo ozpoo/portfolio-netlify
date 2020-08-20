@@ -4,7 +4,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Link, graphql, StaticQuery } from 'gatsby'
-import { Card, Row, Col, Button } from 'react-bootstrap'
+import { Card, Row, Col } from 'react-bootstrap'
 
 import PreviewCompatibleImage from './../PreviewCompatibleImage'
 import AnimateIn from './../AnimateIn'
@@ -56,19 +56,16 @@ class WorkRoll extends React.Component {
                         }} />
                     )}
                   </div>
-                  <Card.Body>
-                    {post.excerpt}
-                  </Card.Body>
+                  {post.excerpt &&
+                    <Card.Body>
+                      {post.excerpt}
+                    </Card.Body>
+                  }
                   <Card.Footer>
-                    <div className='hover-arrow'>
-                      <small className='text-monospace'>View</small>
+                    <div className='hover-plus'>
                       <svg>
-                        <defs>
-                          <marker id='m' markerUnits='userSpaceOnUse' markerWidth='10' markerHeight='10' refX='1' refY='1' viewBox='0 0 1 2'>
-                            <polyline points='0 0, 1 1, 0 2' />
-                          </marker>
-                        </defs>
-                        <line x1='0' y1='50%' x2='100%' y2='50%' marker-end='url(#m)' />
+                        <line x1='0' y1='50%' x2='100%' y2='50%' />
+                        <line x1='50%' y1='0' x2='50%' y2='100%' />
                       </svg>
                     </div>
                   </Card.Footer>

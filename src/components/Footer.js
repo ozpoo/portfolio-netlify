@@ -1,41 +1,36 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { Container, ListGroup, Row, Col } from 'react-bootstrap'
+import { Container, Card, ListGroup, Row, Col } from 'react-bootstrap'
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <Container className='py-4 px-3'>
+      <Container className='global-footer py-4 px-3'>
         <Row>
           <Col xs={12} md={4}>
-            <ListGroup>
-              <ListGroup.Item>
-                <Link to='/'>Home</Link>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <Link to='/about'>About</Link>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <Link to='/work'>Work</Link>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <Link to='/products'>Products</Link>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <Link to='/contact/examples'>Form Examples</Link>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <a
-                  className='navbar-item'
-                  href='/admin/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
+            <Card>
+              <ListGroup variant='flush'>
+                <ListGroup.Item as={Link} to='/'>
+                  Home
+                </ListGroup.Item>
+                <ListGroup.Item as={Link} to='/about'>
+                  About
+                </ListGroup.Item>
+                <ListGroup.Item as={Link} to='/work'>
+                  Work
+                </ListGroup.Item>
+                <ListGroup.Item as={Link} to='/products'>
+                  Products
+                </ListGroup.Item>
+                <ListGroup.Item as={Link} to='/contact/examples'>
+                  Form Examples
+                </ListGroup.Item>
+                <ListGroup.Item action href='/admin' target='_blank' rel='noopener noreferrer'>
                   Admin
-                </a>
-              </ListGroup.Item>
-            </ListGroup>
+                </ListGroup.Item>
+              </ListGroup>
+            </Card>
           </Col>
           <Col xs={12} md={4}>
             <ListGroup>

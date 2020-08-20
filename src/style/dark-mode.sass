@@ -1,17 +1,21 @@
-@import './../fonts/InterUI/stylesheet.css'
+@import './dark-mode-variables'
 
 .dark-mode
-  $body-bg: lighten(black, 5%)
-  $body-color: darken(white, 5%)
+  body
+    background: $body-bg
+    color: $body-color
 
-  $card-border-color: $body-color
-  $card-bg: lighten($body-bg, 5%)
+  .card, .card-header, .card-footer
+    background-color: $card-bg
+    border: none
 
-  $list-group-bg: $card-bg
+  .list-group
+    .list-group-item
+      background-color: $card-bg
+      border-color: $body-bg
 
-  $text-muted: darken($body-color, 54%)
-
-  @import './../../node_modules/bootstrap/scss/bootstrap'
+  .text-muted
+    color: $text-muted!important
 
   .global-nav
     .global-nav-list
