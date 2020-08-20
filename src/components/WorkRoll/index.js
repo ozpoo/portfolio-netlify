@@ -35,8 +35,8 @@ class WorkRoll extends React.Component {
                   easing:         'cubic-bezier(.03,.98,.52,.99)',    // Easing on enter/exit.
                 }}>
                 <Card className={post.frontmatter.featuredpost ? 'is-featured global-work-card' : 'global-work-card'}>
-                  <Card.Header>
-                    <Link to={post.fields.slug}>{post.frontmatter.title}</Link> &mdash; {post.frontmatter.date}
+                  <Card.Header as='h5' className='m-0'>
+                    {post.frontmatter.title} <span className='text-muted'>&mdash; {post.frontmatter.date}</span>
                   </Card.Header>
                   <div className='aspect-ratio-box'>
                     {post.frontmatter.featuredimage ? (
