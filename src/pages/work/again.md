@@ -1,11 +1,12 @@
 ---
 templateKey: work-post
-title: Again
+title: Lego Robotics
 date: 2020-08-15T02:06:05.810Z
-description: Ye boiiiii
+description: ""
 featuredpost: false
-featuredimage: /img/barc_nelson1601_0083_low_600x1800.jpg
+featuredimage: ""
 tags:
-  - work
+  - Identity
+  - Book
 ---
 Hey
