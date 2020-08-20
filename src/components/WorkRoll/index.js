@@ -34,7 +34,7 @@ class WorkRoll extends React.Component {
                   reset:          true,    // If the tilt effect has to be reset on exit.
                   easing:         'cubic-bezier(.03,.98,.52,.99)',    // Easing on enter/exit.
                 }}>
-                <Card className={post.frontmatter.featuredpost ? 'is-featured global-work-card' : 'global-work-card'}>
+                <Card as={Link} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-work-card' : 'global-work-card'}>
                   <Card.Header as='h5' className='m-0'>
                     {post.frontmatter.title}
                     <span className='text-muted'> &mdash; {post.frontmatter.tags.join(' & ')}</span>
@@ -60,9 +60,17 @@ class WorkRoll extends React.Component {
                     {post.excerpt}
                   </Card.Body>
                   <Card.Footer>
-                    <Link to={post.fields.slug}>
-                      Keep Reading &rarr;
-                    </Link>
+                    <div className='hover-arrow'>
+                      <small className='text-monospace'>View</small>
+                      <svg>
+                        <defs>
+                          <marker id='m' markerUnits='userSpaceOnUse' markerWidth='10' markerHeight='10' refX='1' refY='1' viewBox='0 0 1 2'>
+                            <polyline points='0 0, 1 1, 0 2' />
+                          </marker>
+                        </defs>
+                        <line x1='0' y1='50%' x2='100%' y2='50%' marker-end='url(#m)' />
+                      </svg>
+                    </div>
                   </Card.Footer>
                 </Card>
               </Tilt>

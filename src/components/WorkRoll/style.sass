@@ -3,6 +3,25 @@
 @import './../../../node_modules/bootstrap/scss/mixins/_breakpoints'
 
 .global-work-card
+  color: inherit!important
+  text-decoration: none!important
+
+  .hover-arrow
+    svg
+      width: 25px
+      height: 15px
+      overflow: visible
+      transition: width 220ms ease
+      margin-left: 10px
+      polyline, line
+        stroke-width: 1.25
+        fill: none
+        vector-effect: non-scaling-stroke
+
+  &:hover
+    .hover-arrow
+      svg
+        width: 50px
 
   .aspect-ratio-box
     position: relative
@@ -41,6 +60,10 @@
     .aspect-ratio-box
       &::after
         background: #e6e6e6
+    .hover-arrow
+      svg
+        polyline, line
+          stroke: black
 
 .dark-mode
   .global-work-card
@@ -49,3 +72,7 @@
     .aspect-ratio-box
       &::after
         background: #242424
+    .hover-arrow
+      svg
+        polyline, line
+          stroke: white
