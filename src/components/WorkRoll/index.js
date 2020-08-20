@@ -36,7 +36,8 @@ class WorkRoll extends React.Component {
                 }}>
                 <Card className={post.frontmatter.featuredpost ? 'is-featured global-work-card' : 'global-work-card'}>
                   <Card.Header as='h5' className='m-0'>
-                    {post.frontmatter.title} <span className='text-muted'>&mdash; {post.frontmatter.date}</span>
+                    {post.frontmatter.title}
+                    <span className='text-muted'> &mdash; {post.frontmatter.tags.join(' & ')}</span>
                   </Card.Header>
                   <div className='aspect-ratio-box'>
                     {post.frontmatter.featuredimage ? (
@@ -59,9 +60,9 @@ class WorkRoll extends React.Component {
                     {post.excerpt}
                   </Card.Body>
                   <Card.Footer>
-                    <Button as={Link} to={post.fields.slug}>
+                    <Link to={post.fields.slug}>
                       Keep Reading &rarr;
-                    </Button>
+                    </Link>
                   </Card.Footer>
                 </Card>
               </Tilt>
@@ -101,6 +102,7 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
+                tags
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 240, quality: 100) {
