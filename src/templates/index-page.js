@@ -34,7 +34,7 @@ export const IndexPageTemplate = ({
     </AnimateIn>
 
     <AnimateIn>
-      <h2>02 <span className='text-muted'>— Studies</span></h2>
+      <h2>02 <span className='text-muted'>— Case Studies</span></h2>
     </AnimateIn>
     <StudiesRoll />
     <AnimateIn className='mt-2 mb-5'>

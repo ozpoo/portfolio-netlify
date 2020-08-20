@@ -27,7 +27,7 @@ const FeatureGrid = ({ gridItems }) => (
               easing:         'cubic-bezier(.03,.98,.52,.99)',    // Easing on enter/exit.
             }}>
             <Card>
-              <Card.Header className='text-monospace'>{item.title}</Card.Header>
+              <Card.Header className='text-monospace'><small>{item.title}</small></Card.Header>
               <PreviewCompatibleImage imageInfo={item}/>
               <Card.Body>
                 {item.text}

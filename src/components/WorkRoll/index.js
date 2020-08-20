@@ -1,11 +1,13 @@
+import './style.sass'
+
 import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Link, graphql, StaticQuery } from 'gatsby'
 import { Card, Row, Col, Button } from 'react-bootstrap'
 
-import PreviewCompatibleImage from './PreviewCompatibleImage'
-import AnimateIn from './AnimateIn'
+import PreviewCompatibleImage from './../PreviewCompatibleImage'
+import AnimateIn from './../AnimateIn'
 
 import Tilt from 'react-tilt'
 
@@ -17,7 +19,7 @@ class WorkRoll extends React.Component {
     return (
       <Row>
         {posts && posts.map(({ node: post }) => (
-          <Col xs={6} lg={4} xl={3} key={post.id}>
+          <Col xs={6} lg={4} xl={3} key={post.id} className='mb-5'>
             <AnimateIn>
               <Tilt
                 className='tilt'
@@ -32,18 +34,27 @@ class WorkRoll extends React.Component {
                   reset:          true,    // If the tilt effect has to be reset on exit.
                   easing:         'cubic-bezier(.03,.98,.52,.99)',    // Easing on enter/exit.
                 }}>
-                <Card className={post.frontmatter.featuredpost ? 'is-featured' : ''}>
-                  <Card.Header as='header'>
+                <Card className={post.frontmatter.featuredpost ? 'is-featured global-work-card' : 'global-work-card'}>
+                  <Card.Header>
                     <Link to={post.fields.slug}>{post.frontmatter.title}</Link> &mdash; {post.frontmatter.date}
                   </Card.Header>
-                  {post.frontmatter.featuredimage ? (
-                    <PreviewCompatibleImage
-                      imageInfo={{
-                        image: post.frontmatter.featuredimage,
-                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                      }}
-                    />
-                  ) : null}
+                  <div className='aspect-ratio-box'>
+                    {post.frontmatter.featuredimage ? (
+                      <PreviewCompatibleImage
+                        imageInfo={{
+                          image: post.frontmatter.featuredimage,
+                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                        }}
+                      />
+                    ) : (
+                      <PreviewCompatibleImage
+                        imageInfo={{
+                          type: 'url',
+                          image: 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D',
+                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                        }} />
+                    )}
+                  </div>
                   <Card.Body>
                     {post.excerpt}
                   </Card.Body>
