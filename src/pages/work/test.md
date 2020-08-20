@@ -1,11 +1,12 @@
 ---
 templateKey: work-post
-title: Test
+title: Selfie Quilts
 date: 2020-08-11T04:00:39.824Z
-description: Hey
+description: f
 featuredpost: false
-featuredimage: /img/bcard_03_600x1800.jpg
+featuredimage: ""
 tags:
-  - Tagster
+  - In Progress
+  - Exhibition
+  - Research
 ---
-Testeroo
