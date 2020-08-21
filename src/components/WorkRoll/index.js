@@ -21,26 +21,25 @@ class WorkRoll extends Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
-    let bell = () => {}
-    let hover = () => {}
-
-    if (!typeof window === "undefined" && window.document) {
-      bell = new UIfx(
+    let bell = window && window.document ?
+      new UIfx(
         bellAudio,
         {
           volume: 1.0, // number between 0.0 ~ 1.0
           throttleMs: 100
         }
       )
+    : false
 
-      hover = new UIfx(
+    let hover = window && window.document ?
+      new UIfx(
         hoverAudio,
         {
           volume: 1.0, // number between 0.0 ~ 1.0
-          throttleMs: 0
+          throttleMs: 100
         }
       )
-    }
+    : false
 
     return (
       <Row>
@@ -60,7 +59,7 @@ class WorkRoll extends Component {
                   reset:          true,    // If the tilt effect has to be reset on exit.
                   easing:         'cubic-bezier(.03,.98,.52,.99)',    // Easing on enter/exit.
                 }}>
-                <Card as={Link} onMouseEnter={() => hover.play()} onClick={() => bell.play()} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-work-card' : 'global-work-card'}>
+                <Card as={Link} onMouseEnter={() => hover && hover.play()} onClick={() => bell && bell.play()} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-work-card' : 'global-work-card'}>
                   <Card.Header as='h5' className='m-0'>
                     {post.frontmatter.title}
                     <span className='text-muted'> &mdash; {post.frontmatter.tags.join(' & ')}</span>

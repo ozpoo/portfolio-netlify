@@ -16,62 +16,61 @@ import shutterAudio from './../../static/audio/wav/03-Primary-System-Sounds/ui_c
 const MainNav = () => {
   const darkMode = useDarkMode(true)
 
-  let bell = () => {}
-  let shutter = () => {}
-
-  if (!typeof window === "undefined" && window.document) {
-    bell = new UIfx(
+  let bell = window && window.document ?
+    new UIfx(
       bellAudio,
       {
         volume: 1.0, // number between 0.0 ~ 1.0
         throttleMs: 100
       }
     )
+  : false
 
-    shutter = new UIfx(
+  let shutter = window && window.document ?
+    new UIfx(
       shutterAudio,
       {
         volume: 1.0, // number between 0.0 ~ 1.0
-        throttleMs: 0
+        throttleMs: 100
       }
     )
-  }
+  : false
 
   return (
     <div className='global-nav'>
       <Container className='px-3 py-3 d-flex flex-md-column justify-content-between h-100'>
         <div>
-          <Link onClick={() => bell.play()} to='/'>
+          <Link onClick={() => bell && bell.play()} to='/'>
             <Logo />
           </Link>
 
           <ul className='global-nav-list list-unstyled pt-5'>
             <li>
-              <Link onClick={() => bell.play()} activeClassName='active' to='/'>Index</Link>
+              <Link onClick={() => bell && bell.play()} activeClassName='active' to='/'>Index</Link>
             </li>
           </ul>
 
           <ul className='global-nav-list list-unstyled mt-4'>
             <li>
-              <Link onClick={() => bell.play()} activeClassName='active' to='/work' partiallyActive={true}>Work</Link>
+              <Link onClick={() => bell && bell.play()} activeClassName='active' to='/work' partiallyActive={true}>Work</Link>
             </li>
             <li>
-              <Link onClick={() => bell.play()} activeClassName='active' to='/studies' partiallyActive={true}>Studies</Link>
+              <Link onClick={() => bell && bell.play()} activeClassName='active' to='/studies' partiallyActive={true}>Studies</Link>
             </li>
             <li>
-              <Link onClick={() => bell.play()} activeClassName='active' to='/news' partiallyActive={true}>News</Link>
+              <Link onClick={() => bell && bell.play()} activeClassName='active' to='/news' partiallyActive={true}>News</Link>
             </li>
             <li>
-              <Link onClick={() => bell.play()} activeClassName='active' to='/journal' partiallyActive={true}>Journal</Link>
+              <Link onClick={() => bell && bell.play()} activeClassName='active' to='/journal' partiallyActive={true}>Journal</Link>
             </li>
           </ul>
 
           <ul className='global-nav-list list-unstyled mt-4'>
             <li>
-              <Link onClick={() => bell.play()} activeClassName='active' to='/about' partiallyActive={true}>About</Link>
+              <Link onClick={() => bell && bell.play()} activeClassName='active' to='/about' partiallyActive={true}>About</Link>
             </li>
             <li>
-              <Link onClick={() => bell.play()} activeClassName='active' to='/contact'>Contact</Link>
+              <Link onClick={() => bell && bell.play()} activeClassName='active' to='/contact'>Contact</Link>
             </li>
           </ul>
 
@@ -103,7 +102,7 @@ const MainNav = () => {
             id='toggle-theme'
             checked={darkMode.value}
             onChange={() => {
-              shutter.play()
+              shutter && shutter.play()
               darkMode.toggle()
             }}
             aria-label='Toggle dark mode'

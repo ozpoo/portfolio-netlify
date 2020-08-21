@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 
 import { Button, Card } from 'react-bootstrap'
 
-import PreviewCompatibleImage from './../PreviewCompatibleImage'
 import AnimateIn from './../AnimateIn'
 
 import EmblaCarouselReact from 'embla-carousel-react'
@@ -25,20 +24,18 @@ class FeatureGrid extends Component {
   componentDidMount() {
     this.setProgress()
 
-    let bell = () => { }
-
-    if (!typeof window === "undefined" && window.document) {
-      bell = new UIfx(
+    let bell = window && window.document ?
+      new UIfx(
         bellAudio,
         {
           volume: 1.0, // number between 0.0 ~ 1.0
           throttleMs: 100
         }
       )
-    }
+    : false
 
     this.embla.on('select', () => {
-      bell.play()
+      bell && bell.play()
 
       this.goBackwards = false
       this.goBig = false
