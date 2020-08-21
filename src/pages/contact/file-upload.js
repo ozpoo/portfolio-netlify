@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component} from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 
@@ -12,7 +12,7 @@ function encode(data) {
   return formData
 }
 
-export default class Contact extends React.Component {
+class Contact extends Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -106,3 +106,5 @@ export default class Contact extends React.Component {
     )
   }
 }
+
+export default Contact

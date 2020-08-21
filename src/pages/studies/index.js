@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import Layout from './../../components/Layout'
 import AnimateIn from './../../components/AnimateIn'
@@ -6,7 +6,7 @@ import StudiesRoll from './../../components/StudiesRoll'
 
 import { Container } from 'react-bootstrap'
 
-export default class StudiesIndexPage extends React.Component {
+export default class StudiesIndexPage extends Component {
   render() {
     return (
       <Layout

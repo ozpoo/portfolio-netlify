@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import Layout from './../../components/Layout'
 import AnimateIn from '../../components/AnimateIn'
@@ -7,7 +7,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import {aPMS, aRGB} from './script.js'
 
-export default class Pantone extends React.Component {
+class Pantone extends Component {
   constructor(props) {
     super(props)
     this.state = { }
@@ -42,3 +42,5 @@ export default class Pantone extends React.Component {
     )
   }
 }
+
+export default Pantone

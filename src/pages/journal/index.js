@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import Layout from './../../components/Layout'
 import AnimateIn from './../../components/AnimateIn'
@@ -6,7 +6,7 @@ import JournalRoll from './../../components/JournalRoll'
 
 import { Container } from 'react-bootstrap'
 
-export default class JournalIndexPage extends React.Component {
+class JournalIndexPage extends Component {
   render() {
     return (
       <Layout
@@ -27,3 +27,5 @@ export default class JournalIndexPage extends React.Component {
     )
   }
 }
+
+export default JournalIndexPage

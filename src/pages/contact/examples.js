@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Layout from '../../components/Layout'
 
 import { Container } from 'react-bootstrap'
 
-export default class Index extends React.Component {
+class Index extends Component {
   render() {
     return (
       <Layout>
@@ -49,3 +49,5 @@ export default class Index extends React.Component {
     )
   }
 }
+
+export default Index

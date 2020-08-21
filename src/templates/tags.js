@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 import { Container, Button } from 'react-bootstrap'
 
-class TagRoute extends React.Component {
+class TagRoute extends Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map((post) => (
@@ -62,7 +62,8 @@ export const tagPageQuery = graphql`
             slug
           }
           frontmatter {
-            title
+            title,
+            tags
           }
         }
       }

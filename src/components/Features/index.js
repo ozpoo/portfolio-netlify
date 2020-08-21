@@ -3,7 +3,7 @@ import './style.sass'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import { Button, Accordion, Card, Row, Col } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
 
 import PreviewCompatibleImage from './../PreviewCompatibleImage'
 import AnimateIn from './../AnimateIn'
@@ -55,32 +55,7 @@ class FeatureGrid extends Component {
   }
 
   setProgress = (settled) => {
-    const length = this.embla.slideNodes().length
-    let adder = (100 / length) / 100
-
     let progress = Math.max(0, Math.min(1, this.embla.scrollProgress()))
-
-    // if(progress === 0 || progress === (1 - adder)) {
-    //   this.goBackwards = false
-    //   this.goBig = false
-    // }
-    //
-    // if(this.goBackwards) {
-    //   const totalProgress = 1 - adder - adder
-    //   progress = Math.abs(1 - progress)
-    //   const anotherAdder = totalProgress * (progress / adder)
-    //   progress = progress + anotherAdder
-    // }
-    //
-    // if(this.goBig) {
-    //   const totalProgress = 1 - adder - adder
-    //   progress = Math.abs(progress - 1)
-    //   const anotherAdder = totalProgress * (progress / adder)
-    //   progress = progress + anotherAdder
-    // }
-    //
-    // this.setState({scrollProgress: (progress + adder) * 100})
-
     this.setState({scrollProgress: progress * 100})
   }
 

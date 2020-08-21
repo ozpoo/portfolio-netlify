@@ -56,6 +56,7 @@ NewsPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  tags: PropTypes.object,
   helmet: PropTypes.object,
 }
 
