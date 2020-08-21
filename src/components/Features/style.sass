@@ -1,8 +1,13 @@
+@import './../../style/bootstrap-variables'
+
 .global-features
+  color: black
+
   .is-draggable
-    overflow: visible!important
+    // overflow: visible!important
 
   .embla__progress
+    display: none
     position: relative
     background-color: white
     margin-top: 20px
@@ -40,16 +45,16 @@
 
   .feature
     position: relative
-    min-width: calc(100% + 20px)
-    padding: 0 10px
+    min-width: 75%
+    padding-right: $spacer
     .card
       .card-body
-        height: 220px
+        height: 140px
       .content
         opacity: 0
         transform: translate3d(0, 10px, 0)
         transition: transform 440ms ease, opacity 260ms ease
-        transition-delay: 440ms
+        transition-delay: 880ms
     &.is-selected
       .card
         .content

@@ -1,7 +1,12 @@
 import './style.sass'
 
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+
+import UIfx from 'uifx'
+// import bellAudio from './../../../static/audio/wav/03-Primary-System-Sounds/navigation_selection-complete-celebration.wav'
+import bellAudio from './../../../static/audio/wav/01-Hero-Sounds/hero_simple-celebration-01.wav'
+import hoverAudio from './../../../static/audio/wav/04-Secondary-System-Sounds/navigation_unavailable-selection.wav'
 
 import { Link, graphql, StaticQuery } from 'gatsby'
 import { Card, Row, Col } from 'react-bootstrap'
@@ -11,10 +16,26 @@ import AnimateIn from './../AnimateIn'
 
 import Tilt from 'react-tilt'
 
-class WorkRoll extends React.Component {
+class WorkRoll extends Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
+
+    const bell = new UIfx(
+      bellAudio,
+      {
+        volume: 1.0, // number between 0.0 ~ 1.0
+        throttleMs: 100
+      }
+    )
+
+    const hover = new UIfx(
+      hoverAudio,
+      {
+        volume: 1.0, // number between 0.0 ~ 1.0
+        throttleMs: 100
+      }
+    )
 
     return (
       <Row>
@@ -34,7 +55,7 @@ class WorkRoll extends React.Component {
                   reset:          true,    // If the tilt effect has to be reset on exit.
                   easing:         'cubic-bezier(.03,.98,.52,.99)',    // Easing on enter/exit.
                 }}>
-                <Card as={Link} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-work-card' : 'global-work-card'}>
+                <Card as={Link} onMouseEnter={() => hover.play()} onClick={() => bell.play()} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-work-card' : 'global-work-card'}>
                   <Card.Header as='h5' className='m-0'>
                     {post.frontmatter.title}
                     <span className='text-muted'> &mdash; {post.frontmatter.tags.join(' & ')}</span>

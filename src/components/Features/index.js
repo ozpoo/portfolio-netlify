@@ -8,9 +8,10 @@ import { Button, Accordion, Card, Row, Col } from 'react-bootstrap'
 import PreviewCompatibleImage from './../PreviewCompatibleImage'
 import AnimateIn from './../AnimateIn'
 
-import Tilt from 'react-tilt'
-
 import EmblaCarouselReact from 'embla-carousel-react'
+
+import UIfx from 'uifx'
+import bellAudio from './../../../static/audio/wav/04-Secondary-System-Sounds/navigation_transition-right.wav'
 
 class FeatureGrid extends Component {
   constructor(props) {
@@ -24,7 +25,17 @@ class FeatureGrid extends Component {
   componentDidMount() {
     this.setProgress()
 
+    const bell = new UIfx(
+      bellAudio,
+      {
+        volume: 1.0, // number between 0.0 ~ 1.0
+        throttleMs: 0
+      }
+    )
+
     this.embla.on('select', () => {
+      bell.play()
+
       this.goBackwards = false
       this.goBig = false
 
@@ -76,15 +87,16 @@ class FeatureGrid extends Component {
   render() {
     const { scrollProgress } = this.state
     const { gridItems } = this.props
+
     return (
       <AnimateIn className='global-features pb-5'>
         <EmblaCarouselReact
           className='pb-4'
           emblaRef={c => (this.embla = c)}
-          options={{loop: false}}>
+          options={{loop: false, align: 'start'}}>
           <div className='d-flex'>
             <div className='feature'>
-              <Card style={{background: '#5bc7c7'}}>
+              <Card style={{background: '#47e2c9'}}>
                 <div className='content'>
                   <Card.Header as='h2'>Work</Card.Header>
                   <Card.Body>
@@ -96,7 +108,7 @@ class FeatureGrid extends Component {
             </div>
 
             <div className='feature'>
-              <Card style={{background: '#f08a61'}}>
+              <Card style={{background: '#cee25c'}}>
                 <div className='content'>
                   <Card.Header as='h2'>Studies</Card.Header>
                     <Card.Body>
@@ -108,7 +120,7 @@ class FeatureGrid extends Component {
             </div>
 
             <div className='feature'>
-              <Card style={{background: '#cee25c'}}>
+              <Card style={{background: '#ff694d'}}>
                 <div className='content'>
                   <Card.Header as='h2'>News</Card.Header>
                   <Card.Body>
@@ -132,7 +144,7 @@ class FeatureGrid extends Component {
             </div>
           </div>
         </EmblaCarouselReact>
-        <Button onClick={() => this.embla.scrollPrev()}>Prev</Button>
+        <Button className='mr-2' onClick={() => this.embla.scrollPrev()}>Prev</Button>
         <Button onClick={() => this.embla.scrollNext()}>Next</Button>
         <div className='embla__progress'>
           <div className='embla__progress__bar' style={{ transform: `translateX(${scrollProgress}%)`}} />
