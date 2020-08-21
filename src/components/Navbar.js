@@ -16,21 +16,26 @@ import shutterAudio from './../../static/audio/wav/03-Primary-System-Sounds/ui_c
 const MainNav = () => {
   const darkMode = useDarkMode(true)
 
-  const bell = new UIfx(
-    bellAudio,
-    {
-      volume: 1.0, // number between 0.0 ~ 1.0
-      throttleMs: 100
-    }
-  )
+  let bell = () => {}
+  let shutter = () => {}
 
-  const shutter = new UIfx(
-    shutterAudio,
-    {
-      volume: 1.0, // number between 0.0 ~ 1.0
-      throttleMs: 0
-    }
-  )
+  if (!typeof window === "undefined" && window.document) {
+    bell = new UIfx(
+      bellAudio,
+      {
+        volume: 1.0, // number between 0.0 ~ 1.0
+        throttleMs: 100
+      }
+    )
+
+    shutter = new UIfx(
+      shutterAudio,
+      {
+        volume: 1.0, // number between 0.0 ~ 1.0
+        throttleMs: 0
+      }
+    )
+  }
 
   return (
     <div className='global-nav'>

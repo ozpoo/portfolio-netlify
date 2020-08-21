@@ -25,13 +25,17 @@ class FeatureGrid extends Component {
   componentDidMount() {
     this.setProgress()
 
-    const bell = new UIfx(
-      bellAudio,
-      {
-        volume: 1.0, // number between 0.0 ~ 1.0
-        throttleMs: 0
-      }
-    )
+    let bell = () => { }
+
+    if (!typeof window === "undefined" && window.document) {
+      bell = new UIfx(
+        bellAudio,
+        {
+          volume: 1.0, // number between 0.0 ~ 1.0
+          throttleMs: 100
+        }
+      )
+    }
 
     this.embla.on('select', () => {
       bell.play()

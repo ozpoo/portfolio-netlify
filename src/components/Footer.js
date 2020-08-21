@@ -10,13 +10,17 @@ import bellAudio from './../../static/audio/wav/03-Primary-System-Sounds/navigat
 
 class Footer extends Component {
   render() {
-    const bell = new UIfx(
-      bellAudio,
-      {
-        volume: 1.0, // number between 0.0 ~ 1.0
-        throttleMs: 0
-      }
-    )
+    let bell = () => {}
+
+    if (!typeof window === "undefined" && window.document) {
+      bell = new UIfx(
+        bellAudio,
+        {
+          volume: 1.0, // number between 0.0 ~ 1.0
+          throttleMs: 100
+        }
+      )
+    }
     return (
       <Container className='global-footer py-4 px-3'>
         <Row>

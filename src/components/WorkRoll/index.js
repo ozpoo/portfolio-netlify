@@ -21,21 +21,26 @@ class WorkRoll extends Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
-    const bell = new UIfx(
-      bellAudio,
-      {
-        volume: 1.0, // number between 0.0 ~ 1.0
-        throttleMs: 100
-      }
-    )
+    let bell = () => {}
+    let hover = () => {}
 
-    const hover = new UIfx(
-      hoverAudio,
-      {
-        volume: 1.0, // number between 0.0 ~ 1.0
-        throttleMs: 100
-      }
-    )
+    if (!typeof window === "undefined" && window.document) {
+      bell = new UIfx(
+        bellAudio,
+        {
+          volume: 1.0, // number between 0.0 ~ 1.0
+          throttleMs: 100
+        }
+      )
+
+      hover = new UIfx(
+        hoverAudio,
+        {
+          volume: 1.0, // number between 0.0 ~ 1.0
+          throttleMs: 0
+        }
+      )
+    }
 
     return (
       <Row>
