@@ -25,37 +25,25 @@ export const IndexPageTemplate = ({
 
     <Features gridItems={sections} />
 
-    <AnimateIn>
+    <AnimateIn className='mb-5'>
       <h2>01 <span className='text-muted'>— Work</span></h2>
     </AnimateIn>
     <WorkRoll />
-    <AnimateIn className='mt-2 mb-5'>
-      <Link to='/work'>See all</Link>
-    </AnimateIn>
 
-    <AnimateIn>
+    <AnimateIn className='mb-5'>
       <h2>02 <span className='text-muted'>— Case Studies</span></h2>
     </AnimateIn>
     <StudiesRoll />
-    <AnimateIn className='mt-2 mb-5'>
-      <Link to='/studies'>See all</Link>
-    </AnimateIn>
 
-    <AnimateIn>
+    <AnimateIn className='mb-5'>
       <h2>03 <span className='text-muted'>— News</span></h2>
     </AnimateIn>
     <NewsRoll />
-    <AnimateIn className='mt-2 mb-5'>
-      <Link to='/news'>See all</Link>
-    </AnimateIn>
 
-    <AnimateIn>
+    <AnimateIn className='mb-5'>
       <h2>04 <span className='text-muted'>— Journal</span></h2>
     </AnimateIn>
     <JournalRoll />
-    <AnimateIn className='mt-2 mb-5'>
-      <Link to='/journal'>See all</Link>
-    </AnimateIn>
   </Container>
 )
 

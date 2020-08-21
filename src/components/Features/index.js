@@ -67,16 +67,27 @@ class FeatureGrid extends Component {
     return (
       <AnimateIn className='global-features pb-5'>
         <EmblaCarouselReact
-          className='pb-4'
           emblaRef={c => (this.embla = c)}
-          options={{loop: false, align: 'start'}}>
+          options={{loop: true, align: 'center'}}>
           <div className='d-flex'>
             <div className='feature'>
               <Card style={{background: '#47e2c9'}}>
                 <div className='content'>
                   <Card.Header as='h2'>Work</Card.Header>
                   <Card.Body>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
+                  </Card.Body>
+                  <Card.Footer><Button>More</Button></Card.Footer>
+                </div>
+              </Card>
+            </div>
+
+            <div className='feature'>
+              <Card>
+                <div className='content'>
+                  <Card.Header as='h2'>Filler</Card.Header>
+                  <Card.Body>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
                   <Card.Footer><Button>More</Button></Card.Footer>
                 </div>
@@ -88,8 +99,20 @@ class FeatureGrid extends Component {
                 <div className='content'>
                   <Card.Header as='h2'>Studies</Card.Header>
                     <Card.Body>
-                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                     </Card.Body>
+                  <Card.Footer><Button>More</Button></Card.Footer>
+                </div>
+              </Card>
+            </div>
+
+            <div className='feature'>
+              <Card>
+                <div className='content'>
+                  <Card.Header as='h2'>Filler</Card.Header>
+                  <Card.Body>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
+                  </Card.Body>
                   <Card.Footer><Button>More</Button></Card.Footer>
                 </div>
               </Card>
@@ -100,7 +123,19 @@ class FeatureGrid extends Component {
                 <div className='content'>
                   <Card.Header as='h2'>News</Card.Header>
                   <Card.Body>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
+                  </Card.Body>
+                  <Card.Footer><Button>More</Button></Card.Footer>
+                </div>
+              </Card>
+            </div>
+
+            <div className='feature'>
+              <Card>
+                <div className='content'>
+                  <Card.Header as='h2'>Filler</Card.Header>
+                  <Card.Body>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
                   <Card.Footer><Button>More</Button></Card.Footer>
                 </div>
@@ -112,7 +147,19 @@ class FeatureGrid extends Component {
                 <div className='content'>
                   <Card.Header as='h2'>Journal</Card.Header>
                   <Card.Body>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
+                  </Card.Body>
+                  <Card.Footer><Button>More</Button></Card.Footer>
+                </div>
+              </Card>
+            </div>
+
+            <div className='feature'>
+              <Card>
+                <div className='content'>
+                  <Card.Header as='h2'>Filler</Card.Header>
+                  <Card.Body>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
                   <Card.Footer><Button>More</Button></Card.Footer>
                 </div>
@@ -120,8 +167,18 @@ class FeatureGrid extends Component {
             </div>
           </div>
         </EmblaCarouselReact>
-        <Button className='mr-2' onClick={() => this.embla.scrollPrev()}>Prev</Button>
-        <Button onClick={() => this.embla.scrollNext()}>Next</Button>
+        <Button className='prev' onClick={() => this.embla.scrollPrev()}>
+          <svg>
+            <line x1='0' y1='50%' x2='100%' y2='50%' />
+            <line x1='50%' y1='0' x2='50%' y2='100%' />
+          </svg>
+        </Button>
+        <Button className='next' onClick={() => this.embla.scrollNext()}>
+          <svg>
+            <line x1='0' y1='50%' x2='100%' y2='50%' />
+            <line x1='50%' y1='0' x2='50%' y2='100%' />
+          </svg>
+        </Button>
         <div className='embla__progress'>
           <div className='embla__progress__bar' style={{ transform: `translateX(${scrollProgress}%)`}} />
         </div>

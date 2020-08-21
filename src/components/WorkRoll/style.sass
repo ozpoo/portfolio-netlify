@@ -1,7 +1,15 @@
+@import '~bootstrap/scss/functions'
+@import '~bootstrap/scss/variables'
+@import '~bootstrap/scss/mixins'
+
 .global-work-card
   color: inherit!important
   text-decoration: none!important
   overflow: hidden
+
+  @include media-breakpoint-down(xs)
+    width: calc(80% + #{$spacer})
+    margin: auto
 
   img
     display: block

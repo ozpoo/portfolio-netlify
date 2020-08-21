@@ -44,7 +44,7 @@ class WorkRoll extends Component {
     return (
       <Row>
         {posts && posts.map(({ node: post }) => (
-          <Col xs={6} lg={4} xl={3} key={post.id} className='mb-5'>
+          <Col xs={12} sm={6} lg={4} xl={3} key={post.id} className='mb-5'>
             <AnimateIn>
               <Tilt
                 className='tilt'

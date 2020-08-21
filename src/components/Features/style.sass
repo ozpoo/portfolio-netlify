@@ -1,23 +1,56 @@
 @import './../../style/bootstrap-variables'
 
+@import '~bootstrap/scss/functions'
+@import '~bootstrap/scss/variables'
+@import '~bootstrap/scss/mixins'
+
 .global-features
   color: black
+  position: relative
 
   .is-draggable
-    // overflow: visible!important
+    border-radius: $border-radius
+  @include media-breakpoint-down(sm)
+    .is-draggable
+      overflow: visible!important
+
+  .prev, .next
+    position: absolute
+    height: 50px
+    width: 50px
+    border-radius: 50%
+    top: 50%
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    @include media-breakpoint-down(xs)
+      display: none
+    svg
+      height: 40%
+      width: 40%
+      display: block
+      stroke: currentColor
+      stroke-width: 1.5
+
+  .prev
+    left: 0
+    transform: translate3d(-50%, -50%, 0)
+  .next
+    right: 0
+    transform: translate3d(50%, -50%, 0)
 
   .embla__progress
+    position: absolute
     display: none
-    position: relative
+    bottom: 0
+    transform: translate3d(0, 20px, 0)
     background-color: white
-    margin-top: 20px
     max-width: 270px
     width: calc(100% - 40px)
     height: 4px
     overflow: hidden
-    border-radius: 2px
-    margin-left: auto
-    margin-right: auto
+    border-radius: 4px
 
   .embla__progress__bar
     position: absolute
@@ -45,11 +78,16 @@
 
   .feature
     position: relative
-    min-width: calc(75% + #{$spacer})
-    padding-right: $spacer
+    min-width: calc(50% + #{$spacer})
+    @include media-breakpoint-down(sm)
+      min-width: 90%
     .card
+      margin: 0 $spacer
+      @include media-breakpoint-down(xs)
+        margin: 0 #{$spacer * .5}
       .card-body
         height: 140px
+        max-width: 80%
       .content
         opacity: 0
         transform: translate3d(0, 10px, 0)
@@ -60,3 +98,29 @@
         .content
           opacity: 1
           transform: translate3d(0, 0, 0)
+
+.light-mode
+  @import './../../style/light-mode-variables'
+  .prev, .next
+    background: darken($body-bg, 12%)
+    border-color: darken($body-bg, 12%)
+    color: $body-color
+  .global-features
+    .feature
+      &:nth-child(even)
+        .card
+          color: $body-color
+          background: $card-bg!important
+
+.dark-mode
+  @import './../../style/dark-mode-variables'
+  .prev, .next
+    background: lighten($card-bg, 12%)
+    border-color: lighten($card-bg, 12%)
+    color: $body-color
+  .global-features
+    .feature
+      &:nth-child(even)
+        .card
+          color: $body-color
+          background: $card-bg!important
