@@ -16,7 +16,7 @@ import shutterAudio from './../../static/audio/wav/03-Primary-System-Sounds/ui_c
 const MainNav = () => {
   const darkMode = useDarkMode(true)
 
-  let bell = window && window.document ?
+  let bell = typeof window !== 'undefined' && window.document ?
     new UIfx(
       bellAudio,
       {
@@ -26,7 +26,7 @@ const MainNav = () => {
     )
   : false
 
-  let shutter = window && window.document ?
+  let shutter = typeof window !== 'undefined' && window.document ?
     new UIfx(
       shutterAudio,
       {

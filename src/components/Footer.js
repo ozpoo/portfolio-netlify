@@ -10,7 +10,7 @@ import bellAudio from './../../static/audio/wav/03-Primary-System-Sounds/navigat
 
 class Footer extends Component {
   render() {
-    let bell = window && window.document ?
+    let bell = typeof window !== 'undefined' && window.document ?
       new UIfx(
         bellAudio,
         {

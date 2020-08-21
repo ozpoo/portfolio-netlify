@@ -24,7 +24,7 @@ class FeatureGrid extends Component {
   componentDidMount() {
     this.setProgress()
 
-    let bell = window && window.document ?
+    let bell = typeof window !== 'undefined' && window.document ?
       new UIfx(
         bellAudio,
         {

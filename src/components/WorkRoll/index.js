@@ -21,7 +21,7 @@ class WorkRoll extends Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
-    let bell = window && window.document ?
+    let bell = typeof window !== 'undefined' && window.document ?
       new UIfx(
         bellAudio,
         {
@@ -31,7 +31,7 @@ class WorkRoll extends Component {
       )
     : false
 
-    let hover = window && window.document ?
+    let hover = typeof window !== 'undefined' && window.document ?
       new UIfx(
         hoverAudio,
         {
