@@ -1,0 +1,57 @@
+.global-features
+  .is-draggable
+    overflow: visible!important
+
+  .embla__progress
+    position: relative
+    background-color: white
+    margin-top: 20px
+    max-width: 270px
+    width: calc(100% - 40px)
+    height: 4px
+    overflow: hidden
+    border-radius: 2px
+    margin-left: auto
+    margin-right: auto
+
+  .embla__progress__bar
+    position: absolute
+    background-color: #1bcacd
+    width: 100%
+    top: 0
+    bottom: 0
+    left: -100%
+
+  .carousel-control-prev, .carousel-control-next
+    height: 50px
+    width: 50px
+    background: black
+    opacity: 100%
+    border-radius: 50%
+    top: 50%
+
+  .carousel-control-prev
+    left: 0
+    transform: translate3d(-50%, -50%, 0)
+
+  .carousel-control-next
+    right: 0
+    transform: translate3d(50%, -50%, 0)
+
+  .feature
+    position: relative
+    min-width: calc(100% + 20px)
+    padding: 0 10px
+    .card
+      .card-body
+        height: 220px
+      .content
+        opacity: 0
+        transform: translate3d(0, 10px, 0)
+        transition: transform 440ms ease, opacity 260ms ease
+        transition-delay: 440ms
+    &.is-selected
+      .card
+        .content
+          opacity: 1
+          transform: translate3d(0, 0, 0)

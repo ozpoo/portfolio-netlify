@@ -25,7 +25,7 @@ export const IndexPageTemplate = ({
 
     <Features gridItems={sections} />
 
-    <AnimateIn className='mt-5'>
+    <AnimateIn>
       <h2>01 <span className='text-muted'>— Work</span></h2>
     </AnimateIn>
     <WorkRoll />
