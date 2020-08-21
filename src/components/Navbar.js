@@ -16,6 +16,8 @@ import shutterAudio from './../../static/audio/wav/03-Primary-System-Sounds/ui_c
 const MainNav = () => {
   const darkMode = useDarkMode(true)
 
+  typeof window !== 'undefined' && window.document && document.addEventListener('touchstart', function() {}, true)
+
   let bell = typeof window !== 'undefined' && window.document ?
     new UIfx(
       bellAudio,
