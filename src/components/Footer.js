@@ -8,7 +8,7 @@ import { Container, Card, ListGroup, Row, Col } from 'react-bootstrap'
 import UIfx from 'uifx'
 import bellAudio from './../../static/audio/wav/03-Primary-System-Sounds/navigation_hover-tap.wav'
 
-const Footer = class extends Component {
+class Footer extends Component {
   render() {
     const bell = new UIfx(
       bellAudio,

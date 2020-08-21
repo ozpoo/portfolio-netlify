@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import { Link, graphql, StaticQuery } from 'gatsby'
@@ -9,7 +9,7 @@ import AnimateIn from './AnimateIn'
 
 import Tilt from 'react-tilt'
 
-class NewsRoll extends React.Component {
+class NewsRoll extends Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
