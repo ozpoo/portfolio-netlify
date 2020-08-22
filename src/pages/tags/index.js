@@ -16,7 +16,11 @@ const TagsPage = ({
     },
   },
 }) => (
-  <Layout>
+  <Layout
+    crumbs={[
+      {label: 'Index', path: '/'},
+      {label: 'Tags', path: '/tags'},
+    ]}>
     <Container className='py-4 px-3'>
       <Helmet title={`Tags | ${title}`} />
       <AnimateIn className='mb-5'>
@@ -24,7 +28,7 @@ const TagsPage = ({
       </AnimateIn>
       <AnimateIn className='mb-5'>
         <ListGroup>
-          {group.map((tag) => (
+          {group.sort((a, b) => a.totalCount < b.totalCount ? 1 : -1).map((tag) => (
             <ListGroup.Item key={tag.fieldValue}>
               <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
                 {tag.fieldValue} ({tag.totalCount})

@@ -23,7 +23,12 @@ class TagRoute extends Component {
     } tagged with “${tag}”`
 
     return (
-      <Layout>
+      <Layout
+        crumbs={[
+          {label: 'Index', path: '/'},
+          {label: 'Tags', path: '/tags'},
+          {label: this.props.pageContext.tag, path: '/tags/' + this.props.pageContext.tag},
+        ]}>
         <Container className='py-4 px-3'>
           <Helmet title={`${tag} | ${title}`} />
           <section className='mb-5'>
