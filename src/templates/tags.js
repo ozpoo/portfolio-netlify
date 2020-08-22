@@ -29,7 +29,7 @@ class TagRoute extends Component {
           {label: 'Tags', path: '/tags'},
           {label: this.props.pageContext.tag, path: '/tags/' + this.props.pageContext.tag},
         ]}>
-        <Container className='py-4 px-3'>
+        <Container className='py-4 px-xs-4 px-sm-5'>
           <Helmet title={`${tag} | ${title}`} />
           <section className='mb-5'>
             <h1>{tagHeader}</h1>

@@ -14,7 +14,7 @@ class JournalIndexPage extends Component {
           {label: 'Index', path: '/'},
           {label: 'Journal', path: '/journal'},
         ]}>
-        <Container className='py-4 px-3'>
+        <Container className='py-4 px-xs-4 px-sm-5'>
           <AnimateIn className='mb-5'>
             <h1>Journal</h1>
           </AnimateIn>

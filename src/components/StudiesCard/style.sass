@@ -5,14 +5,10 @@
 .global-studies-card
   color: inherit!important
   overflow: hidden
-
-  @include media-breakpoint-down(xs)
-    max-width: calc(90% - #{$spacer * 2})
-    margin: auto
+  padding-right: 25%
 
   .card-header
     height: 80px
-    max-width: 420px
 
 .light-mode
   @import './../../style/light-mode-variables'

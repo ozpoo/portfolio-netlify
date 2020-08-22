@@ -16,7 +16,7 @@ class StudiesTeaser extends Component {
     return (
       <Row className='mb-5'>
         {posts && posts.map(({ node: post }) => (
-          <Col xs={12} md={6} key={post.id} className='mb-4'>
+          <Col xs={12} lg={6} key={post.id} className='mb-4'>
             <StudiesCard post={post} />
           </Col>
         ))}

@@ -19,7 +19,7 @@ export const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <Container className='py-4 px-3'>
+  <Container className='py-4 px-xs-4 px-sm-5'>
 
     <AnimateIn className='mb-5'>
       <h1>{title}</h1>

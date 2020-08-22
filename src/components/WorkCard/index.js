@@ -36,6 +36,7 @@ class WordCard extends Component {
     const { post } = this.props
     const { bell, hover } = this.state
 
+
     return (
       <AnimateIn>
         <Tilt>
