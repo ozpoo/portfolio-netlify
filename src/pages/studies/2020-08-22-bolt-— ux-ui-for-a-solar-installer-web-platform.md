@@ -1,6 +1,6 @@
 ---
 templateKey: studies-post
-title: Bolt — UX/UI For a Solar Installer Web Platform
+title: Bolt — Redefining The Status Quo of Going Solar
 date: 2020-08-22T05:06:48.425Z
 featuredimage: /img/food_delivery_mockup_2x.jpg
 tags:
