@@ -13,7 +13,7 @@ class WorkRoll extends Component {
     return (
       <Row className='mb-5'>
         {posts && posts.map(({ node: post }) => (
-          <Col xs={12} sm={6} md={4} xl={3} key={post.id} className='mb-4'>
+          <Col xs={12} sm={6} lg={4} xl={3} key={post.id} className='mb-4'>
             <WorkCard post={post} />
           </Col>
         ))}

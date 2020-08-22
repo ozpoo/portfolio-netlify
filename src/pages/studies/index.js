@@ -16,7 +16,7 @@ export default class StudiesIndexPage extends Component {
         ]}>
         <Container className='py-4 px-3'>
           <AnimateIn className='mb-5'>
-            <h1>Case Studies</h1>
+            <h1>Case Studies <span className='text-muted'>&mdash; deep dives into the problems, process, &amp; solutions of my work.</span></h1>
           </AnimateIn>
 
           <section className='mb-5'>
