@@ -13,9 +13,9 @@ class StudiesRoll extends Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <Row>
+      <Row className='mb-5'>
         {posts && posts.map(({ node: post }) => (
-          <Col xs={12} md={6} key={post.id}>
+          <Col xs={12} md={6} key={post.id} className='mb-4'>
             <StudiesCard post={post} />
           </Col>
         ))}
@@ -52,9 +52,10 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
+                tags
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 240, quality: 100) {
+                    fluid(maxWidth: 540, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

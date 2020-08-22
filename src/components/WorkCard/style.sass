@@ -8,7 +8,7 @@
   overflow: hidden
 
   @include media-breakpoint-down(xs)
-    width: calc(80% + #{$spacer})
+    max-width: calc(90% - #{$spacer * 2})
     margin: auto
 
   img
@@ -36,7 +36,7 @@
         width: 100%
 
   .card-header
-    height: 200px
+    height: 80px
 
 .light-mode
   @import './../../style/light-mode-variables'

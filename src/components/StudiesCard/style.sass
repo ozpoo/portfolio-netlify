@@ -6,6 +6,14 @@
   color: inherit!important
   overflow: hidden
 
+  @include media-breakpoint-down(xs)
+    max-width: calc(90% - #{$spacer * 2})
+    margin: auto
+
+  .card-header
+    height: 80px
+    max-width: 420px
+
 .light-mode
   @import './../../style/light-mode-variables'
 

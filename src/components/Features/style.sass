@@ -79,6 +79,8 @@
   .feature
     position: relative
     min-width: calc(50% + #{$spacer})
+    @include media-breakpoint-down(lg)
+      min-width: 80%
     @include media-breakpoint-down(sm)
       min-width: 90%
     .card

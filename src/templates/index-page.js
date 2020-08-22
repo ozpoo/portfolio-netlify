@@ -6,7 +6,7 @@ import { graphql } from 'gatsby'
 import Layout from './../components/Layout'
 import Features from './../components/Features'
 import WorkTeaser from './../components/WorkTeaser'
-import StudiesRoll from './../components/StudiesRoll'
+import StudiesTeaser from './../components/StudiesTeaser'
 import NewsTeaser from './../components/NewsTeaser'
 import JournalRoll from './../components/JournalRoll'
 
@@ -33,7 +33,7 @@ export const IndexPageTemplate = ({
     <AnimateIn className='mb-5'>
       <h2>02 <span className='text-muted'>— Case Studies</span></h2>
     </AnimateIn>
-    <StudiesRoll limit={4} />
+    <StudiesTeaser />
 
     <AnimateIn className='mb-5'>
       <h2>03 <span className='text-muted'>— News</span></h2>

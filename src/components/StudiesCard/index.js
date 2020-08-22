@@ -37,7 +37,7 @@ class StudiesCard extends Component {
     const { bell, hover } = this.state
 
     return (
-      <AnimateIn className='mb-4'>
+      <AnimateIn>
         <Tilt>
           <Card
             as={Link}
@@ -45,9 +45,6 @@ class StudiesCard extends Component {
             onClick={() => bell && bell.play()}
             to={post.fields.slug}
             className={post.frontmatter.featuredpost ? 'is-featured global-studies-card' : 'global-studies-card'}>
-            <Card.Header as='header'>
-              {post.frontmatter.title}
-            </Card.Header>
             {post.frontmatter.featuredimage ? (
               <PreviewCompatibleImage
                 imageInfo={{
@@ -56,9 +53,10 @@ class StudiesCard extends Component {
                 }}
               />
             ) : null}
-            <Card.Body>
-              {post.excerpt}
-            </Card.Body>
+            <Card.Header as='h5' className='m-0'>
+              {post.frontmatter.title}
+              <span className='text-muted'> &mdash; {post.frontmatter.tags && post.frontmatter.tags.join(' & ')}</span>
+            </Card.Header>
             <Card.Footer>
               <Button>
                 Learn &rarr;

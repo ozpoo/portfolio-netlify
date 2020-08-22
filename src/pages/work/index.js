@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Layout from './../../components/Layout'
+import AnimateIn from './../../components/AnimateIn'
 import WorkRoll from './../../components/WorkRoll'
 
 import { Container } from 'react-bootstrap'
@@ -14,6 +15,9 @@ export default class WorkIndexPage extends React.Component {
           {label: 'Work', path: '/work'},
         ]}>
         <Container className='py-4 px-3'>
+          <AnimateIn className='mb-5'>
+          <h1>Work</h1>
+          </AnimateIn>
           <section className='mb-5'>
             <WorkRoll />
           </section>
