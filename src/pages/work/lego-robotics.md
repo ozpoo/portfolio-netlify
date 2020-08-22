@@ -6,6 +6,6 @@ description: ""
 featuredpost: false
 featuredimage: ""
 tags:
-  - Identity
+  - Brand Identity
   - Book
 ---
