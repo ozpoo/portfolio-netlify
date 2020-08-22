@@ -1,6 +1,6 @@
 ---
 templateKey: studies-post
-title: Ivy — Identity System For a Cannabis Startup
+title: Ivy — Cutting Through The Stigma and The Hype
 date: 2020-08-22T05:05:18.169Z
 featuredimage: /img/app-ui-design-mockup.jpg
 tags:
