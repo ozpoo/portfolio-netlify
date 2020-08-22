@@ -7,7 +7,7 @@ import {
 
 const BreadCrumbs = (props) => {
   return (
-    <Container className='global-breadcrumbs py-3 px-3'>
+    <Container className='global-breadcrumbs py-3 px-3' fluid>
       <div className='d-flex'>
         {props.crumbs.map((crumb, index) => (
           ((props.crumbs.length - index) > 1) ?

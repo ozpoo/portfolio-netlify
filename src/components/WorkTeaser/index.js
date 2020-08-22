@@ -16,7 +16,7 @@ import AnimateIn from './../AnimateIn'
 
 import Tilt from 'react-tilt'
 
-class WorkRoll extends Component {
+class WorkTeaser extends Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -104,7 +104,7 @@ class WorkRoll extends Component {
   }
 }
 
-WorkRoll.propTypes = {
+WorkTeaser.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -115,8 +115,9 @@ WorkRoll.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query WorkRollQuery {
+      query WorkTeaserQuery {
         allMarkdownRemark(
+          limit: 4,
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "work-post" } } }
         ) {
@@ -146,6 +147,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <WorkRoll data={data} count={count} />}
+    render={(data, count) => <WorkTeaser data={data} count={count} />}
   />
 )

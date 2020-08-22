@@ -5,8 +5,8 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from './../components/Layout'
 import Features from './../components/Features'
-import WorkRoll from './../components/WorkRoll'
-import StudiesRoll from './../components/StudiesRoll'
+import WorkTeaser from './../components/WorkTeaser'
+import StudiesTeaser from './../components/StudiesTeaser'
 import NewsRoll from './../components/NewsRoll'
 import JournalRoll from './../components/JournalRoll'
 
@@ -28,12 +28,12 @@ export const IndexPageTemplate = ({
     <AnimateIn className='mb-5'>
       <h2>01 <span className='text-muted'>— Work</span></h2>
     </AnimateIn>
-    <WorkRoll />
+    <WorkTeaser />
 
     <AnimateIn className='mb-5'>
       <h2>02 <span className='text-muted'>— Case Studies</span></h2>
     </AnimateIn>
-    <StudiesRoll />
+    <StudiesTeaser />
 
     <AnimateIn className='mb-5'>
       <h2>03 <span className='text-muted'>— News</span></h2>

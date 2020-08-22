@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import { Card, Row, Col, Button } from 'react-bootstrap'
 
-import PreviewCompatibleImage from './PreviewCompatibleImage'
-import AnimateIn from './AnimateIn'
+import PreviewCompatibleImage from './../PreviewCompatibleImage'
+import AnimateIn from './../AnimateIn'
 
 import Tilt from 'react-tilt'
 
