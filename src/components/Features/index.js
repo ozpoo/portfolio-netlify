@@ -35,7 +35,7 @@ class FeatureGrid extends Component {
       <AnimateIn className='global-features pb-5'>
         <EmblaCarouselReact
           emblaRef={c => (this.embla = c)}
-          options={{loop: true, align: 'center'}}>
+          options={{loop: true, align: 'center', startIndex: 1}}>
           <div className='d-flex'>
             <div className='feature'>
               <Card style={{background: '#47e2c9'}}>
