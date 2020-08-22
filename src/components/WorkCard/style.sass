@@ -14,21 +14,6 @@
   img
     display: block
 
-  .hover-plus
-    display: none
-    svg
-      width: 20px
-      height: 20px
-      transition: transform 280ms ease, stroke 280ms ease
-      stroke-width: 1.4
-      fill: none
-
-  &:hover
-    .hover-plus
-      svg
-        transform: rotate(90deg)
-        stroke: currentColor!important
-
   .aspect-ratio-box
     position: relative
 
@@ -50,23 +35,12 @@
         height: 100%
         width: 100%
 
-  .card-footer
-    display: flex
-    flex-direction: column
-    justify-content: flex-end
-    height: 60px
-
   .card-header
     height: 200px
 
 .light-mode
   @import './../../style/light-mode-variables'
-
   .global-work-card
-    .hover-plus
-      svg
-        stroke: $text-muted
-
     .aspect-ratio-box
       &::after
         background: darken($body-bg, 8%)
@@ -74,9 +48,6 @@
 .dark-mode
   @import './../../style/dark-mode-variables'
   .global-work-card
-    .hover-plus
-      svg
-        stroke: $text-muted
     .aspect-ratio-box
       &::after
         background: lighten($body-bg, 8%)

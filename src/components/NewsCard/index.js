@@ -7,7 +7,7 @@ import bellAudio from './../../../static/audio/wav/01-Hero-Sounds/hero_simple-ce
 import hoverAudio from './../../../static/audio/wav/04-Secondary-System-Sounds/navigation_unavailable-selection.wav'
 
 import { Link } from 'gatsby'
-import { Card } from 'react-bootstrap'
+import { Card, Button } from 'react-bootstrap'
 
 import PreviewCompatibleImage from './../PreviewCompatibleImage'
 import AnimateIn from './../AnimateIn'
@@ -61,12 +61,9 @@ class NewsCard extends Component {
               {post.frontmatter.description}
             </Card.Body>
             <Card.Footer>
-              <div className='hover-plus'>
-                <svg>
-                  <line x1='0' y1='50%' x2='100%' y2='50%' />
-                  <line x1='50%' y1='0' x2='50%' y2='100%' />
-                </svg>
-              </div>
+              <Button>
+                Read &rarr;
+              </Button>
             </Card.Footer>
           </Card>
         </Tilt>
