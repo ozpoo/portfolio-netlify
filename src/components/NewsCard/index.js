@@ -9,10 +9,8 @@ import hoverAudio from './../../../static/audio/wav/04-Secondary-System-Sounds/n
 import { Link } from 'gatsby'
 import { Card, Button } from 'react-bootstrap'
 
-import PreviewCompatibleImage from './../PreviewCompatibleImage'
 import AnimateIn from './../AnimateIn'
-
-import Tilt from 'react-tilt'
+import Tilt from './../Tilt'
 
 class NewsCard extends Component {
   constructor(props) {
@@ -39,19 +37,7 @@ class NewsCard extends Component {
 
     return (
       <AnimateIn>
-        <Tilt
-          className='tilt'
-          options={{
-            reverse:        false,  // reverse the tilt direction
-            max:            15,     // max tilt rotation (degrees)
-            perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
-            scale:          1.04,      // 2 = 200%, 1.5 = 150%, etc..
-            speed:          300,    // Speed of the enter/exit transition
-            transition:     true,   // Set a transition on enter/exit.
-            axis:           null,   // What axis should be disabled. Can be X or Y.
-            reset:          true,    // If the tilt effect has to be reset on exit.
-            easing:         'cubic-bezier(.03,.98,.52,.99)',    // Easing on enter/exit.
-          }}>
+        <Tilt>
           <Card as={Link} onMouseEnter={() => hover && hover.play()} onClick={() => bell && bell.play()} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-news-card' : 'global-news-card'}>
             <Card.Header as='h5' className='m-0'>
               {post.frontmatter.title}
