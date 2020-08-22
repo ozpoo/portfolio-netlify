@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
 import { Row, Col } from 'react-bootstrap'
 
-import WorkCard from './../WorkCard'
+import NewsCard from './../NewsCard'
 
-class WorkTeaser extends Component {
+class NewsRoll extends Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -14,7 +14,7 @@ class WorkTeaser extends Component {
       <Row>
         {posts && posts.map(({ node: post }) => (
           <Col xs={12} sm={6} lg={4} xl={3} key={post.id} className='mb-5'>
-            <WorkCard post={post} />
+            <NewsCard post={post} />
           </Col>
         ))}
       </Row>
@@ -22,7 +22,7 @@ class WorkTeaser extends Component {
   }
 }
 
-WorkTeaser.propTypes = {
+NewsRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -33,11 +33,10 @@ WorkTeaser.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query WorkTeaserQuery {
+      query NewsRollQuery {
         allMarkdownRemark(
-          limit: 4,
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "work-post" } } }
+          filter: { frontmatter: { templateKey: { eq: "news-post" } } }
         ) {
           edges {
             node {
@@ -65,6 +64,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <WorkTeaser data={data} count={count} />}
+    render={(data, count) => <NewsRoll data={data} count={count} />}
   />
 )

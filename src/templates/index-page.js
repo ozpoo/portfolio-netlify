@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from './../components/Layout'
 import Features from './../components/Features'
 import WorkTeaser from './../components/WorkTeaser'
-import StudiesTeaser from './../components/StudiesTeaser'
-import NewsRoll from './../components/NewsRoll'
+import StudiesRoll from './../components/StudiesRoll'
+import NewsTeaser from './../components/NewsTeaser'
 import JournalRoll from './../components/JournalRoll'
 
 import AnimateIn from './../components/AnimateIn'
@@ -33,12 +33,12 @@ export const IndexPageTemplate = ({
     <AnimateIn className='mb-5'>
       <h2>02 <span className='text-muted'>— Case Studies</span></h2>
     </AnimateIn>
-    <StudiesTeaser />
+    <StudiesRoll limit={4} />
 
     <AnimateIn className='mb-5'>
       <h2>03 <span className='text-muted'>— News</span></h2>
     </AnimateIn>
-    <NewsRoll />
+    <NewsTeaser />
 
     <AnimateIn className='mb-5'>
       <h2>04 <span className='text-muted'>— Journal</span></h2>

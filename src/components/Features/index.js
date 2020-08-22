@@ -16,48 +16,15 @@ class FeatureGrid extends Component {
   constructor(props) {
     super(props)
     this.state = {}
-    this.currentIndex = 0
-    this.goBackwards = false
-    this.goBig = false
   }
 
   componentDidMount() {
-    this.setProgress()
-
-    let bell = typeof window !== 'undefined' && window.document ?
-      new UIfx(
-        bellAudio,
-        {
-          volume: 1.0, // number between 0.0 ~ 1.0
-          throttleMs: 100
-        }
-      )
-    : false
+    const bell = typeof window !== 'undefined' && window.document ?
+      new UIfx(bellAudio, { volume: 1.0, throttleMs: 100 }) : false
 
     this.embla.on('select', () => {
       bell && bell.play()
-
-      this.goBackwards = false
-      this.goBig = false
-
-      if(this.currentIndex === (this.embla.slideNodes().length - 1) && this.embla.selectedScrollSnap() === 0) this.goBackwards = true
-      if(this.currentIndex === 0 && this.embla.selectedScrollSnap() === (this.embla.slideNodes().length - 1)) this.goBig = true
-
-      this.currentIndex = this.embla.selectedScrollSnap()
     })
-    this.embla.on('scroll', () => {
-      this.setProgress()
-    })
-    this.embla.on('settle', () => {
-      this.goBackwards = false
-      this.goBig = false
-      this.setProgress()
-    })
-  }
-
-  setProgress = (settled) => {
-    let progress = Math.max(0, Math.min(1, this.embla.scrollProgress()))
-    this.setState({scrollProgress: progress * 100})
   }
 
   render() {

@@ -2,7 +2,6 @@ import React from 'react'
 
 import Layout from './../../components/Layout'
 import WorkRoll from './../../components/WorkRoll'
-import AnimateIn from './../../components/AnimateIn'
 
 import { Container } from 'react-bootstrap'
 
