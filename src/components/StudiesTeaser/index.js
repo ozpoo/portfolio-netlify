@@ -1,4 +1,6 @@
-import React from 'react'
+import './style.sass'
+
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import { Link, graphql, StaticQuery } from 'gatsby'
@@ -9,7 +11,7 @@ import AnimateIn from './../AnimateIn'
 
 import Tilt from 'react-tilt'
 
-class StudiesTeaser extends React.Component {
+class StudiesTeaser extends Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -32,7 +34,7 @@ class StudiesTeaser extends React.Component {
                   reset:          true,    // If the tilt effect has to be reset on exit.
                   easing:         'cubic-bezier(.03,.98,.52,.99)',    // Easing on enter/exit.
                 }}>
-                <Card as={Link} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured' : ''}>
+                <Card as={Link} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-studies-card' : 'global-studies-card'}>
                   <Card.Header as='header'>
                     {post.frontmatter.title}
                   </Card.Header>
