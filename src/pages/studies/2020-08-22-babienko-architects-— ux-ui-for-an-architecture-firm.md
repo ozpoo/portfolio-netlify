@@ -1,6 +1,7 @@
 ---
 templateKey: studies-post
-title: Babienko Architects — UX/UI For an Architecture Firm
+title: Babienko Architects — Showcasing the Beauty in Attention to Materials and
+  Detail
 date: 2020-08-20T05:10:44.294Z
 featuredimage: /img/food_delivery_mockup_2x.jpg
 tags:
