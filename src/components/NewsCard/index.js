@@ -1,5 +1,4 @@
 import './style.sass'
-
 import React, { Component } from 'react'
 
 import UIfx from 'uifx'
