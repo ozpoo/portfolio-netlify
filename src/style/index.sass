@@ -33,33 +33,6 @@ h2
   @include media-breakpoint-down(sm)
     margin-left: 0px
 
-.global-nav
-  position: fixed
-  left: 0
-  top: 0
-  bottom: 0
-  width: 180px
-  z-index: 100
-
-  @include media-breakpoint-down(sm)
-    position: relative
-    top: auto
-    left: auto
-    bottom: auto
-    width: 100%
-
-  .global-nav-list
-    a
-      font-size: 1.6em
-      display: block
-      line-height: 1.6
-      text-decoration: none
-      &:hover, &.active
-        opacity: .4
-
-    @include media-breakpoint-down(sm)
-      display: none
-
 .global-breadcrumbs
   @include media-breakpoint-down(sm)
     display: none

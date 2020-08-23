@@ -6,9 +6,10 @@ import { withPrefix } from 'gatsby'
 
 import { Helmet } from 'react-helmet'
 
-import Footer from './Footer'
-import Navbar from './Navbar'
+import Logo from './Logo'
+import Menu from './Menu'
 import BreadCrumbs from './BreadCrumbs'
+import Footer from './Footer'
 
 const TemplateWrapper = ({ children, crumbs }) => {
   const { title, description } = useSiteMetadata()
@@ -54,8 +55,10 @@ const TemplateWrapper = ({ children, crumbs }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar />
-      <div>{children}</div>
+
+      <Logo />
+      <Menu />
+      {children}
       <Footer />
     </div>
   )

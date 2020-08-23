@@ -1,0 +1,37 @@
+@import '~bootstrap/scss/functions'
+@import '~bootstrap/scss/variables'
+@import '~bootstrap/scss/mixins'
+
+.global-nav
+  position: fixed
+  left: 0
+  top: 0
+  bottom: 0
+  width: 180px
+  z-index: 100
+  padding-top: 8vh
+
+  @include media-breakpoint-down(sm)
+    position: relative
+    top: auto
+    left: auto
+    bottom: auto
+    width: 100%
+
+  .global-nav-list
+    a
+      font-size: 1.6em
+      display: block
+      line-height: 1.6
+      text-decoration: none
+      &:hover, &.active
+        opacity: .4
+
+    @include media-breakpoint-down(sm)
+      display: none
+
+.light-mode
+  @import './../../style/light-mode-variables'
+
+.dark-mode
+  @import './../../style/dark-mode-variables'

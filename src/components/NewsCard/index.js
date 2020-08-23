@@ -46,11 +46,6 @@ class NewsCard extends Component {
             <Card.Body>
               {post.frontmatter.description}
             </Card.Body>
-            <Card.Footer>
-              <Button>
-                Read &rarr;
-              </Button>
-            </Card.Footer>
           </Card>
         </Tilt>
       </AnimateIn>

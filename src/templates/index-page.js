@@ -19,29 +19,29 @@ export const IndexPageTemplate = ({
   sections,
 }) => (
   <Container className='py-4 px-xs-4 px-sm-5'>
-    <AnimateIn className='mb-5'>
+    <AnimateIn className='intro-stuff mb-5'>
       <h1 dangerouslySetInnerHTML={{__html: intro_text}} />
     </AnimateIn>
 
     <Features gridItems={sections} />
 
-    <AnimateIn className='mb-5'>
-      <h2>01 <span className='text-muted'>— Work</span></h2>
+    <AnimateIn className='intro-stuff mb-4'>
+      <h1>Work</h1>
     </AnimateIn>
     <WorkTeaser />
 
-    <AnimateIn className='mb-5'>
-      <h2>02 <span className='text-muted'>— Case Studies</span></h2>
+    <AnimateIn className='intro-stuff mb-4'>
+      <h1>Case Studies</h1>
     </AnimateIn>
     <StudiesTeaser />
 
-    <AnimateIn className='mb-5'>
-      <h2>03 <span className='text-muted'>— News</span></h2>
+    <AnimateIn className='intro-stuff mb-4'>
+      <h1>News</h1>
     </AnimateIn>
     <NewsTeaser />
 
-    <AnimateIn className='mb-5'>
-      <h2>04 <span className='text-muted'>— Journal</span></h2>
+    <AnimateIn className='intro-stuff mb-4'>
+      <h1>Jounral</h1>
     </AnimateIn>
     <JournalRoll />
   </Container>

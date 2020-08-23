@@ -32,7 +32,7 @@ class FeatureGrid extends Component {
     const { gridItems } = this.props
 
     return (
-      <AnimateIn className='global-features pb-5'>
+      <AnimateIn className='global-features mb-5'>
         <EmblaCarouselReact
           emblaRef={c => (this.embla = c)}
           options={{loop: true, align: 'center', startIndex: 1}}>
@@ -44,7 +44,7 @@ class FeatureGrid extends Component {
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
-                  <Card.Footer><Button>More</Button></Card.Footer>
+                  <Card.Footer></Card.Footer>
                 </div>
               </Card>
             </div>
@@ -56,7 +56,7 @@ class FeatureGrid extends Component {
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
-                  <Card.Footer><Button>More</Button></Card.Footer>
+                  <Card.Footer></Card.Footer>
                 </div>
               </Card>
             </div>
@@ -68,7 +68,7 @@ class FeatureGrid extends Component {
                     <Card.Body>
                       <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                     </Card.Body>
-                  <Card.Footer><Button>More</Button></Card.Footer>
+                  <Card.Footer></Card.Footer>
                 </div>
               </Card>
             </div>
@@ -80,7 +80,7 @@ class FeatureGrid extends Component {
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
-                  <Card.Footer><Button>More</Button></Card.Footer>
+                  <Card.Footer></Card.Footer>
                 </div>
               </Card>
             </div>
@@ -92,7 +92,7 @@ class FeatureGrid extends Component {
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
-                  <Card.Footer><Button>More</Button></Card.Footer>
+                  <Card.Footer></Card.Footer>
                 </div>
               </Card>
             </div>
@@ -104,7 +104,7 @@ class FeatureGrid extends Component {
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
-                  <Card.Footer><Button>More</Button></Card.Footer>
+                  <Card.Footer></Card.Footer>
                 </div>
               </Card>
             </div>
@@ -116,7 +116,7 @@ class FeatureGrid extends Component {
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
-                  <Card.Footer><Button>More</Button></Card.Footer>
+                  <Card.Footer></Card.Footer>
                 </div>
               </Card>
             </div>
@@ -128,7 +128,7 @@ class FeatureGrid extends Component {
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
-                  <Card.Footer><Button>More</Button></Card.Footer>
+                  <Card.Footer></Card.Footer>
                 </div>
               </Card>
             </div>

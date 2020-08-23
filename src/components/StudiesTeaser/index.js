@@ -1,5 +1,3 @@
-import './style.sass'
-
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
@@ -16,7 +14,7 @@ class StudiesTeaser extends Component {
     return (
       <Row className='mb-5'>
         {posts && posts.map(({ node: post }) => (
-          <Col xs={12} lg={6} key={post.id} className='mb-4'>
+          <Col xs={12} sm={6} key={post.id} className='mb-4'>
             <StudiesCard post={post} />
           </Col>
         ))}

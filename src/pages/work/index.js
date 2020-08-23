@@ -16,7 +16,7 @@ export default class WorkIndexPage extends React.Component {
         ]}>
         <Container className='py-4 px-xs-4 px-sm-5'>
           <AnimateIn className='mb-5'>
-          <h1>Work <span className='text-muted'>&mdash; a chronicle to present the gammut of my passions and undertakings.</span></h1>
+          <h1>Work <span className='text-muted'>&mdash; a chronicle that presents myriad passions and undertakings I have pursued.</span></h1>
           </AnimateIn>
           <section className='mb-5'>
             <WorkRoll />
