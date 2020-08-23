@@ -6,6 +6,9 @@ import { Row, Col } from 'react-bootstrap'
 
 import StudiesCard from './../StudiesCard'
 
+import { Link } from 'gatsby'
+import AnimateIn from './../AnimateIn'
+
 class StudiesTeaser extends Component {
   render() {
     const { data } = this.props
@@ -14,10 +17,17 @@ class StudiesTeaser extends Component {
     return (
       <Row className='mb-5'>
         {posts && posts.map(({ node: post }) => (
-          <Col xs={12} sm={6} key={post.id} className='mb-4'>
+          <Col xs={12} md={6} xl={4} key={post.id} className='mb-4'>
             <StudiesCard post={post} />
           </Col>
         ))}
+        <Col xs={12}>
+          <AnimateIn>
+            <Link to='/studies'>
+              Browse Case Studies &rarr;
+            </Link>
+          </AnimateIn>
+        </Col>
       </Row>
     )
   }
@@ -36,7 +46,7 @@ export default () => (
     query={graphql`
       query StudiesTeaserQuery {
         allMarkdownRemark(
-          limit: 2,
+          limit: 3,
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "studies-post" } } }
         ) {

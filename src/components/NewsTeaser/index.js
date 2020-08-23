@@ -6,6 +6,9 @@ import { Row, Col } from 'react-bootstrap'
 
 import NewsCard from './../NewsCard'
 
+import { Link } from 'gatsby'
+import AnimateIn from './../AnimateIn'
+
 class NewsRoll extends Component {
   render() {
     const { data } = this.props
@@ -17,6 +20,13 @@ class NewsRoll extends Component {
             <NewsCard post={post} />
           </Col>
         ))}
+        <Col xs={12}>
+          <AnimateIn>
+            <Link to='/news'>
+              Browse News &rarr;
+            </Link>
+          </AnimateIn>
+        </Col>
       </Row>
     )
   }

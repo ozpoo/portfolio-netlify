@@ -39,6 +39,9 @@ class WordCard extends Component {
       <AnimateIn>
         <Tilt>
           <Card as={Link} onMouseEnter={() => hover && hover.play()} onClick={() => bell && bell.play()} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-work-card' : 'global-work-card'}>
+            <Card.Header className='text-nowrap'>
+              <span className='text-monospace text-muted'>{post.frontmatter.date}</span>
+            </Card.Header>
             <div className='aspect-ratio-box'>
               {post.frontmatter.featuredimage ? (
                 <PreviewCompatibleImage
@@ -58,11 +61,11 @@ class WordCard extends Component {
             </div>
             <Card.Body as='h5' className='m-0'>
               {post.frontmatter.title}
-              <span className='text-muted'> &mdash; {post.frontmatter.tags.join(' & ')}</span>
+              <span className='text-muted'> &mdash; {post.frontmatter.tags && post.frontmatter.tags.join(' & ')}</span>
             </Card.Body>
             <Card.Footer>
               <Button>
-                Discover &rarr;
+                Read &rarr;
               </Button>
             </Card.Footer>
           </Card>

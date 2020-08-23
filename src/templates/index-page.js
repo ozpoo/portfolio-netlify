@@ -41,7 +41,7 @@ export const IndexPageTemplate = ({
     <NewsTeaser />
 
     <AnimateIn className='intro-stuff mb-4'>
-      <h1>Jounral</h1>
+      <h1>Journal</h1>
     </AnimateIn>
     <JournalRoll />
   </Container>

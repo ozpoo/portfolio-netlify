@@ -46,7 +46,7 @@ class NewsCard extends Component {
               {post.frontmatter.description}
             </Card.Body>
             <Card.Footer>
-              <Button as={Link} to={post.fields.slug}>
+              <Button>
                 Read &rarr;
               </Button>
             </Card.Footer>

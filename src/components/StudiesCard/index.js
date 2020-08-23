@@ -67,7 +67,7 @@ class StudiesCard extends Component {
               <span className='text-muted'> &mdash; {post.frontmatter.tags && post.frontmatter.tags.join(' & ')}</span>
             </Card.Header>
             <Card.Footer>
-              <Button as={Link} to={post.fields.slug}>
+              <Button>
                 Learn &rarr;
               </Button>
             </Card.Footer>

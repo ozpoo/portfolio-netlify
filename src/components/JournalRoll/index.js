@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import { Link } from 'gatsby'
-
-import { graphql, StaticQuery } from 'gatsby'
+import { Link, graphql, StaticQuery } from 'gatsby'
 import { Row, Col } from 'react-bootstrap'
 
 import AnimateIn from './../AnimateIn'
-import WorkCard from './../WorkCard'
+import JournalCard from './../JournalCard'
 
-class WorkTeaser extends Component {
+class JournalRoll extends Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -17,14 +15,14 @@ class WorkTeaser extends Component {
     return (
       <Row className='mb-5'>
         {posts && posts.map(({ node: post }) => (
-          <Col xs={12} sm={6} lg={4} xl={3} key={post.id} className='mb-4'>
-            <WorkCard post={post} />
+          <Col xs={6} lg={4} xl={3} key={post.id} className='mb-4'>
+            <JournalCard post={post} />
           </Col>
         ))}
         <Col xs={12}>
           <AnimateIn>
-            <Link to='/work'>
-              Browse Work &rarr;
+            <Link to='/journal'>
+              Browse Journal &rarr;
             </Link>
           </AnimateIn>
         </Col>
@@ -33,7 +31,7 @@ class WorkTeaser extends Component {
   }
 }
 
-WorkTeaser.propTypes = {
+JournalRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -44,11 +42,10 @@ WorkTeaser.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query WorkTeaserQuery {
+      query JournalRollQuery {
         allMarkdownRemark(
-          limit: 4,
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "work-post" } } }
+          filter: { frontmatter: { templateKey: { eq: "journal-post" } } }
         ) {
           edges {
             node {
@@ -65,7 +62,7 @@ export default () => (
                 tags
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 260, quality: 100) {
+                    fluid(maxWidth: 240, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
@@ -76,6 +73,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <WorkTeaser data={data} count={count} />}
+    render={(data, count) => <JournalRoll data={data} count={count} />}
   />
 )

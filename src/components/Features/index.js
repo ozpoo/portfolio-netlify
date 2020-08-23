@@ -8,7 +8,6 @@ import { Link } from 'gatsby'
 import { Button, Card } from 'react-bootstrap'
 
 import AnimateIn from './../AnimateIn'
-import Tilt from './../Tilt'
 
 import EmblaCarouselReact from 'embla-carousel-react'
 
