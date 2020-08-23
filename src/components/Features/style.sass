@@ -15,6 +15,14 @@
     .is-draggable
       overflow: visible!important
 
+  .prev
+    svg
+      margin-left: -8%
+
+  .next
+    svg
+      margin-right: -8%
+
   .prev, .next
     position: absolute
     height: 50px
@@ -28,11 +36,14 @@
     @include media-breakpoint-down(xs)
       display: none
     svg
-      height: 40%
-      width: 40%
+      height: 44%
+      width: 44%
       display: block
       stroke: currentColor
       stroke-width: 1.5
+      fill: none
+      polyline
+        vector-effect: non-scaling-stroke
 
   .prev
     left: 0

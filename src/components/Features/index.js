@@ -169,16 +169,14 @@ class FeatureGrid extends Component {
           </div>
         </EmblaCarouselReact>
         <Button className='prev' onClick={() => this.embla.scrollPrev()}>
-          <svg>
-            <line x1='0' y1='50%' x2='100%' y2='50%' />
-            <line x1='50%' y1='0' x2='50%' y2='100%' />
+          <svg viewBox='0 0 5 10'>
+            <polyline points='5 0, 0 5, 5 10' />
           </svg>
         </Button>
         <Button className='next' onClick={() => this.embla.scrollNext()}>
-          <svg>
-            <line x1='0' y1='50%' x2='100%' y2='50%' />
-            <line x1='50%' y1='0' x2='50%' y2='100%' />
-          </svg>
+        <svg viewBox='0 0 5 10'>
+          <polyline points='0 0, 5 5, 0 10' />
+        </svg>
         </Button>
         <div className='embla__progress'>
           <div className='embla__progress__bar' style={{ transform: `translateX(${scrollProgress}%)`}} />
