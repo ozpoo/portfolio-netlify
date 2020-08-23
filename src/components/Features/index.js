@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import { Button, Card } from 'react-bootstrap'
 
 import AnimateIn from './../AnimateIn'
+import Tilt from './../Tilt'
 
 import EmblaCarouselReact from 'embla-carousel-react'
 
@@ -38,15 +39,17 @@ class FeatureGrid extends Component {
           options={{loop: true, align: 'center', startIndex: 1}}>
           <div className='d-flex'>
             <div className='feature'>
-              <Card style={{background: '#47e2c9'}}>
-                <div className='content'>
-                  <Card.Header as='h2'>Work</Card.Header>
-                  <Card.Body>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
-                  </Card.Body>
-                  <Card.Footer></Card.Footer>
-                </div>
-              </Card>
+              <Tilt>
+                <Card style={{background: '#47e2c9'}}>
+                  <div className='content'>
+                    <Card.Header as='h2'>Work</Card.Header>
+                    <Card.Body>
+                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
+                    </Card.Body>
+                    <Card.Footer></Card.Footer>
+                  </div>
+                </Card>
+              </Tilt>
             </div>
 
             <div className='feature'>
