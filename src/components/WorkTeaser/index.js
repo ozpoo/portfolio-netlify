@@ -1,3 +1,4 @@
+import './style.sass'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
@@ -15,9 +16,9 @@ class WorkTeaser extends Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <Row className='mb-5'>
+      <Row className='global-work-teaser-grid mb-5'>
         {posts && posts.map(({ node: post }) => (
-          <Col xs={12} sm={6} lg={4} xl={3} key={post.id} className='mb-4'>
+          <Col xs={6} sm={6} lg={4} xl={3} key={post.id} className='column mb-4'>
             <WorkCard post={post} />
           </Col>
         ))}

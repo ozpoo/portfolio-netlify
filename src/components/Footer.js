@@ -24,7 +24,7 @@ class Footer extends Component {
       <Container className='global-footer py-4 px-xs-4 px-sm-5'>
         <Row>
           <Col xs={12} md={4}>
-            <AnimateIn>
+            <AnimateIn className='mb-4'>
               <Card>
                 <ListGroup variant='flush'>
                   <ListGroup.Item as={Link} to='/' onClick={() => bell && bell.play()}>
@@ -50,7 +50,7 @@ class Footer extends Component {
             </AnimateIn>
           </Col>
           <Col xs={12} md={4}>
-            <AnimateIn>
+            <AnimateIn className='mb-4'>
               <ListGroup>
                 <ListGroup.Item>
                   <Link to='/blog' onClick={() => bell && bell.play()}>Latest Stories</Link>
@@ -62,7 +62,7 @@ class Footer extends Component {
             </AnimateIn>
           </Col>
           <Col xs={12} md={4}>
-            <AnimateIn>
+            <AnimateIn className='mb-4'>
               <ListGroup>
                 <ListGroup.Item>
                   <a title='facebook' href='https://facebook.com' onClick={() => bell && bell.play()}>Facebook</a>

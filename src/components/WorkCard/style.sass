@@ -12,8 +12,8 @@
   overflow: hidden
 
   @include media-breakpoint-down(xs)
-    max-width: calc(90% - #{$spacer * 2})
-    margin: auto
+    h5
+      font-size: $font-size-base
 
   img
     display: block
@@ -40,7 +40,7 @@
         width: 100%
 
   .card-body
-    height: 120px
+    min-height: 120px
 
 .light-mode
   @import './../../style/light-mode-variables'
