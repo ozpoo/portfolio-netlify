@@ -13,7 +13,6 @@ body
   -moz-osx-font-smoothing: grayscale
   -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1)
   letter-spacing: -.03em
-  overflow-x: hidden
 
 h1
   @include media-breakpoint-down(lg)
@@ -22,6 +21,34 @@ h1
 h2
   @include media-breakpoint-down(lg)
     font-size: calc(14px + 1.4vw)!important
+
+.text-crop-1
+  -webkit-line-clamp: 1
+  overflow : hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-box-orient: vertical
+
+.text-crop-2
+  -webkit-line-clamp: 2
+  overflow : hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-box-orient: vertical
+
+.text-crop-3
+  -webkit-line-clamp: 3
+  overflow : hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-box-orient: vertical
+
+.text-crop-4
+  -webkit-line-clamp: 4
+  overflow : hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-box-orient: vertical
 
 .container
   img

@@ -8,12 +8,18 @@
   color: inherit!important
   overflow: hidden
 
+  .gatsby-image-wrapper
+    height: 166px
+    img
+      object-fit: cover
+      display: block
+
   @include media-breakpoint-down(xs)
     h5
       font-size: $font-size-base
 
-  .card-header
-    min-height: 110px
+.light-mode
+  @import './../../style/light-mode-variables'
 
-  img
-    display: block
+.dark-mode
+  @import './../../style/dark-mode-variables'

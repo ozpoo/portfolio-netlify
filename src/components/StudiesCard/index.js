@@ -3,7 +3,7 @@ import './style.sass'
 import React, { Component } from 'react'
 
 import { Link } from 'gatsby'
-import { Card, Button } from 'react-bootstrap'
+import { Row, Col, Card, Button } from 'react-bootstrap'
 
 import PreviewCompatibleImage from './../PreviewCompatibleImage'
 import AnimateIn from './../AnimateIn'
@@ -45,27 +45,31 @@ class StudiesCard extends Component {
             onClick={() => bell && bell.play()}
             to={post.fields.slug}
             className={post.frontmatter.featuredpost ? 'is-featured global-studies-card' : 'global-studies-card'}>
-            <div className='aspect-ratio-box'>
-              {post.frontmatter.featuredimage ? (
-                <PreviewCompatibleImage
-                  imageInfo={{
-                    image: post.frontmatter.featuredimage,
-                    alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                  }}
-                />
-              ) : (
-                <PreviewCompatibleImage
-                  imageInfo={{
-                    type: 'url',
-                    image: 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D',
-                    alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                  }} />
-              )}
-            </div>
-            <Card.Header as='h5' className='m-0'>
-              {post.frontmatter.title}
-              <span className='text-muted'> &mdash; {post.frontmatter.tags && post.frontmatter.tags.join(' & ')}</span>
-            </Card.Header>
+            <Row noGutters>
+              <Col>
+                {post.frontmatter.featuredimage ? (
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: post.frontmatter.featuredimage,
+                      alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                    }}
+                  />
+                ) : (
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      type: 'url',
+                      image: 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D',
+                      alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                    }} />
+                )}
+              </Col>
+              <Col>
+                <Card.Body as='h5' className='m-0'>
+                  {post.frontmatter.title}
+                  <span className='text-muted'> &mdash; {post.frontmatter.tags && post.frontmatter.tags.join(' & ')}</span>
+                </Card.Body>
+              </Col>
+            </Row>
             <Card.Footer>
               <Button>
                 Learn &rarr;

@@ -18,7 +18,7 @@ class StudiesTeaser extends Component {
     return (
       <Row className='global-studies-teaser-grid mb-5'>
         {posts && posts.map(({ node: post }) => (
-          <Col xs={6} md={6} xl={4} key={post.id} className='column mb-4'>
+          <Col xs={12} lg={6} key={post.id} className='column mb-4'>
             <StudiesCard post={post} />
           </Col>
         ))}
@@ -47,7 +47,7 @@ export default () => (
     query={graphql`
       query StudiesTeaserQuery {
         allMarkdownRemark(
-          limit: 3,
+          limit: 2,
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "studies-post" } } }
         ) {

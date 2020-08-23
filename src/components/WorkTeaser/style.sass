@@ -5,6 +5,11 @@
 .global-work-teaser-grid
   padding: 0 $spacer * .5
 
+  @include media-breakpoint-only(lg)
+    .column
+      &:nth-child(4)
+        display: none
+
   @include media-breakpoint-down(xs)
     .column
       padding: 0 $spacer * .5
