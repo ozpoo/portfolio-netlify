@@ -62,6 +62,11 @@ class WordCard extends Component {
               {post.frontmatter.title}
               <span className='text-muted'> &mdash; {post.frontmatter.tags.join(' & ')}</span>
             </Card.Header>
+            <Card.Footer>
+              <Button as={Link} to={post.fields.slug}>
+                Keep Reading &rarr;
+              </Button>
+            </Card.Footer>
           </Card>
         </Tilt>
       </AnimateIn>
