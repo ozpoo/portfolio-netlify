@@ -38,7 +38,7 @@ class WordCard extends Component {
     return (
       <AnimateIn>
         <Tilt>
-          <Card as={Link} onMouseEnter={() => hover && hover.play()} onClick={() => bell && bell.play()} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-work-card' : 'global-work-card'}>
+          <Card as={Link} onMouseEnter={() => hover && hover.play()} onClick={() => bell && bell.play()} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-journal-card' : 'global-journal-card'}>
             <div className='aspect-ratio-box'>
               {post.frontmatter.featuredimage ? (
                 <PreviewCompatibleImage
