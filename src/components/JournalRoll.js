@@ -49,7 +49,7 @@ class JournalRoll extends Component {
                   </Card.Body>
                   <Card.Footer>
                     <Button as={Link} to={post.fields.slug}>
-                      Keep Reading &rarr;
+                      Read &rarr;
                     </Button>
                   </Card.Footer>
                 </Card>

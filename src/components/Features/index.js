@@ -3,6 +3,8 @@ import './style.sass'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import { Link } from 'gatsby'
+
 import { Button, Card } from 'react-bootstrap'
 
 import AnimateIn from './../AnimateIn'
@@ -46,7 +48,11 @@ class FeatureGrid extends Component {
                     <Card.Body>
                       <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                     </Card.Body>
-                    <Card.Footer></Card.Footer>
+                    <Card.Footer>
+                      <Button as={Link} to={'/'}>
+                        Discover &rarr;
+                      </Button>
+                    </Card.Footer>
                   </div>
                 </Card>
               </Tilt>
@@ -59,7 +65,11 @@ class FeatureGrid extends Component {
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
-                  <Card.Footer></Card.Footer>
+                  <Card.Footer>
+                    <Button as={Link} to={'/'}>
+                      Discover &rarr;
+                    </Button>
+                  </Card.Footer>
                 </div>
               </Card>
             </div>
@@ -71,7 +81,11 @@ class FeatureGrid extends Component {
                     <Card.Body>
                       <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                     </Card.Body>
-                  <Card.Footer></Card.Footer>
+                    <Card.Footer>
+                      <Button as={Link} to={'/'}>
+                        Discover &rarr;
+                      </Button>
+                    </Card.Footer>
                 </div>
               </Card>
             </div>
@@ -83,7 +97,11 @@ class FeatureGrid extends Component {
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
-                  <Card.Footer></Card.Footer>
+                  <Card.Footer>
+                    <Button as={Link} to={'/'}>
+                      Discover &rarr;
+                    </Button>
+                  </Card.Footer>
                 </div>
               </Card>
             </div>
@@ -95,7 +113,11 @@ class FeatureGrid extends Component {
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
-                  <Card.Footer></Card.Footer>
+                  <Card.Footer>
+                    <Button as={Link} to={'/'}>
+                      Discover &rarr;
+                    </Button>
+                  </Card.Footer>
                 </div>
               </Card>
             </div>
@@ -107,7 +129,11 @@ class FeatureGrid extends Component {
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
-                  <Card.Footer></Card.Footer>
+                  <Card.Footer>
+                    <Button as={Link} to={'/'}>
+                      Discover &rarr;
+                    </Button>
+                  </Card.Footer>
                 </div>
               </Card>
             </div>
@@ -119,7 +145,11 @@ class FeatureGrid extends Component {
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
-                  <Card.Footer></Card.Footer>
+                  <Card.Footer>
+                    <Button as={Link} to={'/'}>
+                      Discover &rarr;
+                    </Button>
+                  </Card.Footer>
                 </div>
               </Card>
             </div>
@@ -131,7 +161,11 @@ class FeatureGrid extends Component {
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
-                  <Card.Footer></Card.Footer>
+                  <Card.Footer>
+                    <Button as={Link} to={'/'}>
+                      Discover &rarr;
+                    </Button>
+                  </Card.Footer>
                 </div>
               </Card>
             </div>

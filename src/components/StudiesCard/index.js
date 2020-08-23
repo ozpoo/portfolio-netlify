@@ -68,7 +68,7 @@ class StudiesCard extends Component {
             </Card.Header>
             <Card.Footer>
               <Button as={Link} to={post.fields.slug}>
-                Keep Reading &rarr;
+                Learn &rarr;
               </Button>
             </Card.Footer>
           </Card>

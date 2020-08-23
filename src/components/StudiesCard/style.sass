@@ -6,6 +6,10 @@
   color: inherit!important
   overflow: hidden
 
+  @include media-breakpoint-down(xs)
+    max-width: calc(90% - #{$spacer * 2})
+    margin: auto
+
   .card-header
     height: 110px
 
