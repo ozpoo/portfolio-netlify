@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-intro_text: Oz <span class="text-muted">is an</span> award winning design-gineer
-  <span class="text-muted">who lives in the intersection of</span> human
-  centered design (UX/UI)<span class="text-muted">, and</span> software
+intro_text: Oz <span class="text-muted">is an</span> internationally recognized
+  design-gineer <span class="text-muted">who lives in the intersection of</span>
+  human centered design (UX/UI)<span class="text-muted">, and</span> software
   engineering<span class="text-muted">.</span>
 sections:
   - image: /img/barc_nelson1601_0083_low_600x1800.jpg
