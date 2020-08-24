@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-intro_text: Oz <span class="text-muted">is an</span> award winning creative
+intro_text: Oz <span class="text-muted">is an</span> award winning design-gineer
   <span class="text-muted">who works at the intersection of</span> human
   centered design (UX/UI)<span class="text-muted">, and</span> software
   engineering<span class="text-muted">.</span>
