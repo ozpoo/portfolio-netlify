@@ -9,6 +9,7 @@ import { Button, Card } from 'react-bootstrap'
 
 import AnimateIn from './../AnimateIn'
 
+import PreviewCompatibleImage from './../PreviewCompatibleImage'
 import EmblaCarouselReact from 'embla-carousel-react'
 
 import UIfx from 'uifx'
@@ -61,6 +62,14 @@ class FeatureGrid extends Component {
                   <Card.Header as='h2'>Filler</Card.Header>
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
+                    <div className='image-avatar-lg'>
+                      <PreviewCompatibleImage
+                        imageInfo={{
+                          type: 'url',
+                          image: '/img/headshot.jpg',
+                          alt: 'Eric Oz Andren',
+                        }} />
+                    </div>
                   </Card.Body>
                   <Card.Footer>
                     <Button as={Link} to={'/'}>

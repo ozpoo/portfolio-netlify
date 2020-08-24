@@ -6,9 +6,9 @@ import { Image } from 'react-bootstrap'
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
   const imageStyle = { borderRadius: '0rem' }
-  const { alt = '', image } = imageInfo
+  const { alt = '', image, type } = imageInfo
 
-  if(image && image.type && image.type === 'url')
+  if(type && type === 'url')
     return <Image style={imageStyle} src={image} alt={alt} />
 
   if(image && image.childImageSharp)
