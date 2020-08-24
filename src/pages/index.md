@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-intro_text: Oz <span class="text-muted">is an</span> award winning design-gineer
+intro_text: Oz <span class="text-muted">is an</span> award winning creative
   <span class="text-muted">who specializes in</span> digital design <span
   class="text-muted">and</span> software engineering<span
   class="text-muted">.</span>
