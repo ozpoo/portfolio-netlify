@@ -58,11 +58,10 @@ class ThesisCard extends Component {
             </div>
             <Card.Body as='h5' className='m-0'>
               {post.frontmatter.title}
-              <span className='text-muted'> &mdash; {post.frontmatter.tags.join(' & ')}</span>
             </Card.Body>
             <Card.Footer>
               <Button>
-                Discover &rarr;
+                Read &rarr;
               </Button>
             </Card.Footer>
           </Card>

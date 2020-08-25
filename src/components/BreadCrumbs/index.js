@@ -16,7 +16,7 @@ const BreadCrumbs = (props) => {
               <div className='text-muted px-1'>&mdash;</div>
             </div>
             :
-            <div key={index} style={{maxWidth: '320px'}} className='px-1 text-crop-1'>{crumb.label}</div>
+            <div key={index} style={{maxWidth: '320px'}} className='text-crop-1'>{crumb.label}</div>
           )
         )}
       </div>
