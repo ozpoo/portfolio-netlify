@@ -5,7 +5,7 @@ title: I care greatly for those I work with — I feel my purpose as a creator i
   to be the conduit for others — to assist in the manifestation of tools and
   artifacts that enhance wellbeing and give life to dreams.
 ---
-![](/img/108566b2275a80713fef68496c2d9f0f.jpg)
+![](/img/10b70a12-ae64-41af-b1a9-39ba4188a426-03d54cba-42d9-4b1d-b135-6532d249a2ce.jpg)
 
 My skillset provides me with the ability to see projects of many scales all the way through — from beginning to end. The value of this comes with the rewards of enhanced communication, increased success rates, better suited solutions, and for those in a pinch — the potential to cut down costs and timeline. I believe collaboration is huge — but over the years I have found myself working for many small businesses and startups who don't have quite the financial setup to hire that big-league think tank that comes with a large team.
 
