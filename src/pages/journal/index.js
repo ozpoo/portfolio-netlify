@@ -16,7 +16,7 @@ class JournalIndexPage extends Component {
         ]}>
         <Container className='py-4 px-xs-4 px-sm-5'>
           <AnimateIn className='mb-5'>
-            <h1>Journal</h1>
+            <h1>Journal <span className='text-muted'>&mdash; a look into my thoughts, dreams, eassays &mdash; and maybe even a few rants.</span></h1>
           </AnimateIn>
 
           <section className='mb-5'>

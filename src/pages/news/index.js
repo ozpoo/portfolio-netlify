@@ -16,7 +16,7 @@ class NewsIndexPage extends Component {
         ]}>
         <Container className='py-4 px-xs-4 px-sm-5'>
           <AnimateIn className='mb-5'>
-            <h1>News <span className='text-muted'>&mdash; updates and milestones across all areas of my design &amp; academic lives.</span></h1>
+            <h1>News <span className='text-muted'>&mdash; updates and milestones across all areas of my design and academic lives.</span></h1>
           </AnimateIn>
 
           <section className='mb-5'>

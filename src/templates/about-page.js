@@ -9,13 +9,13 @@ import AnimateIn from './../components/AnimateIn'
 
 import { Container, Row, Col } from 'react-bootstrap'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, intro_text, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <Container className='py-4 px-xs-4 px-sm-5'>
       <AnimateIn className='mb-5'>
-        <h1>{title}</h1>
+        <h1 dangerouslySetInnerHTML={{__html: intro_text}} />
       </AnimateIn>
       <Row>
         <Col xs={8}>
@@ -24,7 +24,9 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
           </AnimateIn>
         </Col>
         <Col xs={4}>
-          Other stuffs
+          <AnimateIn className='mb-5'>
+            Other stuffs
+          </AnimateIn>
         </Col>
       </Row>
     </Container>
@@ -66,7 +68,8 @@ export const aboutPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
+        title,
+        intro_text
       }
     }
   }

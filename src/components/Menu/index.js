@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 
 import Switch from 'react-switch'
 
-import { Container } from 'react-bootstrap'
+import { Container, Button } from 'react-bootstrap'
 
 import useDarkMode from './../use-dark-mode'
 
@@ -67,6 +67,9 @@ class Menu extends Component {
               <li>
                 <Link onClick={() => bell && bell.play()} activeClassName='active' to='/about' partiallyActive={true}>About</Link>
               </li>
+            </ul>
+
+            <ul className='global-nav-list list-unstyled mt-4'>
               <li>
                 <Link onClick={() => bell && bell.play()} activeClassName='active' to='/contact'>Contact</Link>
               </li>
@@ -85,7 +88,11 @@ class Menu extends Component {
           </div>
 
           <div>
-            <TheSwitch shutter={shutter} />
+            <ul className='list-unstyled m-0'>
+              <li>
+                <TheSwitch shutter={shutter} />
+              </li>
+            </ul>
           </div>
         </Container>
       </div>

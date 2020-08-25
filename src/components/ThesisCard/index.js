@@ -37,35 +37,11 @@ class ThesisCard extends Component {
 
     return (
       <AnimateIn>
-        <Tilt>
-          <Card as={Link} onMouseEnter={() => hover && hover.play()} onClick={() => bell && bell.play()} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-thesis-card' : 'global-thesis-card'}>
-            <div className='aspect-ratio-box'>
-              {post.frontmatter.featuredimage ? (
-                <PreviewCompatibleImage
-                  imageInfo={{
-                    image: post.frontmatter.featuredimage,
-                    alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                  }}
-                />
-              ) : (
-                <PreviewCompatibleImage
-                  imageInfo={{
-                    type: 'url',
-                    image: 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D',
-                    alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                  }} />
-              )}
-            </div>
-            <Card.Body as='h5' className='m-0'>
-              {post.frontmatter.title}
-            </Card.Body>
-            <Card.Footer>
-              <Button>
-                Read &rarr;
-              </Button>
-            </Card.Footer>
-          </Card>
-        </Tilt>
+        <Link onMouseEnter={() => hover && hover.play()} onClick={() => bell && bell.play()} to={post.fields.slug}>
+          <h2>
+            {post.frontmatter.title}
+          </h2>
+        </Link>
       </AnimateIn>
     )
   }
