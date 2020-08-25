@@ -9,6 +9,7 @@ import ProductPagePreview from './preview-templates/ProductPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 import StudiesPostPreview from './preview-templates/StudiesPostPreview'
 import NewsPostPreview from './preview-templates/NewsPostPreview'
+import ThesisPostPreview from './preview-templates/ThesisPostPreview'
 
 CMS.registerEditorComponent({
   id: 'youtube',
@@ -41,3 +42,4 @@ CMS.registerPreviewTemplate('journal', JournalPostPreview)
 CMS.registerPreviewTemplate('work', WorkPostPreview)
 CMS.registerPreviewTemplate('studies', StudiesPostPreview)
 CMS.registerPreviewTemplate('news', NewsPostPreview)
+CMS.registerPreviewTemplate('thesis', ThesisPostPreview)

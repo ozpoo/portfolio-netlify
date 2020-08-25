@@ -1,0 +1,31 @@
+@import '~bootstrap/scss/functions'
+@import '~bootstrap/scss/variables'
+@import '~bootstrap/scss/mixins'
+
+.browse-work
+  background: #47e2c9!important
+  color: black
+
+.global-work-card
+  color: inherit!important
+  text-decoration: none!important
+  overflow: hidden
+
+  @include media-breakpoint-down(xs)
+    h5
+      font-size: $font-size-base
+
+  .gatsby-image-wrapper
+    height: 166px
+    img
+      object-fit: cover
+      display: block
+
+  .card-body
+    min-height: 126px
+
+.light-mode
+  @import './../../style/light-mode-variables'
+
+.dark-mode
+  @import './../../style/dark-mode-variables'

@@ -58,6 +58,9 @@ class Menu extends Component {
               <li>
                 <Link onClick={() => bell && bell.play()} activeClassName='active' to='/journal' partiallyActive={true}>Journal</Link>
               </li>
+              <li>
+                <Link onClick={() => bell && bell.play()} activeClassName='active' to='/thesis'>Thesis</Link>
+              </li>
             </ul>
 
             <ul className='global-nav-list list-unstyled mt-4'>

@@ -12,7 +12,7 @@ import PreviewCompatibleImage from './../PreviewCompatibleImage'
 import AnimateIn from './../AnimateIn'
 import Tilt from './../Tilt'
 
-class WorkCard extends Component {
+class ThesisCard extends Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -38,7 +38,7 @@ class WorkCard extends Component {
     return (
       <AnimateIn>
         <Tilt>
-          <Card as={Link} onMouseEnter={() => hover && hover.play()} onClick={() => bell && bell.play()} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-work-card' : 'global-work-card'}>
+          <Card as={Link} onMouseEnter={() => hover && hover.play()} onClick={() => bell && bell.play()} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-thesis-card' : 'global-thesis-card'}>
             <div className='aspect-ratio-box'>
               {post.frontmatter.featuredimage ? (
                 <PreviewCompatibleImage
@@ -72,4 +72,4 @@ class WorkCard extends Component {
   }
 }
 
-export default WorkCard
+export default ThesisCard

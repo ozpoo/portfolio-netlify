@@ -102,10 +102,16 @@
       @include media-breakpoint-down(xs)
         margin: 0 #{$spacer * .5}
       .card-body
-        min-height: 160px
+        min-height: 90px
         max-width: 80%
         @include media-breakpoint-down(xs)
-          min-height: 120px
+          min-height: 90px
+          max-width: 100%
+      .card-footer
+        height: 110px
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
       .content
         opacity: 0
         transform: translate3d(0, 10px, 0)

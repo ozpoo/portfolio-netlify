@@ -7,7 +7,7 @@ import Layout from './../components/Layout'
 import Content, { HTMLContent } from './../components/Content'
 import AnimateIn from './../components/AnimateIn'
 
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -17,9 +17,16 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
       <AnimateIn className='mb-5'>
         <h1>{title}</h1>
       </AnimateIn>
-      <AnimateIn className='mb-5'>
-        <PageContent content={content} />
-      </AnimateIn>
+      <Row>
+        <Col xs={8}>
+          <AnimateIn className='mb-5'>
+            <PageContent content={content} />
+          </AnimateIn>
+        </Col>
+        <Col xs={4}>
+          Other stuffs
+        </Col>
+      </Row>
     </Container>
   )
 }

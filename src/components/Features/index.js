@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 
 import { Link } from 'gatsby'
 
-import { Button, Card } from 'react-bootstrap'
+import { Button, Card, Row, Col } from 'react-bootstrap'
 
 import AnimateIn from './../AnimateIn'
 
@@ -62,19 +62,23 @@ class FeatureGrid extends Component {
                   <Card.Header as='h2'>Filler</Card.Header>
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
-                    <div className='image-avatar-lg'>
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          type: 'url',
-                          image: '/img/headshot.jpg',
-                          alt: 'Eric Oz Andren',
-                        }} />
-                    </div>
                   </Card.Body>
                   <Card.Footer>
-                    <Button as={Link} to={'/'}>
-                      Discover &rarr;
-                    </Button>
+                    <div>
+                      <Button as={Link} to={'/'}>
+                        Discover &rarr;
+                      </Button>
+                    </div>
+                    <div>
+                      <div className='image-avatar-lg'>
+                        <PreviewCompatibleImage
+                          imageInfo={{
+                            type: 'url',
+                            image: '/img/headshot.jpg',
+                            alt: 'Eric Oz Andren',
+                          }} />
+                      </div>
+                    </div>
                   </Card.Footer>
                 </div>
               </Card>
@@ -104,9 +108,21 @@ class FeatureGrid extends Component {
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
                   <Card.Footer>
-                    <Button as={Link} to={'/'}>
-                      Discover &rarr;
-                    </Button>
+                    <div>
+                      <Button as={Link} to={'/'}>
+                        Discover &rarr;
+                      </Button>
+                    </div>
+                    <div>
+                      <div className='image-avatar-lg'>
+                        <PreviewCompatibleImage
+                          imageInfo={{
+                            type: 'url',
+                            image: '/img/headshot.jpg',
+                            alt: 'Eric Oz Andren',
+                          }} />
+                      </div>
+                    </div>
                   </Card.Footer>
                 </div>
               </Card>
@@ -136,9 +152,21 @@ class FeatureGrid extends Component {
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
                   <Card.Footer>
-                    <Button as={Link} to={'/'}>
-                      Discover &rarr;
-                    </Button>
+                    <div>
+                      <Button as={Link} to={'/'}>
+                        Discover &rarr;
+                      </Button>
+                    </div>
+                    <div>
+                      <div className='image-avatar-lg'>
+                        <PreviewCompatibleImage
+                          imageInfo={{
+                            type: 'url',
+                            image: '/img/headshot.jpg',
+                            alt: 'Eric Oz Andren',
+                          }} />
+                      </div>
+                    </div>
                   </Card.Footer>
                 </div>
               </Card>
@@ -168,9 +196,21 @@ class FeatureGrid extends Component {
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
                   <Card.Footer>
-                    <Button as={Link} to={'/'}>
-                      Discover &rarr;
-                    </Button>
+                    <div>
+                      <Button as={Link} to={'/'}>
+                        Discover &rarr;
+                      </Button>
+                    </div>
+                    <div>
+                      <div className='image-avatar-lg'>
+                        <PreviewCompatibleImage
+                          imageInfo={{
+                            type: 'url',
+                            image: '/img/headshot.jpg',
+                            alt: 'Eric Oz Andren',
+                          }} />
+                      </div>
+                    </div>
                   </Card.Footer>
                 </div>
               </Card>
