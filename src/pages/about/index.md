@@ -1,9 +1,9 @@
 ---
 templateKey: about-page
 path: /about
-title: I care greatly for those I work with — I feel my purpose as a creator is
-  to be the conduit for others — to assist in the manifestation of tools and
-  artifacts that enhance wellbeing and give life to dreams.
+title: I care greatly for those I work with — as a creator my purpose is to be
+  the conduit for others assisting in the manifestation of tools and artifacts
+  that enhance wellbeing and give life to dreams.
 ---
 ![](/img/108566b2275a80713fef68496c2d9f0f.jpg)
 
