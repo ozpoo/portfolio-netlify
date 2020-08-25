@@ -35,6 +35,7 @@ export const AboutPageTemplate = ({ title, intro_text, content, contentComponent
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  intro_text: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -51,6 +52,7 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        intro_text={post.frontmatter.intro_text}
         content={post.html}
       />
     </Layout>
