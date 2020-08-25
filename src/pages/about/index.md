@@ -4,8 +4,8 @@ path: /about
 title: About
 intro_text: I care greatly<span class="text-muted"> for those I work with — as a
   creator </span>my purpose is to be the conduit <span class="text-muted">for
-  others to build tools and artifacts that </span>enhance wellbeing and give
-  life to dreams.
+  others to build tools and artifacts that </span>enhance wellbeing<span
+  class="text-muted"> and </span>give life to dreams.
 ---
 ![](/img/108566b2275a80713fef68496c2d9f0f.jpg)
 
