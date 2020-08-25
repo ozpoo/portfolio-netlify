@@ -2,9 +2,9 @@
 templateKey: about-page
 path: /about
 title: About
-intro_text: I care greatly for those I work with<span class='text-muted"> — as a
+intro_text: I care greatly for those I work with<span class="text-muted"> — as a
   creator </span>my purpose is to be the conduit for others<span
-  class='text-muted"> building tools and artifacts that </span>enhance wellbeing
+  class="text-muted"> building tools and artifacts that </span>enhance wellbeing
   and give life to dreams.
 ---
 ![](/img/108566b2275a80713fef68496c2d9f0f.jpg)
