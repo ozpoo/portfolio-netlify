@@ -42,7 +42,7 @@ go in the right direction.*” (Toffler 1991)
 
 It is necessary, as thriving beings, to set aside time for reflection and observation. Observation allows us to gain a better understanding of what’s going on. Though it is argued *Moore’s Law* may be coming to an end (Cumming et al. 2014) we have lived decades in a world where digital technologies have been, and continue, to increase at an exponential rate. In terms of technology, now, more than ever, the world we live in is rapidly changing. With these changes come effects–*consequences*. Effects, on a large scale, that can be hard–*or deceiving*–to see. Effects that are physical, psychological, and sociological. Effects that determine how we interact and how we will continue on into the abyss of our time. However far these effects may be from our current perception–*need for reflection*–does not make them any less important to our future. 
 
-### 1.4. The Glass Is Just Too Big 
+## 1.4. The Glass Is Just Too Big 
 
 For years I’ve orchestrated an internal battle in an attempt to reconcile whether technology is right or wrong, good or evil, just or unjust, only to conclude the best understanding is not found through a simple question of differences. In fact, I was looking at it all wrong. 
 
