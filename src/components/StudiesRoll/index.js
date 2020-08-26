@@ -54,7 +54,7 @@ export default () => (
                 tags
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 540, quality: 100) {
+                    fluid(maxWidth: 260, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

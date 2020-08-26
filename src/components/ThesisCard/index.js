@@ -6,11 +6,8 @@ import bellAudio from './../../../static/audio/wav/01-Hero-Sounds/hero_simple-ce
 import hoverAudio from './../../../static/audio/wav/04-Secondary-System-Sounds/navigation_unavailable-selection.wav'
 
 import { Link } from 'gatsby'
-import { Card, Button } from 'react-bootstrap'
 
-import PreviewCompatibleImage from './../PreviewCompatibleImage'
 import AnimateIn from './../AnimateIn'
-import Tilt from './../Tilt'
 
 class ThesisCard extends Component {
   constructor(props) {

@@ -5,10 +5,11 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import { kebabCase } from 'lodash'
 
-import Layout from '../components/Layout'
+import Layout from './../components/Layout'
+import AnimateIn from './../components/AnimateIn'
 import Content, { HTMLContent } from '../components/Content'
 
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 export const ThesisPostTemplate = ({
   content,
@@ -26,27 +27,31 @@ export const ThesisPostTemplate = ({
 
       <section className='mb-5'>
         <h1>{title}</h1>
-        <p>{description}</p>
       </section>
 
-      <section className='mb-5'>
-        <PostContent content={content} />
-      </section>
-
-      <section className='mb-5'>
-        {tags && tags.length ? (
-          <section>
-            <h4>Tags</h4>
-            <ul>
-              {tags.map((tag) => (
-                <li key={tag + `tag`}>
-                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ) : null}
-      </section>
+      <Row>
+        <Col xs={8}>
+          <AnimateIn className='mb-5'>
+            <PostContent content={content} />
+          </AnimateIn>
+        </Col>
+        <Col xs={4}>
+          <AnimateIn className='mb-5'>
+            {tags && tags.length ? (
+              <section>
+                <h4>Tags</h4>
+                <ul>
+                  {tags.map((tag) => (
+                    <li key={tag + `tag`}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ) : null}
+          </AnimateIn>
+        </Col>
+      </Row>
     </Container>
   )
 }
