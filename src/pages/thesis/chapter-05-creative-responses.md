@@ -1,6 +1,6 @@
 ---
 templateKey: thesis-post
-title: Chapter 05 — Creative
+title: Chapter 05 — Creative Responses
 date: 2020-08-25T20:48:00.223Z
 featuredimage: /img/creative.jpg
 ---

@@ -1,6 +1,6 @@
 ---
 templateKey: thesis-post
-title: Chapter 01 — Intro
+title: Chapter 01 — Introduction
 date: 2020-08-25T20:23:48.566Z
 featuredimage: /img/intro.jpg
 ---
