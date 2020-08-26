@@ -25,9 +25,9 @@ export const ThesisPostTemplate = ({
     <Container className='py-4 px-xs-4 px-sm-5'>
       {helmet || ''}
 
-      <section className='mb-5'>
+      <AnimateIn className='mb-5'>
         <h1>{title}</h1>
-      </section>
+      </AnimateIn>
 
       <Row>
         <Col xs={8}>
