@@ -3,42 +3,24 @@ templateKey: thesis-post
 title: List of Figures
 date: 2020-08-23T05:35:27.426Z
 ---
-Figure 1. Screenshot of #selfie music video (Chainsmokers 2015) ...................................................... 18
-
-Figure 2. Screenshot of Selfiecity interface (DigitalThoughtFacility 2014) .......................................... 19
-
-Figure 3. Screenshot of a selfie featured in book (Kardashian West 2015) .......................................... 20
-
-Figure 4. Screenshot of Alpha Sphere performance video (Hou 2003) ............................................... 21
-
-Figure 5. Screenshot of type hover swipe in action (Taylor et. al 2014) .............................................. 22
-
-Figure 6. Screenshot of Network Effect interface (Harris 2015) .......................................................... 23
-
-Figure 7. Graph showing Instagram user growth (Statista 2015) ......................................................... 24
-
-Figure 8. Screen shot of code for the selfie data models ...................................................................... 25
-
-Figure 9. Screenshot of CSV data sheet before database import ........................................................ 26
-
-Figure 10. Screenshot of Django data admin interface ...................................................................... 27
-
-Figure 11. Screenshot of data viewing interface .................................................................................. 27
-
-Figure 12. A series of activity selfies gathered publically from Instagram ........................................... 31
-
-Figure 13. A series of affection selfies gathered publically from Instagram ......................................... 32
-
-Figure 14. A series of association selfies gathered publically from Instagram ...................................... 33
-
-Figure 15. A series of body selfies gathered publically from Instagram ............................................... 34
-
-Figure 16. A series of emotion selfies gathered publically from Instagram .......................................... 35
-
-Figure 17. A series of face selfies gathered publically from Instagram ................................................. 36
-
-Figure 18. A series of fantasy selfies gathered publically from Instagram ............................................ 37
-
+Figure 1. Screenshot of #selfie music video (Chainsmokers 2015)\
+Figure 2. Screenshot of Selfiecity interface (DigitalThoughtFacility 2014)\
+Figure 3. Screenshot of a selfie featured in book (Kardashian West 2015)\
+Figure 4. Screenshot of Alpha Sphere performance video (Hou 2003)\
+Figure 5. Screenshot of type hover swipe in action (Taylor et. al 2014)\
+Figure 6. Screenshot of Network Effect interface (Harris 2015)\
+Figure 7. Graph showing Instagram user growth (Statista 2015)\
+Figure 8. Screen shot of code for the selfie data models\
+Figure 9. Screenshot of CSV data sheet before database import\
+Figure 10. Screenshot of Django data admin interface\
+Figure 11. Screenshot of data viewing interface\
+Figure 12. A series of activity selfies gathered publically from Instagram\
+Figure 13. A series of affection selfies gathered publically from Instagram\
+Figure 14. A series of association selfies gathered publically from Instagram\
+Figure 15. A series of body selfies gathered publically from Instagram\
+Figure 16. A series of emotion selfies gathered publically from Instagram\
+Figure 17. A series of face selfies gathered publically from Instagram\
+Figure 18. A series of fantasy selfies gathered publically from Instagram\
 Figure 19. A series of mirror selfies gathered publically from Instagram ............................................ 38
 
 Figure 20. A series of group selfies gathered publically from Instagram ............................................. 39
