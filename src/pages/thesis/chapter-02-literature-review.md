@@ -86,7 +86,7 @@ Online Social Network Interactions manifest in a series of manners. There are di
 
 The *awkward integration* of our life experience and online social network interactions. Awkward simply because we have yet to agree on written–even unwritten–rules that spell out guidelines of appropriate ways to integrate our online relationships with our relationships in the physical world. A lack of paint by numbers, or wise tales, that help us understand. Where is the book of etiquette on integrating the physical and online self? 
 
-### 2.9. Those Who Control 
+## 2.9. Those Who Control 
 
 “*A squirrel dying in front of your house may be more relevant to your interests right now than people dying in Africa.—Mark Zuckerberg, Facebook founder*” (Pariser 2011)
 
@@ -126,7 +126,7 @@ With these abilities comes the debate of impermanence versus permanence and what
 
 One can argue that selfies are a new way of bonding, a harmless source of self-expression, or even just another way to connect with friends, but it’s important to think about the negative possibilities found in *selfie culture* too. Selfies are debated to have psychological issues in relation to Internet addiction and psychological health and well-being, and are also seen to have a significant correlation to narcissism (Sorokowski). To continue the discussion we should ask the question of whether or not narcissism is good or bad. In our case the dangers in narcissism are found rooted in its connections to egotism, self-esteem, and aggression. All of which can feed the cycle of Internet addiction, fear of missing out, and continue to alter perception of who we are or who we think we want to be.
 
-2.12. The Message In A Bottle
+## 2.12. The Message In A Bottle
 
 “*Not all this new knowledge is factual or even explicit. Much knowledge, as the term is used here, is unspoken, consisting of assumptions piled atop assumptions, of fragmentary models, of unnoticed analogies, and it includes not simply logical and seemingly unemotional information data, but values, the products of passion and emotion, not to mention imagination and intuition.*” (Toffler 1991)
 
