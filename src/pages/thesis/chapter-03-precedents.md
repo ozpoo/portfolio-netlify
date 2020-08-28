@@ -19,6 +19,8 @@ Type-Hover-Swipe*\
 
 ## 3.1. The Chainsmokers: #Selfie
 
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_025_image_0001.jpg)
+
 Figure 1. Screenshot of #selfie music video (Chainsmokers 2015) 
 
 “*\#Selfie*” is a socially oriented song focused on selfies created by musical group The Chainsmokers. Paired with a music video, the song is based on the conversation of two narcissistic girls at a nightclub heard discussing their night. Located in the bathroom the girls can help but take selfies in front of the mirror. The music video features selfies taken by popular celebrities such as Steve Aoki, Snoop Dogg, and David Hasselhoff, and also includes selfies submitted by fans. 
@@ -26,6 +28,8 @@ Figure 1. Screenshot of #selfie music video (Chainsmokers 2015)
 The creation of the “#*Selfie*” song and video show the integration and acceptance of Selfie Culture. The addition of celebrity selfies only forwards the idea of acceptance and hints at the selfie being a desirable activity while the addition of fan submitted selfies provides a communal platform looking past the vanity or narcissistic tendencies that may be exhibited by those who post selfies.
 
 ## 3.2. Selfiecity
+
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_026_image_0001.jpg)
 
 Figure 2. Screenshot of Selfiecity interface (DigitalThoughtFacility 2014) 
 
@@ -35,6 +39,8 @@ By representing data in a variety of easily digestible graphics we can start to 
 
 ## 3.3. Kim Kardashian: Selfish
 
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_027_image_0001.jpg)
+
 Figure 3. Screenshot of a selfie featured in book (Kardashian West 2015) 
 
 “*Selfish*” is a book of selfies by pop culture icon Kim Kardashian. It illustrates her life with a collection, curated by Kim, of selfies she has posted online. 
@@ -42,6 +48,8 @@ Figure 3. Screenshot of a selfie featured in book (Kardashian West 2015)
 This is a testament to how integrated, acceptable, or even “*normal*” it has become to post a selfie and be proud of it. Similar to a book you may find sitting on your friend’s coffee table that exhibits famous historical paintings, you now may find Kim’s selfie collection right next to it. Its popularity in sales also shows the worth people have placed on selfie culture, and even hints at a vicarious nature of living through the selfies of others. 
 
 ## 3.4. Alpha Sphere
+
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_028_image_0001.jpg)
 
 Figure 4. Screenshot of Alpha Sphere performance video (Hou 2003) 
 
@@ -51,6 +59,8 @@ A captivating use of haptic sensors and light driven feedback makes this piece w
 
 ## 3.5. Type-Hover-Swipe
 
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_029_image_0001.jpg)
+
 Figure 5. Screenshot of type hover swipe in action (Taylor et. al 2014) 
 
 Type-Hover-Swipe is a clever augmented keyboard. Making use of sensor technologies at can capture expressive motion gestures that can be used to control a device. Low-resolution infrared proximity sensors make the data capture simple. However, a large database of pre-mapped gestures allows for quick reverse lookup making its abilities quite robust. 
@@ -58,6 +68,8 @@ Type-Hover-Swipe is a clever augmented keyboard. Making use of sensor technologi
 Using intuitive gestural motion to control devices seems, to me, a very natural progression in the development of technology. Adapting our natural ability to move in to ways that can control a device integrates a much more inclusive approach to design. It is much easier to wave than it is to type 100 words per minute.
 
 ## 3.6. Network Effect
+
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_030_image_0001.jpg)
 
 Figure 6. Screenshot of Network Effect interface (Harris 2015) 
 
