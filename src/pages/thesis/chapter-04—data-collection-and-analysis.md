@@ -141,6 +141,16 @@ For the more imaginative or creative user, this category of selfie is seen poste
 
 ![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_045_image_0001.jpg)
 
-Figure 19. A series of mirror selfies gathered publically from Instagram 
+Figure 19. A series of mirror selfies gathered publicly from Instagram 
 
 Sometimes the face just isn’t enough. If you are proud of your whole body or the situation you are currently in, the mirror selfie is a great way to capture a larger perspective. While still making sure you–all of you–is in the frame, the user can create greater context for the viewers, or just make sure they see the entire outfit you picked for that night. A clever way to make use of past and present technologies to gain advantage.
+
+### The Group Selfie
+
+*The user portrays their self with one or more other people.* 
+
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_046_image_0001.jpg)
+
+Figure 20. A series of group selfies gathered publicly from Instagram
+
+Standing on the shoulders of giants is the way humanity has advanced. The group selfie is a testament to our longing for community and the power displayed by sticking together. By pairing yourself with a friend, or group of friends, you can show that you are accepted and appreciated and that you appreciate and are willing to work with others. The “team player” of selfies.
