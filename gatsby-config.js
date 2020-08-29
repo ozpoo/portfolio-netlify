@@ -36,10 +36,22 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-remark-embed-youtube',
+            options: {
+              width: 800,
+              height: 400
+            }
+          },
+          `gatsby-remark-responsive-iframe`,
+          {
             resolve: 'gatsby-remark-relative-images',
             options: {
               name: 'uploads',
             },
+          },
+          {
+            resolve: `gatsby-remark-figure-caption`,
+            options: {figureClassName: 'md-figure'},
           },
           {
             resolve: 'gatsby-remark-images',
@@ -47,7 +59,7 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 2048,
+              maxWidth: 2048
             },
           },
           {

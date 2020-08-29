@@ -15,7 +15,7 @@ CMS.registerEditorComponent({
   id: 'youtube',
   label: 'Youtube',
   fields: [{name: 'id', label: 'Youtube Video ID', widget: 'string'}],
-  pattern: /^`youtube: (\S+)`$/,
+  pattern: /^`youtube:(\S+)`$/,
   fromBlock: function(match) {
     return {
       id: match[1]
@@ -23,12 +23,12 @@ CMS.registerEditorComponent({
   },
   toBlock: function(obj) {
     console.log('youtube: toBlock')
-    return '`youtube: ' + obj.id + '`'
+    return '`youtube:'+ obj.id +'`'
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
-    return '<img src="http://img.youtube.com/vi/' + obj.id + '/maxresdefault.jpg" alt="Youtube Video"/>'
+    return '<iframe src="'+obj.id+'" alt="Youtube Video" allowfullscreen></iframe>'
   }
 })
 
