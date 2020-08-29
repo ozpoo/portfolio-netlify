@@ -159,8 +159,6 @@ Standing on the shoulders of giants is the way humanity has advanced. The group 
 
 *The user portrays an object, idea, person, or place absent of themselves.*
 
-![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_047_image_0001.jpg)
-
-Figure 21. A series of object selfies gathered publicly from Instagram 
+![Figure 21. A series of object selfies gathered publicly from Instagram](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_047_image_0001.jpg "Figure 21. A series of object selfies gathered publicly from Instagram")
 
 For those who can find beauty in what lies beyond themselves. The object selfie is a great way to display the things you love or put emphasis on something greater than who you are. We obsess over our possessions and marvel in the world around us. The object selfie shows just what it is that is dear to you, other than yourself.
