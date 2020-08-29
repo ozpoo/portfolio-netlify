@@ -134,3 +134,13 @@ This is the literal definition of selfie. The user, by capturing a portrait of j
 Figure 18. A series of fantasy selfies gathered publicly from Instagram
 
 For the more imaginative or creative user, this category of selfie is seen posted by those wishing to live in a world other than their own. If you have a crush on a movie character or wish to live in an alien world, the fantasy selfie is a perfect way to set up the scene of your ideal world for the whole network to know. After all, reality is just relative.
+
+### The Mirror Selfie
+
+*The user makes use of a mirror to capture the selfie. Often used to capture a larger portion of the body.*
+
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_045_image_0001.jpg)
+
+Figure 19. A series of mirror selfies gathered publically from Instagram 
+
+Sometimes the face just isn’t enough. If you are proud of your whole body or the situation you are currently in, the mirror selfie is a great way to capture a larger perspective. While still making sure you–all of you–is in the frame, the user can create greater context for the viewers, or just make sure they see the entire outfit you picked for that night. A clever way to make use of past and present technologies to gain advantage.
