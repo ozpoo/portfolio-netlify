@@ -8,9 +8,7 @@ featuredimage: /img/data.jpg
 
 Through previous experimentation with the Application Programming Interfaces of Facebook, Twitter, and Instagram I was able to become more familiar with their capabilities and limitations. Facebook is relatively locked down in terms of data access–*especially publicly accessible information*–and filtering through their query results can be cumbersome, Twitter focuses on a range of media which is traditionally just text, and Instagram focuses on photographs–*the medium of a selfie*–and is one of the largest and most thriving social networks of this time. The figure below shows the history of monthly active Instagram users. It illustrates a steady and growing increase of users over the past 3 years. Based on this information–*and already having part the script developed*–I made the decision to move forward gathering posts with the hashtag of selfie (#selfie) from Instagram.
 
-``
-
-`youtube:IRipnVvnaIg`
+`youtube:https://www.youtube.com/embed/IRipnVvnaIg`
 
 ![Figure 7. Graph showing Instagram user growth (Statista 2015)](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_031_image_0001.jpg "Figure 7. Graph showing Instagram user growth (Statista 2015)")
 
