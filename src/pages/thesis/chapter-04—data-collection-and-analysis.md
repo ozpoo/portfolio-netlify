@@ -4,7 +4,7 @@ title: Chapter 04 — Data Collection and Analysis
 date: 2020-08-25T20:39:37.997Z
 featuredimage: /img/data.jpg
 ---
-## 4.1. Gathering Data 
+## 4.1. Gathering Data
 
 Through previous experimentation with the Application Programming Interfaces of Facebook, Twitter, and Instagram I was able to become more familiar with their capabilities and limitations. Facebook is relatively locked down in terms of data access–*especially publicly accessible information*–and filtering through their query results can be cumbersome, Twitter focuses on a range of media which is traditionally just text, and Instagram focuses on photographs–*the medium of a selfie*–and is one of the largest and most thriving social networks of this time. The figure below shows the history of monthly active Instagram users. It illustrates a steady and growing increase of users over the past 3 years. Based on this information–*and already having part the script developed*–I made the decision to move forward gathering posts with the hashtag of selfie (#selfie) from Instagram.
 
@@ -44,7 +44,7 @@ Unique Filters: 44
 
 Table 1. Numbers of data gathered 
 
-## 4.2. Findings 
+## 4.2. Findings
 
 A desired sample size is 385 participants, this achieves a 90% confidence level with a standard deviation of +/- 5% the desired sample size is 385 participants (Smith 2013). I was able to collect a sample of 225,117 unique selfies, a significantly larger sample of data than the calculated sample necessary for the desired confidence. By taking inspiration from the Network Effect, similar to their data sampling I pulled the first viable 10,000 selfies gathered. 
 
@@ -58,7 +58,7 @@ This study is focused on self-perception and not commercial propaganda or gain. 
 
 *followme, like4like, instagood, follow, me, follow4follow, picoftheday, photooftheday, likeforlike, tagsforlikes, instalike, instadaily, f4f, l4l, like, bestoftheday, like*
 
-## 4.3. Selfie Categories 
+## 4.3. Selfie Categories
 
 After curating and observing the set of selfies, connections became apparent. Sets of similar compositions, poses, and ideas were being communicated. These groupings–*categories*–in terms of types of photographs were repeatedly being captured and tagged as a selfie (#selfie). The users of Instagram–*those who create posts with the hash tag selfie (#selfie)*–have developed a visual language. A visual language, universally used, that aids in developing a deeper sense of self by engaging with Online Social Networks. These findings are directly related to research question one: “*In what ways are people engaging with Online Social Networks to develop a deeper sense of self?*” 
 
@@ -124,3 +124,13 @@ Humans are capable of understanding a rainbow of emotion and expression. Some of
 Figure 17. A series of face selfies gathered publicly from Instagram 
 
 This is the literal definition of selfie. The user, by capturing a portrait of just their face, lets people see who they are. Often paired with a smile or a model like facial pose the face selfie is the most self-driven selfie. Barren of anything but the model himself, its mission is most often just to let the world see them, motivated by self-love.
+
+### The Fantasy Selfie 
+
+*The user portrays their self in a fantastical manner through means of photo manipulation, props, or composition.*
+
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_044_image_0001.jpg)
+
+Figure 18. A series of fantasy selfies gathered publicly from Instagram
+
+For the more imaginative or creative user, this category of selfie is seen posted by those wishing to live in a world other than their own. If you have a crush on a movie character or wish to live in an alien world, the fantasy selfie is a perfect way to set up the scene of your ideal world for the whole network to know. After all, reality is just relative.
