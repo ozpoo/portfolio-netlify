@@ -8,6 +8,8 @@ featuredimage: /img/data.jpg
 
 Through previous experimentation with the Application Programming Interfaces of Facebook, Twitter, and Instagram I was able to become more familiar with their capabilities and limitations. Facebook is relatively locked down in terms of data access–*especially publicly accessible information*–and filtering through their query results can be cumbersome, Twitter focuses on a range of media which is traditionally just text, and Instagram focuses on photographs–*the medium of a selfie*–and is one of the largest and most thriving social networks of this time. The figure below shows the history of monthly active Instagram users. It illustrates a steady and growing increase of users over the past 3 years. Based on this information–*and already having part the script developed*–I made the decision to move forward gathering posts with the hashtag of selfie (#selfie) from Instagram.
 
+{{< figure src="/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_031_image_0001.jpg" width="undefined" caption="Figure 7. Graph showing Instagram user growth (Statista 2015)" link="undefined">}}
+
 ![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_031_image_0001.jpg)
 
 Figure 7. Graph showing Instagram user growth (Statista 2015) 
@@ -125,7 +127,7 @@ Figure 17. A series of face selfies gathered publicly from Instagram
 
 This is the literal definition of selfie. The user, by capturing a portrait of just their face, lets people see who they are. Often paired with a smile or a model like facial pose the face selfie is the most self-driven selfie. Barren of anything but the model himself, its mission is most often just to let the world see them, motivated by self-love.
 
-### The Fantasy Selfie 
+### The Fantasy Selfie
 
 *The user portrays their self in a fantastical manner through means of photo manipulation, props, or composition.*
 
