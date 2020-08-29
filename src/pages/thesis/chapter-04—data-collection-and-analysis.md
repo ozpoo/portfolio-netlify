@@ -16,7 +16,7 @@ Figure 7. Graph showing Instagram user growth (Statista 2015)
 
 In order to observe the users of Instagram in new ways, I needed to access the data in a much more malleable manner. There are limited means to browse and collect the posts of Instagram. However, it is possible, and it is public. To assist in gathering data I built a custom system including automated sever scripts to gather and transfer data from Instagram to a personal database. Transferring this data to my own location allowed me to easily organize and explore what was happening.
 
-![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_032_image_0001.jpg "Figure 8. Screen shot of code for the selfie data models")
+![Figure 8. Screen shot of code for the selfie data models](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_032_image_0001.jpg "Figure 8. Screen shot of code for the selfie data models")
 
 Figure 8. Screen shot of code for the selfie data models 
 
