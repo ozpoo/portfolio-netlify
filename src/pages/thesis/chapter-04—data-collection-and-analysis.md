@@ -32,4 +32,53 @@ Figure 10. Screenshot of Django data admin interface
 
 ![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_034_image_0002.jpg)
 
-Figure 11. Screenshot of data viewing interface
+Figure 11. Screenshot of data viewing interface 
+
+### Data Gathered
+
+Unique Selfies: 225,117 \
+Unique Users: 164,888 \
+Unique Tags: 289,079 \
+Unique Locations: 21,616 \
+Unique Filters: 44
+
+Table 1. Numbers of data gathered 
+
+## 4.2. Findings 
+
+A desired sample size is 385 participants, this achieves a 90% confidence level with a standard deviation of +/- 5% the desired sample size is 385 participants (Smith 2013). I was able to collect a sample of 225,117 unique selfies, a significantly larger sample of data than the calculated sample necessary for the desired confidence. By taking inspiration from the Network Effect, similar to their data sampling I pulled the first viable 10,000 selfies gathered. 
+
+These findings are based on an observational study of Online Social Networking, what people are posting, and why they are posting it. This could be applied to any Online Social Network across the history of Online Social Networking. However, as discussed above, I decided to focus on Instagram and posts hashtagged with the term selfie (#selfie). 
+
+Unlike the words of Thomas Jefferson, all selfies are not created equal. Social media has become an outlet for relentless self-promotion. Whether this self-promotion be business or personally related, with it comes a battery of unrelated posts lacking any personal content other than the propaganda of commercial ideals.
+
+The hashtag was created in 2007 to assist active Online Social Network users organize and browse through posted media (Doctor 2013). Now, it can be–*and is*–conveniently used to help organize and forward online promotional campaigns. Through the data collected in this study, I observed that the hashtag of selfie (#selfie) is victim to this organized promotion. 
+
+This study is focused on self-perception and not commercial propaganda or gain. For this reason I curated the set of selfies to fit within the focus of self-perception. To aid in curation I collected a blacklist of hashtags. This blacklist consists of tags often used to promote things like business advertisements, advertisements to sell followers, advertisements to sell likes, or advertisements to promote blogs–*often on the topic of fashion or fitness*. The most commonly exhibited hashtag culprits are as follows:
+
+*followme, like4like, instagood, follow, me, follow4follow, picoftheday, photooftheday, likeforlike, tagsforlikes, instalike, instadaily, f4f, l4l, like, bestoftheday, like*
+
+## 4.3. Selfie Categories 
+
+After curating and observing the set of selfies, connections became apparent. Sets of similar compositions, poses, and ideas were being communicated. These groupings–*categories*–in terms of types of photographs were repeatedly being captured and tagged as a selfie (#selfie). The users of Instagram–*those who create posts with the hash tag selfie (#selfie)*–have developed a visual language. A visual language, universally used, that aids in developing a deeper sense of self by engaging with Online Social Networks. These findings are directly related to research question one: “*In what ways are people engaging with Online Social Networks to develop a deeper sense of self?*” 
+
+By defining these categories–*or perhaps rules*–of selfie communication, a base of organization will be created. It will provide an organizational structure aiding in further exploration of this visual language. In this we may find a better understanding of Online Social Networks and their role in extension of self. Below are the categories I observed as online self-defining activity displayed through selfies.
+
+*The Activity Selfie*\
+*The Affection Selfie*\
+*The Association Selfie*\
+*The Body Selfie*\
+*The Emotion Selfie*\
+*The Face Selfie*\
+*The Fantasy Selfie*\
+*The Mirror Selfie 
+The Group Selfie*\
+*The Object Selfie*
+
+### The Activity Selfie
+
+*The user portrays himself performing an activity.*
+
+![]()
+
+Figure 13. A series of affection selfies gathered publicly from Instagram
