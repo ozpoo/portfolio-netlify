@@ -8,7 +8,7 @@ featuredimage: /img/data.jpg
 
 Through previous experimentation with the Application Programming Interfaces of Facebook, Twitter, and Instagram I was able to become more familiar with their capabilities and limitations. Facebook is relatively locked down in terms of data access–*especially publicly accessible information*–and filtering through their query results can be cumbersome, Twitter focuses on a range of media which is traditionally just text, and Instagram focuses on photographs–*the medium of a selfie*–and is one of the largest and most thriving social networks of this time. The figure below shows the history of monthly active Instagram users. It illustrates a steady and growing increase of users over the past 3 years. Based on this information–*and already having part the script developed*–I made the decision to move forward gathering posts with the hashtag of selfie (#selfie) from Instagram.
 
-`youtube:https://www.youtube.com/embed/IRipnVvnaIg`
+`youtube:https://www.youtube.com/embed/3aeYK-lOsMI`
 
 ![Figure 7. Graph showing Instagram user growth (Statista 2015)](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_031_image_0001.jpg "Figure 7. Graph showing Instagram user growth (Statista 2015)")
 
@@ -16,7 +16,7 @@ Figure 7. Graph showing Instagram user growth (Statista 2015)
 
 In order to observe the users of Instagram in new ways, I needed to access the data in a much more malleable manner. There are limited means to browse and collect the posts of Instagram. However, it is possible, and it is public. To assist in gathering data I built a custom system including automated sever scripts to gather and transfer data from Instagram to a personal database. Transferring this data to my own location allowed me to easily organize and explore what was happening.
 
-![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_032_image_0001.jpg)
+![Figure 8. Screen shot of code for the selfie data models](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_032_image_0001.jpg)
 
 Figure 8. Screen shot of code for the selfie data models 
 
