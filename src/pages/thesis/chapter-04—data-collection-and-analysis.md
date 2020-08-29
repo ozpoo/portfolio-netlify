@@ -77,8 +77,50 @@ The Group Selfie*\
 
 ### The Activity Selfie
 
-*The user portrays himself performing an activity.*
+*The user portrays themself performing an activity.*
 
-![]()
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_038_image_0001.jpg)
 
 Figure 13. A series of affection selfies gathered publicly from Instagram
+
+A must do for the hopeless romantic, users who are proud of their significant other will most definitely have one of these in their feed. The ability to show yourself connected with another displays a sense of passion, companionship, and a proud distinction of having someone else in your life. Not to mention your ability to show affection publicly.
+
+### The Association Selfie
+
+*The user portrays themself associated with another person, object, or idea by placing it in frame with them.*
+
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_039_image_0001.jpg)
+
+Figure 14. A series of association selfies gathered publicly from Instagram
+
+A deep connection of object, place, or ideals can be seen in the association selfie. By making sure something like an artifact, well known landscape, or meaningful phrase is in the frame with you, people can gain a deeper sense of what you are about. The association selfie is for those who think their worth is about more than just their physical being.
+
+### The Body Selfie
+
+*The user portrays a part of their body absent of their face.*
+
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_040_image_0001.jpg)
+
+Figure 15. A series of body selfies gathered publicly from Instagram
+
+Sometimes it’s about the whole package, or at least a majority of the package. Do you have a favorite body part? Are you proud of much more than just your smile? The body selfie is a perfect way to show off your summer body or build tension of the unknown leaving people wondering and wanting more.
+
+### The Emotion Selfie
+
+*The user portrays an emotion through means of facial expression, hand gesture, or body positioning.*
+
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_042_image_0001.jpg)
+
+Figure 16. A series of emotion selfies gathered publicly from Instagram 
+
+Humans are capable of understanding a rainbow of emotion and expression. Some of us are more apt to wanting to share those than others. For the intimate and open user the emotion selfie is a great way to reach out and let people know your current status. Whether the bottom is rough and rocky or the sun is shining high you can let the network know your current needs through our universal understanding of emotion.
+
+### The Face Selfie
+
+*The user portrays themself in a traditional–face on–self portrait taken by their self.* 
+
+![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_043_image_0001.jpg)
+
+Figure 17. A series of face selfies gathered publicly from Instagram 
+
+This is the literal definition of selfie. The user, by capturing a portrait of just their face, lets people see who they are. Often paired with a smile or a model like facial pose the face selfie is the most self-driven selfie. Barren of anything but the model himself, its mission is most often just to let the world see them, motivated by self-love.
