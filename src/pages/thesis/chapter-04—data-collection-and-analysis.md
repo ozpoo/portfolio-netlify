@@ -85,7 +85,7 @@ A deep connection of object, place, or ideals can be seen in the association sel
 
 *The user portrays a part of their body absent of their face.*
 
-![Figure 15. A series of body selfies gathered publicly from Instagram](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_040_image_0001.jpg "Figure 15. A series of body selfies gathered publicly from Instagram")
+![Figure 15. A series of body selfies gathered publicly from Instagram](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_041_image_0001.jpg "Figure 15. A series of body selfies gathered publicly from Instagram")
 
 Sometimes it’s about the whole package, or at least a majority of the package. Do you have a favorite body part? Are you proud of much more than just your smile? The body selfie is a perfect way to show off your summer body or build tension of the unknown leaving people wondering and wanting more.
 
