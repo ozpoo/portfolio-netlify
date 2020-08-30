@@ -3,8 +3,6 @@ templateKey: thesis-post
 title: Chapter 05.2 — Creative Responses
 date: 2020-08-30T02:30:58.105Z
 ---
-
-
 ![Figure 45. Wireless RF transmitters and receivers used in cube](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_071_image_0001.jpg "Figure 45. Wireless RF transmitters and receivers used in cube")
 
 I have found the incorporation of lights really brings things to life. With light, you can replicate so much of the human spectrum. Light can show mood, urgency, it can be warm, cold, it can be inviting, or it can startle. In order to make my Interactive Selfie Cube come alive lights would be a necessity. They would allow the ability to incorporate personality, feedback, and emotion. In order to do this I needed to figure out a functional, effective solution to applying lights inside of the cube.
@@ -81,3 +79,31 @@ The first letter of each word creates a tone. This tone is carried out until the
 The cube and interface consist of six modes during the interaction. There is an initial sleep mode. When the cube is first turned on or when no one has interacted with it for a while it will default to sleep mode, a less exploratory more serene state. The lights in the cube are pure white and lightly pulse as if it is breathing. The interface displays selfies very small in a large three-dimensional grid slowly floating around space as if you are in a galaxy of twinkling selfies. 
 
 The five other alternate modes are activated depending on what side the cube is oriented on consisting of flat, top, bottom, left, or right. Each mode has a specific color that the cube and the visuals animate to, in unison, each time the mode is changed. Each mode change has its own variation of how large the selfies are, how spaced out the selfies are, and how much effects on the generated sound is applied. Following this are a series of final photographs taken of the cube in its different stats as well as screen shots of the interface in its different states.
+
+![Figure 64. The interface in its sleep mode ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_087_image_0001.jpg "Figure 64. The interface in its sleep mode ")
+
+![Figure 65. The interface in an alternate mode 1](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_088_image_0001.jpg "Figure 65. The interface in an alternate mode 1")
+
+![Figure 67. The interface in an alternate mode 3](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_088_image_0002.jpg "Figure 67. The interface in an alternate mode 3")
+
+![Figure 68. The interface in an alternate mode 4 ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_089_image_0001.jpg "Figure 68. The interface in an alternate mode 4 ")
+
+![Figure 69. The interface in an alternate mode 5](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_089_image_0002.jpg "Figure 69. The interface in an alternate mode 5")
+
+![Figure 70. Final cube sitting on proximity sensing base](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_090_image_0001.jpg "Figure 70. Final cube sitting on proximity sensing base")
+
+![Figure 71. Detail of final cube sitting on proximity sensing base 1 ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_090_image_0002.jpg "Figure 71. Detail of final cube sitting on proximity sensing base 1 ")
+
+![Figure 72. Detail of final cube sitting on proximity sensing base 2](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_091_image_0001.jpg "Figure 72. Detail of final cube sitting on proximity sensing base 2")
+
+![Figure 73. Detail of final cube sitting on proximity sensing base 3](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_091_image_0002.jpg "Figure 73. Detail of final cube sitting on proximity sensing base 3")
+
+![Figure 74. Detail of final cube sitting on proximity sensing base 4](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_092_image_0001.jpg "Figure 74. Detail of final cube sitting on proximity sensing base 4")
+
+![Figure 75. Detail of final cube sitting on proximity sensing base 5](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_092_image_0002.jpg "Figure 75. Detail of final cube sitting on proximity sensing base 5")
+
+![Figure 76. Detail of final cube sitting on proximity sensing base 6](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_093_image_0001.jpg "Figure 76. Detail of final cube sitting on proximity sensing base 6")
+
+![Figure 80. Cube with lights in mode 2](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_095_image_0001.jpg "Figure 80. Cube with lights in mode 2")
+
+![Figure 81. Cube with lights in mode 3](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_095_image_0002.jpg "Figure 81. Cube with lights in mode 3")
