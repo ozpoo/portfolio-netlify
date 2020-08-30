@@ -26,3 +26,7 @@ date: 2020-08-30T02:41:21.172Z
 ![Figure 75. Detail of final cube sitting on proximity sensing base 5](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_092_image_0002.jpg "Figure 75. Detail of final cube sitting on proximity sensing base 5")
 
 ![Figure 76. Detail of final cube sitting on proximity sensing base 6](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_093_image_0001.jpg "Figure 76. Detail of final cube sitting on proximity sensing base 6")
+
+![Figure 80. Cube with lights in mode 2](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_095_image_0001.jpg "Figure 80. Cube with lights in mode 2")
+
+![Figure 81. Cube with lights in mode 3](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_095_image_0002.jpg "Figure 81. Cube with lights in mode 3")
