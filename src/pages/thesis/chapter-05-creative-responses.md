@@ -147,3 +147,29 @@ The materials used needed to accomplish a few goals. I wanted the controller to 
 Acrylic came to be a necessity in terms of material. In order to make this cube come to life I wanted to incorporate lights from the inside. To accomplish this, I needed a material that would be strong, yet malleable, and allow diffused light through. While acrylic straight off the shelf did not provide the proper visual appeal, with studies, I found adding a slight frost with sandpaper created a great look a light diffusion. 
 
 During the material studies I also began formal studies to figure out a structurally stable joint in order to piece the cube together. I did not want to glue the plastic together because I wanted the design to be modular, adaptable, and easy to debug. With this, I found a simple puzzle style notch system helped keep the panels precisely in place without sliding and with the right pattern tension. It also, under tension, would force the material into a perfectly fitted cube.
+
+![Figure 35. Material treatment and form studies ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_065_image_0001.jpg "Figure 35. Material treatment and form studies ")
+
+![Figure 36. Inner frame study](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_065_image_0002.jpg "Figure 36. Inner frame study")
+
+The electronics within the cube consist of a few major boards and chips. The main brain is an Arduino UNO. This controls the sensors, data transmission, and light patters. An accelerometer captures the cubes orientation on the x, y, and z access. These numbers are how all interactivity is interpreted in the cube and in the visualization. The numbers are transmitted, in real time, from the cube to another Arduino UNO. The receiver is then connected to a computer to share and control visualization.
+
+![Figure 37. Forming a central platform for inner cube electronics](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_066_image_0001.jpg "Figure 37. Forming a central platform for inner cube electronics")
+
+In order to create a seamless illusion of integration between object and media I needed to incorporate integrated wireless electronics. Namely, these are sensors that can receive and transmit data from the cube to another computer. For this to work the cube needed its own power source. 
+
+![Figure 38. Set of materials ordered before beginning development ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_067_image_0001.jpg "Figure 38. Set of materials ordered before beginning development ")
+
+![Figure 39. First functioning solar arduino project ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_067_image_0002.jpg "Figure 39. First functioning solar arduino project ")
+
+I took this opportunity to explore renewable energy. By means of lithium ion batteries and solar cells I was able to create a charging system that uses the suns light. Future goals in my work incorporate creating self-sustainable electronics and this fit well within that research, as it is also important for us to think about sustainability in all design.
+
+![Figure 40. Solar charger detail shot](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_068_image_0001.jpg "Figure 40. Solar charger detail shot")
+
+Attention to detail is key when creating function and beautiful solutions. Now I knew I needed a power source to be mounted inside the cube. Meaning, there would need to be something to charge this power source. It would be very inconvenient and messy to have to pull off a panel each time I needed to charge the unit, so I searched for a more integrated solution. I was able to make use of a microphone XLR plug. They consist of four wires, in this case I only needed two, and provide for a pleasing and finished look.
+
+![Figure 41. Detail of charging port](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_069_image_0001.jpg "Figure 41. Detail of charging port")
+
+![Figure 42. Detail of charging port with cable ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_069_image_0002.jpg "Figure 42. Detail of charging port with cable ")
+
+![Figure 43. Connecting and testing external power charging port ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_070_image_0001.jpg "Figure 43. Connecting and testing external power charging port ")
