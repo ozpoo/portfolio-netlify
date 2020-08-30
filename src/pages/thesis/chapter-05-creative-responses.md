@@ -173,3 +173,45 @@ Attention to detail is key when creating function and beautiful solutions. Now I
 ![Figure 42. Detail of charging port with cable ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_069_image_0002.jpg "Figure 42. Detail of charging port with cable ")
 
 ![Figure 43. Connecting and testing external power charging port ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_070_image_0001.jpg "Figure 43. Connecting and testing external power charging port ")
+
+![Figure 44. Finished cube connected and charging with solar panel ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_070_image_0002.jpg "Figure 44. Finished cube connected and charging with solar panel ")
+
+I set out for this to be a wireless project. The ability to be mobile–*free of wires*–with an object gives a completely different experience than one that is attached. It is much closer to the physical world to be able to walk around with something while it still gives feedback to a system. For this reason I needed to find the proper technology for wireless data transfer. After some research I found a cost effective set of RF transmitter and receiver pairs. I ordered five of them, which was a good thing. They were cheap the circuitry seemed to be flawed in some of them. After soldering on external antennas and using the cubes frame as a transmitter I was able to create a more than sufficient data transfer.
+
+![Figure 45. Wireless RF transmitters and receivers used in cube](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_071_image_0001.jpg "Figure 45. Wireless RF transmitters and receivers used in cube")
+
+I have found the incorporation of lights really brings things to life. With light, you can replicate so much of the human spectrum. Light can show mood, urgency, it can be warm, cold, it can be inviting, or it can startle. In order to make my Interactive Selfie Cube come alive lights would be a necessity. They would allow the ability to incorporate personality, feedback, and emotion. In order to do this I needed to figure out a functional, effective solution to applying lights inside of the cube.
+
+![Figure 46. LED lights connected and being tested with battery power and wireless data transfer](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_072_image_0001.jpg "Figure 46. LED lights connected and being tested with battery power and wireless data transfer")
+
+I found a great strip of super bright programmable RGB LEDs in a strip meaning, I program any of the lights, at any given time, whether to be on or off and what color I want it to be allowing me to add pulsing tweens, patterns, and a variety of color to the cube interactions. This is all great; accept a linear strip would not work well it terms of mounting them inside my cube.
+
+![Figure 47. Deconstruction of LED strip in order to solder custom string for cage ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_073_image_0001.jpg "Figure 47. Deconstruction of LED strip in order to solder custom string for cage ")
+
+![Figure 48. Detail of soldered connections for custom LED strand ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_073_image_0002.jpg "Figure 48. Detail of soldered connections for custom LED strand ")
+
+Too create an otherwise seamless incorporation of the LEDs into the cube I made use of the ability to cut them apart and solder them together in any order and with any length I would need. This was great, however, I included 24 lights. Each light required 6 soldered connections tightly packed together. This called for a grand total of 144 tedious solders just to incorporate the lights.
+
+![Figure 49. Experimenting with installed LED string and interactions ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_074_image_0001.jpg "Figure 49. Experimenting with installed LED string and interactions ")
+
+After the brains and lights were installed it was time to start testing and adapting the gesture sensitive functionalities paired with light change. As I said there is an accelerometer that can gauge x, y, and z acceleration and also the ability to sense 6 orientations. Meaning, as you flip the cube from side to side it knows what side it has landed on.
+
+![Figure 50. Setting up LCD display for wireless data capture and debugging ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_075_image_0001.jpg "Figure 50. Setting up LCD display for wireless data capture and debugging ")
+
+![Figure 51. Consolidating and cleaning up breadboard layout ](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_075_image_0002.jpg "Figure 51. Consolidating and cleaning up breadboard layout ")
+
+![Figure 52. Testing accelerometer and wireless data transfer](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_076_image_0001.jpg "Figure 52. Testing accelerometer and wireless data transfer")
+
+After much testing of the data transfer through an RF wireless connection while running light functions I began to run into limitations of the Arduino processor and my power source. In order to capture real time acceleration data on the x, y, and z access I needed to be sending the output to the computer as much as possible. While doing this and running the light animation the Arduino would begin to be overloaded with processing and noticeable hesitation was seen. In order to adjust for this limitation I decided to only listen for orientation changes. Meaning, I could transmit much less frequently freeing up more processing power for the lights. 
+
+The other limitation I ran into was the amount of power the LEDs required and a non-consistent voltage pattern interference provided from the battery. If I ran all LEDs at full power the lights would not display their true color. For instance, bright white became very warm. To adjust for this I run all LEDs at most 50% of optimal brightness to save on energy. This provided to be plenty bright enough in a dim lit room. The inconsistent voltage pattern interference caused a flickering of the lights. To adjust for this I decided to add a jitter of life to the lights. Each light was given a certain threshold of brightness. Every pass of the program the lights are assigned to increase or decrease their brightness by a randomly generated number within the threshold. This causes the illusion that every light is getting slightly larger or smaller as if the cube is jittering with life.
+
+![Figure 53. Adding foam to help deaden sound and soften touch](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_077_image_0001.jpg "Figure 53. Adding foam to help deaden sound and soften touch")
+
+ After being able to play with the cube for a while during testing I needed to start refining the experience. The acrylic, at larger size, was a little more malleable and didn’t feel as soft and the cavity of the cube had a plastic sounding echo. I needed to deaden the echo and make the cube feel more solid. To accomplish this I added a foam buffer between the plates and the cage.
+
+![Figure 54. Detail shot of inner electronics](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_078_image_0001.jpg "Figure 54. Detail shot of inner electronics")
+
+The final details were cleaning up the circuitry and figuring out a way to power the cube on and off. There are a wide variety of power switches. Toggle switches, switches with lights, button switches, large switches, small switches, but I needed my switch to make sense. While opening an apartment garage I saw a keyhole and remembered that there are key driven electric power switches. I instantly ran home, researched, and found a distributor that supplied them. 
+
+I enjoyed the idea of a key power switch because it touches on some of the questions I was attempting to illicit during this interaction. The social ideas behind keys are ideas of importance, or possibly hiding, storing, or keeping something safe. Should you interact with this cube? What will happen when you turn the key? Turning a key is also a much more interactive approach at a switch as well as it forces hand eye coordination and takes a little bit longer than just pushing a button.
