@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-intro_text: Hey there<span class="text-muted"> &mdash; i'm  an</span> award
+intro_text: Hey there!<span class="text-muted"> &mdash; I'm  an</span> award
   winning design-gineer <span class="text-muted">working at the intersection
   of</span> graphic design<span class="text-muted">,</span> human centered
   design (UX)<span class="text-muted">,</span> web design (UI)<span
