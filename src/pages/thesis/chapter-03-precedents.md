@@ -19,9 +19,7 @@ Type-Hover-Swipe*\
 
 ## 3.1. The Chainsmokers: #Selfie
 
-![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_025_image_0001.jpg)
-
-Figure 1. Screenshot of #selfie music video (Chainsmokers 2015) 
+![Figure 1. Screenshot of #selfie music video (Chainsmokers 2015)](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_025_image_0001.jpg "Figure 1. Screenshot of #selfie music video (Chainsmokers 2015)")
 
 “*\#Selfie*” is a socially oriented song focused on selfies created by musical group The Chainsmokers. Paired with a music video, the song is based on the conversation of two narcissistic girls at a nightclub heard discussing their night. Located in the bathroom the girls can help but take selfies in front of the mirror. The music video features selfies taken by popular celebrities such as Steve Aoki, Snoop Dogg, and David Hasselhoff, and also includes selfies submitted by fans. 
 
@@ -29,9 +27,7 @@ The creation of the “#*Selfie*” song and video show the integration and acce
 
 ## 3.2. Selfiecity
 
-![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_026_image_0001.jpg)
-
-Figure 2. Screenshot of Selfiecity interface (DigitalThoughtFacility 2014) 
+![Figure 2. Screenshot of Selfiecity interface (DigitalThoughtFacility 2014)](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_026_image_0001.jpg "Figure 2. Screenshot of Selfiecity interface (DigitalThoughtFacility 2014)")
 
 Selfiecity is a website dedicated to representing selfie data. The data is a collection of selfies posted from five cities around the world. Information about demographics, poses, expressions, and visualizations of the data are presented to reveal patterns found in the collection. 
 
@@ -39,9 +35,7 @@ By representing data in a variety of easily digestible graphics we can start to 
 
 ## 3.3. Kim Kardashian: Selfish
 
-![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_027_image_0001.jpg)
-
-Figure 3. Screenshot of a selfie featured in book (Kardashian West 2015) 
+![Figure 3. Screenshot of a selfie featured in book (Kardashian West 2015)](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_027_image_0001.jpg "Figure 3. Screenshot of a selfie featured in book (Kardashian West 2015)")
 
 “*Selfish*” is a book of selfies by pop culture icon Kim Kardashian. It illustrates her life with a collection, curated by Kim, of selfies she has posted online. 
 
@@ -49,9 +43,7 @@ This is a testament to how integrated, acceptable, or even “*normal*” it has
 
 ## 3.4. Alpha Sphere
 
-![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_028_image_0001.jpg)
-
-Figure 4. Screenshot of Alpha Sphere performance video (Hou 2003) 
+![Figure 4. Screenshot of Alpha Sphere performance video (Hou 2003)](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_028_image_0001.jpg "Figure 4. Screenshot of Alpha Sphere performance video (Hou 2003)")
 
 The Alpha Sphere is an alternative form of musical controller. It is built for composition, production, performance, and learning. A series of pressure sensitive pads placed in a spherical form allows for an intuitive, unique, and interesting musical experience. Each pad can be programmed to trigger and array of different sounds, loops, or effects making it extremely versatile. 
 
@@ -59,9 +51,7 @@ A captivating use of haptic sensors and light driven feedback makes this piece w
 
 ## 3.5. Type-Hover-Swipe
 
-![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_029_image_0001.jpg)
-
-Figure 5. Screenshot of type hover swipe in action (Taylor et. al 2014) 
+![Figure 5. Screenshot of type hover swipe in action (Taylor et. al 2014)](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_029_image_0001.jpg "Figure 5. Screenshot of type hover swipe in action (Taylor et. al 2014)")
 
 Type-Hover-Swipe is a clever augmented keyboard. Making use of sensor technologies at can capture expressive motion gestures that can be used to control a device. Low-resolution infrared proximity sensors make the data capture simple. However, a large database of pre-mapped gestures allows for quick reverse lookup making its abilities quite robust. 
 
@@ -69,9 +59,7 @@ Using intuitive gestural motion to control devices seems, to me, a very natural 
 
 ## 3.6. Network Effect
 
-![](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_030_image_0001.jpg)
-
-Figure 6. Screenshot of Network Effect interface (Harris 2015) 
+![Figure 6. Screenshot of Network Effect interface (Harris 2015)](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_030_image_0001.jpg "Figure 6. Screenshot of Network Effect interface (Harris 2015)")
 
 Network Effect is an interactive representation of data found across the Internet. Meant as a project to create a statement and pose question, this interactive landscape encapsulates you with media from all over the web offering questions of the nature of the media we post online, questions of the effects this media has on our behaviors online, and even questions of the way we see ourselves. 
 
