@@ -107,3 +107,43 @@ In the program's default state the screen displays the back of a human's head as
 There are not many options–*variations*–in the ways we can view our Online Social Networks. These networks capture loads of data about our usage; yet, they don’t allow us to better understand our habits and patterns of usage. People often complain and are effected by how certain types of posts come up in their feed and they find it annoying, things that are negative or maybe even an advertisement. An Online Social Network functions much differently than a social network–*something that has been around since humans lived together*. Why is this? Should this be the case? Glitch is focused strongly on achieving alternative perspective through viewing and interacting with the media in Online Social Networks. 
 
 Glitch explores ways to allow the user alternative modes of viewing their posts and includes a variety of non-traditional Online Social Networking tools. It offers the ability to view visual graphics of usage. When, where, and what are you posting? See patterns of your posts in terms of when you are posting the most, or least, most positive, or most negative. Remember that “friend” you never talk to but still shows up on your feed? That’s not how things work in the physical world. Your social network, and how often you interact with people, is dictated by your interactions. On Glitch, as you cease to interact with individuals they will fade back in importance being set to an inactive friends list. Also, to feel less controlled by notifications activate a proximity interaction sensor. If you are too close to your friend communication will be turned off on Glitch allowing–*or even forcing*–you to interact face to face.
+
+## 5.4. Interactive Selfie Cube
+
+![Figure 31. Interactive Selfie Cube sitting on its proximity-sensing base](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_060_image_0001.jpg "Figure 31. Interactive Selfie Cube sitting on its proximity-sensing base")
+
+My final creative response is a reflection of all the ideas and explorations discussed before in this paper. The purpose of this response was to create a new experience, an alternative way to view and interact with the selfies we are posting. Through this alternative mode of viewing and interacting, I hope to engage users in a way that leads them to a new perspective. A perspective offering heightened ability to understand, question, and reflect on the media that is being posted. A perspective that wasn’t apparent before. Ultimately, this response is to help develop a greater sense of awareness. Helping us become more aware that our online self is synonymous to our physical self–extension of self–and with that comes consequences. Consequences that may have dire effects on our psychological and physical well-being. Consequences that, by our choice, can be avoided by the way we interact online.
+
+### Guiding question two 
+
+*Do alternative methods of viewing media posted to Online Social networks offer a different perspective of their message?* 
+
+The Interactive Selfie Cube controls an interface. That interface is populated with the selfie data I collected and observed as was discussed earlier. By taking influence from previous creative responses, this interface offers an alternative method of viewing selfies. The ways they are presented is drastically different than a standard mode of viewing on social networks such as Instagram or Facebook allowing anyone who engages to be part of the experience and gain new perspective. 
+
+### Guiding question three 
+
+*Do alternative methods of interacting with media posted to Online Social networks offer a different perspective of their message?* 
+
+The Interactive Selfie Cube offers a non-traditional multisensory approach at interfacing with digital media. The alternative mode of interaction is drastically different then the standard modes adopted by popular viewing devices such as a laptop or a mobile touch screen device. This allows anyone who engages with the cube to interact in novel ways and gain new perspective. 
+
+### The Design 
+
+The Interactive Selfie Cube is designed to be a forcibly noticeable interactive experience, a multisensory invasion of what people are defining as self. By designing an interactive device that engages auditory, haptic, kinesthetic, and visual feedback we can create more memorable and understandable experiences (Shams, Ladan, and Seitz 2008). 
+
+I do not know how or what people will perceive through their interactions. Nor do  I know what questions they will pose to themselves. There are, however, some questions I aim to illicit within the experience while also making the engaged more aware of their interactions with devices and that devices are aware of them: 
+
+*Should I continue to interact with this media? Am I comfortable with how I am viewing this media? Am I comfortable with how the media is portrayed? Do I portray myself that way? Do people perceive me the way I perceive this media?* 
+
+![Figure 32. First physical cube mockups that were created upon conception](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_062_image_0001.jpg "Figure 32. First physical cube mockups that were created upon conception")
+
+The controller is in the form of a cube. I chose this form for a few reasons. In an earlier response called Selfieverse I projected the form of a square, which is the traditional selfie format, into three dimensions, which creates a cube. The are many forms a controller could have, but I wanted one that was pure to geometry, simple to create, simple to understand, and easy to hold. Through studies of size I found the ridges of a cube prove easy to grasp. Also, as a fairly intuitive object to hold, pickup, rotate in your grasp to observe, and set down, it seemed like a great fit for the project.
+
+![Figure 33. A series of size and material studies](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_063_image_0001.jpg "Figure 33. A series of size and material studies")
+
+The materials used needed to accomplish a few goals. I wanted the controller to represent the integration of technology and nature and be a statement of the human ability to create. Through this, I hope to provide an instant reminder to the engaged of the different worlds we live in, including the differences, and similarities, of technology and nature. The cube is made of raw industrial materials. Hanger tape for plumbing, nuts and bolts, and laser cut white acrylic. These raw industrial materials not only allow for cheap exploration during development but also provide much function to the form. Hardware can be structural, functional, and aesthetic and I used this to my advantage.
+
+![Figure 34. Detail shot of materials used in construction](/img/i-can-so-i-will-now-we-must_-a-creative-response-to-selfie-cultu_page_064_image_0001.jpg "Figure 34. Detail shot of materials used in construction")
+
+Acrylic came to be a necessity in terms of material. In order to make this cube come to life I wanted to incorporate lights from the inside. To accomplish this, I needed a material that would be strong, yet malleable, and allow diffused light through. While acrylic straight off the shelf did not provide the proper visual appeal, with studies, I found adding a slight frost with sandpaper created a great look a light diffusion. 
+
+During the material studies I also began formal studies to figure out a structurally stable joint in order to piece the cube together. I did not want to glue the plastic together because I wanted the design to be modular, adaptable, and easy to debug. With this, I found a simple puzzle style notch system helped keep the panels precisely in place without sliding and with the right pattern tension. It also, under tension, would force the material into a perfectly fitted cube.
