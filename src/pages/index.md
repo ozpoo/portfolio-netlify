@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-intro_text: Hey there!<span class="text-muted"> &mdash; I'm  an</span> award
-  winning design-gineer <span class="text-muted">working at the intersection
-  of</span> graphic design<span class="text-muted">,</span> human centered
-  design (UX)<span class="text-muted">,</span> web design (UI)<span
+intro_text: Hey<span class="text-muted"> &mdash; I'm  an</span> award winning
+  design-gineer <span class="text-muted">working at the intersection of</span>
+  graphic design<span class="text-muted">,</span> human centered design
+  (UX)<span class="text-muted">,</span> web design (UI)<span
   class="text-muted">, and</span> software engineering<span
   class="text-muted">.</span>
 sections:
