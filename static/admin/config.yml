@@ -94,7 +94,8 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Intro Text, name: intro_text, widget: text}
+          - {label: Intro Text, name: intro_text, widget: text, separator: "\n\n<!--s-->\n\n"}
+          - {label: Slides, name: slides, widget: slides}
           - {label: Sections, name: sections, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}, {label: List, name: list, widget: list, fields: [{label: Title, name: title, widget: string},{label: Description, name: description, widget: text}]}]}
       - file: "src/pages/about/index.md"
         label: "About"

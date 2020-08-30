@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 
@@ -11,49 +11,56 @@ import Content, { HTMLContent } from '../components/Content'
 
 import { Container, Row, Col } from 'react-bootstrap'
 
-export const ThesisPostTemplate = ({
-  content,
-  contentComponent,
-  description,
-  tags,
-  title,
-  helmet,
-}) => {
-  const PostContent = contentComponent || Content
+export const ThesisPostTemplate = class ThesisPostTemplate extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
 
-  return (
-    <Container className='py-4 px-xs-4 px-sm-5'>
-      {helmet || ''}
+  componentDidMount() {
+    console.log(this.find_images())
+  }
 
-      <AnimateIn className='mb-5'>
-        <h1>{title}</h1>
-      </AnimateIn>
+  find_images = () => Array.from(document.getElementsByTagName('img')).map(img => img.src)
 
-      <Row>
-        <Col xs={8}>
-          <AnimateIn className='mb-5'>
-            <PostContent content={content} />
-          </AnimateIn>
-        </Col>
-        <Col xs={4}>
-          <AnimateIn className='mb-5'>
-            {tags && tags.length ? (
-              <section>
-                <h4>Tags</h4>
-                <ul>
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            ) : null}
-          </AnimateIn>
-        </Col>
-      </Row>
-    </Container>
-  )
+  render() {
+    const { content, contentComponent, description, tags, title, helmet } = this.props
+    const PostContent = contentComponent || Content
+
+    return (
+      <Container className='py-4 px-xs-4 px-sm-5'>
+        {helmet || ''}
+
+        <AnimateIn className='mb-5'>
+          <h1>{title}</h1>
+        </AnimateIn>
+
+        <Row>
+          <Col xs={8}>
+            <AnimateIn className='mb-5'>
+              <PostContent content={content} />
+            </AnimateIn>
+          </Col>
+          <Col xs={4}>
+            <AnimateIn className='mb-5'>
+              {tags && tags.length ? (
+                <section>
+                  <h4>Tags</h4>
+                  <ul>
+                    {tags.map((tag) => (
+                      <li key={tag + `tag`}>
+                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : null}
+            </AnimateIn>
+          </Col>
+        </Row>
+      </Container>
+    )
+  }
 }
 
 ThesisPostTemplate.propTypes = {

@@ -11,6 +11,9 @@ import StudiesPostPreview from './preview-templates/StudiesPostPreview'
 import NewsPostPreview from './preview-templates/NewsPostPreview'
 import ThesisPostPreview from './preview-templates/ThesisPostPreview'
 
+import { SlidesControl, SlidesPreview } from "./Slides"
+CMS.registerWidget("slides", SlidesControl, SlidesPreview)
+
 CMS.registerEditorComponent({
   id: 'youtube',
   label: 'Youtube',
