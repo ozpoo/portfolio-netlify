@@ -1,7 +1,7 @@
 ---
 templateKey: thesis-post
 title: List of Figures
-date: 2020-09-03T23:09:15.703Z
+date: 2020-09-03T23:16:26.436Z
 ---
 Figure 1. Screenshot of #selfie music video (Chainsmokers 2015)\
 Figure 2. Screenshot of Selfiecity interface (DigitalThoughtFacility 2014)\
