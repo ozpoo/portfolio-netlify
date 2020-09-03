@@ -9,8 +9,6 @@ tags:
   - Exhibition
   - Data Cognition
 ---
-
-
 Meet Avery, the average selfie! This project is an extension of my MFA Thesis work in which I focused on the phenomenon of ubiquitous online social networking, evaluating its uses and potential effects on its users, and presenting findings and creative solutions to allow stakeholders to engage the data in novel ways.
 
 The idea to create Avery (an average selfie) came to me while I was sifting through hundreds of thousands of selfies posted on Instagram. My goal going into this data research was to find patterns, trends, and — in general — be inspired to create new ways to browse and understand the quantum amounts of data being shared online each day. Projects like [Google's "Average" typeface](https://fonts.google.com/specimen/Average#standard-styles) provided inspiration as I wondered what would emerge if someone were able to harvest an acceptable amount of selfies and apply some sort of technology to morph/average all of the samples into a singular likeness.
@@ -23,16 +21,30 @@ In order to make this slightly more scientific and quantifiable I placed a few p
 
 ## Data Set 01
 
+After the first data sample was complete (so exciting) I was ready to run some AI model magic and merge the selfies into one! Below is the first appearance of Avery, the average of all selfie faces on Instagram.
+
 ![Avery from the first data set](/img/average_face_post-01.jpg "Avery from the first data set")
 
 ## Data Set 02
+
+Data sample number two! This second set was quite exciting as you can start to see. Based on the first two average selfies it is beginning to seem that potentially — no matter the time a data sample is collected — given enough selfie samples the average form will be quite similar.
 
 ![Avery from the second data set](/img/average_face_post-02.jpg "Avery from the second data set")
 
 ## Data Set 03
 
+Data sample number three. Here you can see there are definitely variations in the "exactness" in the facial features. But, still quite similar overall. It looks as though there really may be a singular "Avery" who will always peak through as the average of all faces.
+
 ![Avery from the third data set](/img/average_face_post-03.jpg "Avery from the third data set")
 
 ## Data Set 04
 
+The fourth and last data set for this little experiment. Again, some slight variation in form but — to me — it looks like they could all be siblings.
+
 ![Avery from the fourth data set](/img/average_face_post-04.jpg "Avery from the fourth data set")
+
+## Conclusion
+
+I believe this experiment gives further validity to the notion that there are many creative, and unexplored, ways to present the growing flow of data we are generating and collecting online. The suggested implications are that the emergence of new ways to consume data can provide improved clarity and insight to the data we have at hand. More clarity means a chance for increased knowledge, better informed decisions, and elevated inspiration while solving and creating for the problems of the day.
+
+This project shows potential to be expanded in its scope. Potential modes of expansion would be variations like gathering larger data sets to average, isolating demographics, or making creative use of the many other data points accessible on the public Instagram API (or other publicly accessible social network datas).
