@@ -21,7 +21,7 @@ In order to make this slightly more scientific and quantifiable I placed a few p
 
 ## Data Set 01
 
-After the first data sample was complete (so exciting) I was ready to run some AI model magic and merge the selfies into one! Below is the first appearance of Avery, the average of all selfie faces on Instagram.
+After the first data sample was complete (so exciting) I was ready to run some AI model magic and merge the selfies into one! Below is the first appearance of Avery, the average of selfie faces on Instagram.
 
 ![Avery from the first data set](/img/average_face_post-01.jpg "Avery from the first data set")
 
