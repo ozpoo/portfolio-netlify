@@ -9,7 +9,7 @@ tags:
   - Exhibition
   - Data Cognition
 ---
-Meet Avery, the average selfie! The idea to create Avery (an average selfie) came to me while I was sifting through hundreds of thousands of selfies posted on Instagram during my MFA Thesis research. The goal going into this data research was to find patterns, trends, and — in general — be inspired to create new ways to browse and understand the quantum amounts of data being shared online each day.
+Meet Avery, the average selfie! The idea to create Avery (an average selfie) came to me while I was sifting through hundreds of thousands of selfies posted on Instagram during my MFA Thesis research. The goal going into this data research was to find patterns, trends, and — in general — be inspired to create new ways we can understand the quantum amounts of data being shared online each day.
 
 Projects like [Google's "Average" typeface](https://fonts.google.com/specimen/Average#standard-styles) provided inspiration. As I continued observing I began to wonder what would emerge if someone were able to harvest an acceptable amount of selfies and make use of technology to morph/average all of the samples into a singular likeness.
 
