@@ -1,7 +1,7 @@
 ---
 templateKey: thesis-post
 title: References
-date: 2020-08-25T20:48:55.481Z
+date: 2020-09-03T23:14:20.319Z
 featuredimage: ""
 ---
 Blumberg, Antonia. "A Brief History Of The Selfie." The Huffington Post. October 15, 2013. Accessed April 04, 2016. http://www.huffingtonpost.com/2013/10/15/selfie-history-infographic_n_4101645.html. 
