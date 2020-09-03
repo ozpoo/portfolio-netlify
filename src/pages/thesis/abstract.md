@@ -1,7 +1,7 @@
 ---
 templateKey: thesis-post
 title: Abstract
-date: 2020-08-24T05:36:09.903Z
+date: 2020-09-03T23:16:09.360Z
 ---
 Social Media and Online Social Networks have become increasingly integrated into our every day lives. Digital technologies have progressed from an extension of body to an extension of self. With this integration may come unintended consequences that we are often unaware of. Who would have thought that posting an update on Facebook or browsing your Instagram feed might have an effect on your well-being?
 
