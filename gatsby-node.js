@@ -3,12 +3,20 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
+const postTemplates = [
+  'work-post',
+  'thesis-post'
+]
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
         edges {
           node {
             id
@@ -32,6 +40,31 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges
 
     posts.forEach((edge) => {
+      const templateKey = _.get(edge, `node.frontmatter.templateKey`)
+      if(templateKey !== 'work-post' && templateKey !== 'thesis-post') {
+        const id = edge.node.id
+        createPage({
+          path: edge.node.fields.slug,
+          tags: edge.node.frontmatter.tags,
+          component: path.resolve(
+            `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+          ),
+          // additional data can be passed via context
+          context: {
+            id,
+          },
+        })
+      }
+    })
+
+    // work pages:
+    let works = []
+    posts.forEach((edge) => {
+      if(_.get(edge, `node.frontmatter.templateKey`) === 'work-post') {
+        works = works.concat(edge)
+      }
+    })
+    works.forEach((edge, index) => {
       const id = edge.node.id
       createPage({
         path: edge.node.fields.slug,
@@ -39,9 +72,33 @@ exports.createPages = ({ actions, graphql }) => {
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
         ),
-        // additional data can be passed via context
         context: {
           id,
+          next: index === (works.length - 1) ? null : works[index + 1].node,
+          prev: index === 0 ? null : works[index - 1].node,
+        },
+      })
+    })
+
+    // thesis pages:
+    let thesis = []
+    posts.forEach((edge) => {
+      if(_.get(edge, `node.frontmatter.templateKey`) === 'thesis-post') {
+        thesis = thesis.concat(edge)
+      }
+    })
+    thesis.forEach((edge, index) => {
+      const id = edge.node.id
+      createPage({
+        path: edge.node.fields.slug,
+        tags: edge.node.frontmatter.tags,
+        component: path.resolve(
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+        ),
+        context: {
+          id,
+          next: index === (thesis.length - 1) ? null : thesis[index + 1].node,
+          prev: index === 0 ? null : thesis[index - 1].node,
         },
       })
     })

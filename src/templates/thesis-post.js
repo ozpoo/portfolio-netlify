@@ -18,13 +18,18 @@ export const ThesisPostTemplate = class ThesisPostTemplate extends Component {
   }
 
   componentDidMount() {
-    console.log(this.find_images())
+    this.setState({
+      images: this.find_images(),
+      headers: this.find_headers()
+    })
   }
 
   find_images = () => Array.from(document.getElementsByTagName('img')).map(img => img.src)
+  find_headers = () => Array.from(document.querySelectorAll('h1,h2,h3,h4,h5')).map(header => header)
 
   render() {
-    const { content, contentComponent, description, tags, title, helmet } = this.props
+    const { images, headers } = this.state
+    const { content, contentComponent, description, tags, title, helmet, prev, next } = this.props
     const PostContent = contentComponent || Content
 
     return (
@@ -43,6 +48,8 @@ export const ThesisPostTemplate = class ThesisPostTemplate extends Component {
           </Col>
           <Col xs={4}>
             <AnimateIn className='mb-5'>
+              {prev && <Link to={prev.fields.slug}>Previous</Link>}
+              {next && <Link to={next.fields.slug}>Next</Link>}
               {tags && tags.length ? (
                 <section>
                   <h4>Tags</h4>
@@ -72,8 +79,10 @@ ThesisPostTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-const ThesisPost = ({ data }) => {
+const ThesisPost = ({ data, pageContext }) => {
   const { markdownRemark: post } = data
+
+  console.log(pageContext)
 
   return (
     <Layout
@@ -97,12 +106,15 @@ const ThesisPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        prev={pageContext.prev}
+        next={pageContext.next}
       />
     </Layout>
   )
 }
 
 ThesisPost.propTypes = {
+  pageContext: PropTypes.object,
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),

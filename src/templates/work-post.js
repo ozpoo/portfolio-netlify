@@ -5,18 +5,23 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import { kebabCase } from 'lodash'
 
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import Layout from './../components/Layout'
+import AnimateIn from './../components/AnimateIn'
+import Content, { HTMLContent } from './../components/Content'
+import PreviewCompatibleImage from './../components/PreviewCompatibleImage'
 
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 export const WorkPostTemplate = ({
   content,
   contentComponent,
   description,
+  featuredimage,
   tags,
   title,
   helmet,
+  prev,
+  next,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -24,29 +29,47 @@ export const WorkPostTemplate = ({
     <Container className='py-4 px-xs-4 px-sm-5'>
       {helmet || ''}
 
-      <section className='mb-5'>
+      <AnimateIn className='mb-4'>
         <h1>{title}</h1>
-        <p>{description}</p>
-      </section>
+      </AnimateIn>
 
-      <section className='mb-5'>
-        <PostContent content={content} />
-      </section>
-
-      <section className='mb-5'>
-        {tags && tags.length ? (
-          <section>
-            <h4>Tags</h4>
-            <ul>
-              {tags.map((tag) => (
-                <li key={tag + `tag`}>
-                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ) : null}
-      </section>
+      <Row>
+        <Col xs={8}>
+          <AnimateIn className='mb-4'>
+            {featuredimage &&
+              <div className='featured-image-wrapper'>
+                <PreviewCompatibleImage
+                  imageInfo={{
+                    image: featuredimage,
+                    alt: `featured image thumbnail for post ${title}`,
+                  }}
+                />
+              </div>
+            }
+          </AnimateIn>
+          <AnimateIn className='mb-5'>
+            <PostContent content={content} />
+          </AnimateIn>
+        </Col>
+        <Col xs={4}>
+          <AnimateIn className='mb-5'>
+            {prev && <Link to={prev.fields.slug}>Previous</Link>}
+            {next && <Link to={next.fields.slug}>Next</Link>}
+            {tags && tags.length ? (
+              <section>
+                <h4>Tags</h4>
+                <ul>
+                  {tags.map((tag) => (
+                    <li key={tag + `tag`}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ) : null}
+          </AnimateIn>
+        </Col>
+      </Row>
     </Container>
   )
 }
@@ -60,7 +83,7 @@ WorkPostTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-const WorkPost = ({ data }) => {
+const WorkPost = ({ data, pageContext }) => {
   const { markdownRemark: post } = data
 
   return (
@@ -83,14 +106,18 @@ const WorkPost = ({ data }) => {
             />
           </Helmet>
         }
+        featuredimage={post.frontmatter.featuredimage}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        prev={pageContext.prev}
+        next={pageContext.next}
       />
     </Layout>
   )
 }
 
 WorkPost.propTypes = {
+  pageContext: PropTypes.object,
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
@@ -108,6 +135,13 @@ export const pageQuery = graphql`
         title
         description
         tags
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 240, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

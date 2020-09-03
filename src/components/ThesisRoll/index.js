@@ -30,7 +30,7 @@ export default () => (
     query={graphql`
       query ThesisRollQuery {
         allMarkdownRemark(
-          sort: { order: ASC, fields: [frontmatter___date] }
+          sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "thesis-post" } } }
         ) {
           edges {
