@@ -1,7 +1,7 @@
 ---
 templateKey: thesis-post
 title: Chapter 03 — Precedents
-date: 2020-08-25T20:39:06.105Z
+date: 2020-09-03T23:15:27.178Z
 featuredimage: ""
 ---
 There are many works, whether they were driven through the desires of pop culture or the interest of intellectual efforts, that make use of the current status, breadth, and wild satisfaction of self generated images of one’s self seen in *selfie culture*. 
