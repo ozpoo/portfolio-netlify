@@ -45,6 +45,6 @@ The fourth and last data set for this little experiment. Again, some slight vari
 
 ## Conclusion
 
-I believe this experiment gives further validity to the notion that there are many creative, and unexplored, ways to present the growing flow of data we are generating and collecting online. The suggested implications are that the emergence of new ways to consume data can provide improved clarity and insight to the data we have at hand. More clarity means a chance for increased knowledge, better informed decisions, and elevated inspiration while solving and creating for the problems of the day.
+I believe this experiment gives further validity to the notion that there are many creative, and unexplored, ways to present the growing flow of data we are generating and collecting online. The suggested implications are that the emergence of new ways to consume data can provide improved clarity and insight to the data we have at hand. More clarity means a chance for increased knowledge and better informed decisions.
 
 This project shows potential to be expanded in its scope. Potential modes of expansion would be variations like gathering larger data sets to average, isolating demographics, or making creative use of the many other data points accessible on the public Instagram API (or other publicly accessible social network datas).
