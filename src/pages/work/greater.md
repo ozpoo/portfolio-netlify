@@ -1,9 +1,8 @@
 ---
 templateKey: work-post
 title: Greater
-date: 2020-08-20T02:37:24.007Z
 tags:
-  - User Experience (UX)
+  - User Experience (UX/UI)
   - Software Engineering
-  - Web
+date: 2020-08-20T02:37:24.007Z
 ---
