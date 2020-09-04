@@ -6,7 +6,8 @@ description: ""
 featuredpost: false
 featuredimage: ""
 tags:
-  - In Progress
   - Exhibition
   - Research
+  - Data Cognition
+  - Software Engineering
 ---
