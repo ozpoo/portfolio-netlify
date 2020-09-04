@@ -20,12 +20,12 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news-post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text", required: false}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean", required: false}
+      - {label: "Keywords", name: "keywords", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
 
   - name: "journal"
     label: "Journal"
@@ -35,12 +35,12 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "journal-post"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", pattern: ['^.{50,160}$', "Must have at least 20 characters"], name: "description", widget: "text", required: false}
+      - {label: "Keywords", name: "keywords", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text", required: false}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean", required: false}
       - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
 
   - name: "thesis"
     label: "Thesis"
@@ -50,11 +50,12 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thesis-post"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", pattern: ['^.{50,160}$', "Must have at least 20 characters"], name: "description", widget: "text", required: false}
+      - {label: "Keywords", name: "keywords", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text", required: false}
       - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
 
   - name: "studies"
     label: "Studies"
@@ -64,12 +65,12 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "studies-post"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", pattern: ['^.{50,160}$', "Must have at least 20 characters"], name: "description", widget: "text", required: false}
+      - {label: "Keywords", name: "keywords", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text", required: false}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean", required: false}
       - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
 
   - name: "work"
     label: "Work"
@@ -79,12 +80,12 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "work-post"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", pattern: ['^.{50,160}$', "Must have at least 20 characters"], name: "description", widget: "text", required: false}
+      - {label: "Keywords", name: "keywords", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text", required: false}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean", required: false}
       - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
 
   - name: "pages"
     label: "Pages"
@@ -94,8 +95,10 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Intro Text, name: intro_text, widget: text, separator: "\n\n<!--s-->\n\n"}
-          - {label: "Description", name: "description", widget: "text", required: false}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", pattern: ['^.{50,160}$', "Must have at least 20 characters"], name: "description", widget: "text", required: false}
+          - {label: "Keywords", name: "keywords", widget: "string", required: false}
+          - {label: Intro Text, name: intro_text, widget: text}
           - {label: Slides, name: slides, widget: slides}
           - {label: Sections, name: sections, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}, {label: List, name: list, widget: list, fields: [{label: Title, name: title, widget: string},{label: Description, name: description, widget: text}]}]}
       - file: "src/pages/about/index.md"
@@ -104,6 +107,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", pattern: ['^.{50,160}$', "Must have at least 20 characters"], name: "description", widget: "text", required: false}
+          - {label: "Keywords", name: "keywords", widget: "string", required: false}
           - {label: "Intro Text", name: "intro_text", widget: "text"}
-          - {label: "Description", name: "description", widget: "text", required: false}
           - {label: "Body", name: "body", widget: "markdown"}

@@ -101,7 +101,7 @@ const WorkPost = ({ data, pageContext }) => {
           <Helmet titleTemplate="%s | Work">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
-              name="description"
+              name='description'
               content={`${post.frontmatter.description}`}
             />
           </Helmet>

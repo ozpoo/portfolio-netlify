@@ -99,7 +99,7 @@ const ThesisPost = ({ data, pageContext }) => {
           <Helmet titleTemplate="%s | Thesis">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
-              name="description"
+              name='description'
               content={`${post.frontmatter.description}`}
             />
           </Helmet>
