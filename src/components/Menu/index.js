@@ -1,9 +1,7 @@
 import './style.sass'
 
 import React, { Component } from 'react'
-
 import { Link } from 'gatsby'
-
 import Switch from 'react-switch'
 
 import { Container } from 'react-bootstrap'
@@ -13,6 +11,8 @@ import useDarkMode from './../use-dark-mode'
 import UIfx from 'uifx'
 import bellAudio from './../../../static/audio/wav/03-Primary-System-Sounds/navigation_hover-tap.wav'
 import shutterAudio from './../../../static/audio/wav/03-Primary-System-Sounds/ui_camera-shutter.wav'
+
+import Search from './../Search'
 
 class Menu extends Component {
   constructor(props) {
@@ -39,6 +39,7 @@ class Menu extends Component {
       <div className='global-nav'>
         <Container className='px-3 py-3 d-flex flex-md-column justify-content-between h-100'>
           <div>
+            <Search />
             <ul className='global-nav-list list-unstyled pt-5'>
               <li>
                 <Link onClick={() => bell && bell.play()} activeClassName='active' to='/'>Index</Link>

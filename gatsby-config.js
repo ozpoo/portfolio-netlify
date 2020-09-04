@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Oz — Designgineer',
+    title: 'Oz — Design-gineer',
     description:
-      'Oz is an award winning designgineer who works at the intersection of graphic design, human centered design (UX), web design (UI), and software engineering.',
+      'Oz is an award winning design-gineer who works at the intersection of graphic design, human centered design (UX), web design (UI), and software engineering.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -71,6 +71,26 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+      options: {
+        // Fields to index
+        fields: [`title`, `tags`, `description`, `html`],
+        // How to resolve each field`s value for a supported node type
+        resolvers: {
+          // For any node of type MarkdownRemark, list how to resolve the fields` values
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            description: node => node.frontmatter.description,
+            tags: node => node.frontmatter.tags,
+            html: node => node.internal.content,
+            slug: node => node.fields.slug,
+          },
+        },
+        // Optional filter to limit indexed nodes
+        filter: (node, getNode) => node.frontmatter.tags !== 'exempt',
       },
     },
     {
