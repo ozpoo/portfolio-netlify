@@ -11,7 +11,7 @@ class ThesisRoll extends Component {
     const { edges: posts } = data.allMarkdownRemark
     return (
       posts && posts.map(({ node: post }) => (
-        <ThesisCard post={post} />
+        <ThesisCard key={post.id} post={post} />
       ))
     )
   }

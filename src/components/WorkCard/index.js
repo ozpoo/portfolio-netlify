@@ -39,7 +39,7 @@ class WorkCard extends Component {
       <AnimateIn>
         <Tilt>
           <Card as={Link} onMouseEnter={() => hover && hover.play()} onClick={() => bell && bell.play()} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-work-card' : 'global-work-card'}>
-            <div className='aspect-ratio-box'>
+            <span className='aspect-ratio-box'>
               {post.frontmatter.featuredimage ? (
                 <PreviewCompatibleImage
                   imageInfo={{
@@ -55,7 +55,7 @@ class WorkCard extends Component {
                     alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                   }} />
               )}
-            </div>
+            </span>
             <Card.Body as='h5' className='m-0'>
               {post.frontmatter.title}
               <span className='text-muted'> &mdash; {post.frontmatter.tags.join(' & ')}</span>

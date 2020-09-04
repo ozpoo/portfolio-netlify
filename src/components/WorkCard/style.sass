@@ -11,6 +11,16 @@
   text-decoration: none!important
   overflow: hidden
 
+  .aspect-ratio-box
+    display: block
+    padding-bottom: 66.66%
+    height: 0
+    overflow: visible
+    .gatsby-image-wrapper
+      position: absolute
+      bottom: 0
+      top: 0
+
   @include media-breakpoint-down(xs)
     h5
       font-size: $font-size-base
