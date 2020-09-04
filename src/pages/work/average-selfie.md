@@ -4,10 +4,10 @@ title: Average Selfie
 date: 2020-08-20T02:42:55.588Z
 featuredimage: /img/avery.jpg
 tags:
-  - In Progress
   - AI
   - Exhibition
   - Data Cognition
+  - Software Engineering
 ---
 Meet Avery, the average selfie! The idea to create Avery (an average selfie) came to me while I was sifting through hundreds of thousands of selfies posted on Instagram during my MFA Thesis research. The goal going into this data research was to find patterns, trends, and — in general — be inspired to create new ways we can understand the quantum amounts of data being shared online each day.
 
