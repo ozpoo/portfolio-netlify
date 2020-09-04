@@ -23,13 +23,13 @@ export const IndexPageTemplate = ({
       <h1 dangerouslySetInnerHTML={{__html: intro_text}} />
     </AnimateIn>
 
-    {/*
     <Features gridItems={sections} />
-    */}
 
+    <AnimateIn className='intro-stuff mb-4'>
+      <h1>Work</h1>
+    </AnimateIn>
     <WorkTeaser />
 
-    {/*
     <AnimateIn className='intro-stuff mb-4'>
       <h1>Case Studies</h1>
     </AnimateIn>
@@ -39,7 +39,7 @@ export const IndexPageTemplate = ({
       <h1>News</h1>
     </AnimateIn>
     <NewsTeaser />
-    */}
+
   </Container>
 )
 

@@ -24,7 +24,7 @@ class NewsRoll extends Component {
         <Col xs={12}>
           <AnimateIn>
             <Link to='/news'>
-              Browse News &rarr;
+              Browse All News &rarr;
             </Link>
           </AnimateIn>
         </Col>

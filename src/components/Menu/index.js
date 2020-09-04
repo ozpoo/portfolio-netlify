@@ -39,7 +39,7 @@ class Menu extends Component {
       <div className='global-nav'>
         <Container className='px-3 py-3 d-flex flex-md-column justify-content-between h-100'>
           <div>
-            <Search />
+            {/*<Search />*/}
             <ul className='global-nav-list list-unstyled pt-5'>
               <li>
                 <Link onClick={() => bell && bell.play()} activeClassName='active' to='/'>Index</Link>

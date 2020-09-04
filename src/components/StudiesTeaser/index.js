@@ -25,7 +25,7 @@ class StudiesTeaser extends Component {
         <Col xs={12}>
           <AnimateIn>
             <Link to='/studies'>
-              Browse Case Studies &rarr;
+              Browse All Case Studies &rarr;
             </Link>
           </AnimateIn>
         </Col>
