@@ -18,14 +18,14 @@ class WorkTeaser extends Component {
     return (
       <Row className='global-work-teaser-grid mb-5'>
         {posts && posts.map(({ node: post }) => (
-          <Col xs={6} md={6} lg={4} xl={3} key={post.id} className='column mb-4'>
+          <Col xs={6} sm={6} lg={4} xl={3} key={post.id} className='column mb-4'>
             <WorkCard post={post} />
           </Col>
         ))}
         <Col xs={12}>
           <AnimateIn>
             <Link to='/work'>
-              Browse Work &rarr;
+              Browse All Work &rarr;
             </Link>
           </AnimateIn>
         </Col>
@@ -47,7 +47,7 @@ export default () => (
     query={graphql`
       query WorkTeaserQuery {
         allMarkdownRemark(
-          limit: 4,
+          limit: 8,
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "work-post" } } }
         ) {

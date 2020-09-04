@@ -26,7 +26,7 @@ export const WorkPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <Container className='py-4 px-xs-4 px-sm-5'>
+    <Container className='py-4 px-xs-4 px-sm-5' fluid>
       {helmet || ''}
 
       <AnimateIn className='mb-4'>
@@ -52,21 +52,23 @@ export const WorkPostTemplate = ({
           </AnimateIn>
         </Col>
         <Col xs={4}>
-          <AnimateIn className='mb-5'>
-            {prev && <Link to={prev.fields.slug}>Previous</Link>}
-            {next && <Link to={next.fields.slug}>Next</Link>}
-            {tags && tags.length ? (
-              <section>
-                <h4>Tags</h4>
-                <ul>
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            ) : null}
+          <AnimateIn className='mb-5 position-sticky sticky-top'>
+            <div>
+              {prev && <Link to={prev.fields.slug}>Previous</Link>}
+              {next && <Link to={next.fields.slug}>Next</Link>}
+              {tags && tags.length ? (
+                <section>
+                  <h4>Tags</h4>
+                  <ul>
+                    {tags.map((tag) => (
+                      <li key={tag + `tag`}>
+                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : null}
+            </div>
           </AnimateIn>
         </Col>
       </Row>

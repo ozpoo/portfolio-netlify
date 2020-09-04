@@ -33,7 +33,7 @@ export const ThesisPostTemplate = class ThesisPostTemplate extends Component {
     const PostContent = contentComponent || Content
 
     return (
-      <Container className='py-4 px-xs-4 px-sm-5'>
+      <Container className='py-4 px-xs-4 px-sm-5' fluid>
         {helmet || ''}
 
         <AnimateIn className='mb-5'>

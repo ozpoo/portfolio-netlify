@@ -11,7 +11,7 @@ const Resume = () => (
       {label: 'Index', path: '/'},
       {label: 'Resume', path: '/resume'},
     ]}>
-    <Container className='py-4 px-3'>
+    <Container className='py-4 px-3' fluid>
       <AnimateIn className='mb-5'>
         <h1>Resume</h1>
         <p>You just hit a route that doesn&#39;t exist... the sadness.</p>

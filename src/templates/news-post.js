@@ -21,7 +21,7 @@ export const NewsPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <Container className='py-4 px-xs-4 px-sm-5'>
+    <Container className='py-4 px-xs-4 px-sm-5' fluid>
       {helmet || ''}
 
       <section className='mb-5'>

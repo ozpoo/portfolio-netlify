@@ -36,11 +36,11 @@ class TagsList extends Component {
     return (
       <div className={'global-tags-list' + className ? className : ''}>
         <AnimateIn>
-          <Button as={Link} variant={current === 'All' ? 'secondary' : undefined} className='mb-1 mr-1' to='/work'>
-            All
+          <Button as={Link} variant={current === 'All' ? 'primary' : 'outline-dark'} className='mb-2 mr-2' to='/work'>
+            All &mdash; {tags.length}
           </Button>
           {tags && tags.map((tag) => (
-            <Button as={Link} variant={current === tag.name ? 'secondary' : undefined} key={tag.name} className='mb-1 mr-1' to={'?tag=' + tag.name}>
+            <Button as={Link} variant={current === tag.name ? 'primary' : 'outline-dark'} key={tag.name} className='mb-2 mr-2' to={'?tag=' + tag.name}>
               {tag.name} &mdash; {tag.val}
             </Button>
           ))}

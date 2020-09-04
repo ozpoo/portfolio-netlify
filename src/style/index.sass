@@ -19,6 +19,9 @@ body
   -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1)
   letter-spacing: -.03em
 
+h1, h2, h3, h4
+  font-family: 'Overpass Black'
+
 h1
   @include media-breakpoint-down(lg)
     font-size: calc(21px + 1.4vw)!important
@@ -75,9 +78,9 @@ h2
   display: -webkit-box
   -webkit-box-orient: vertical
 
-.container
+.container-fluid
   p
-    font-size: 1.18em
+    font-size: 1.24em
   h2, h3
     margin-top: 50px
     &:nth-child(1)
@@ -87,7 +90,7 @@ h2
     width: 100%
 
 .global-nav-offset
-  margin-left: 180px
+  margin-left: 16vw
 
   @include media-breakpoint-down(sm)
     margin-left: 0px

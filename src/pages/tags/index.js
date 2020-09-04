@@ -21,7 +21,7 @@ const TagsPage = ({
       {label: 'Index', path: '/'},
       {label: 'Tags', path: '/tags'},
     ]}>
-    <Container className='py-4 px-xs-4 px-sm-5'>
+    <Container className='py-4 px-xs-4 px-sm-5' fluid>
       <Helmet title={`Tags | ${title}`} />
       <AnimateIn className='mb-5'>
         <h1>Tags</h1>

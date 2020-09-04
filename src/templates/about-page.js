@@ -12,8 +12,9 @@ import { Container, Row, Col } from 'react-bootstrap'
 export const AboutPageTemplate = ({ title, intro_text, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
+
   return (
-    <Container className='py-4 px-xs-4 px-sm-5'>
+    <Container className='py-4 px-xs-4 px-sm-5' fluid>
       <AnimateIn className='mb-5'>
         <h1 dangerouslySetInnerHTML={{__html: intro_text}} />
       </AnimateIn>
