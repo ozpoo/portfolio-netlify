@@ -1,12 +1,9 @@
 ---
 templateKey: index-page
 title: Index
-intro_text: Hey,<span class="text-muted"> I'm </span>Oz<span
-  class="text-muted">! &mdash;  an</span> award winning design-gineer <span
-  class="text-muted">working at the intersection of</span> graphic design<span
-  class="text-muted">,</span> human centered design (UX)<span
-  class="text-muted">,</span> web design (UI)<span class="text-muted">,
-  and</span> software engineering<span class="text-muted">.</span>
+intro_text: Hey, I'm Oz! <span class="text-muted">&mdash;  an award winning
+  design-gineer working at the intersection of graphic design, human centered
+  design (UX), web design (UI), and</span> software engineering.
 slides: ---
 sections:
   - image: /img/barc_nelson1601_0083_low_600x1800.jpg
