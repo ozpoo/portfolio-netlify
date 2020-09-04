@@ -6,5 +6,5 @@ featuredimage: /img/branchstrument_02_1800-1800x1200.jpg
 tags:
   - Exhibition
   - Software Engineering
-  - Technology
+  - Electronics
 ---
