@@ -15,7 +15,7 @@ const TemplateWrapper = ({ children, crumbs }) => {
   const { title, description } = useSiteMetadata()
 
   return (
-    <div className='global-nav-offset px-md-3 px-0'>
+    <div className='global-nav-offset'>
       {crumbs && <BreadCrumbs crumbs={crumbs} />}
       <Helmet>
         <html lang='en' />

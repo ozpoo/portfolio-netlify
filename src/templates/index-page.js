@@ -18,26 +18,15 @@ export const IndexPageTemplate = ({
   intro_text,
   sections,
 }) => (
-  <Container className='py-4 px-xs-4 px-sm-5' fluid>
-    <AnimateIn className='intro-stuff mb-5'>
+  <Container className='px-3'>
+
+    <AnimateIn className='intro-stuff my-7'>
       <h1 dangerouslySetInnerHTML={{__html: intro_text}} />
     </AnimateIn>
 
-    <Features gridItems={sections} />
-
-    <AnimateIn className='intro-stuff mb-4'>
-      <h1>Work</h1>
-    </AnimateIn>
+    {/* <Features gridItems={sections} /> */}
     <WorkTeaser />
-
-    <AnimateIn className='intro-stuff mb-4'>
-      <h1>Case Studies</h1>
-    </AnimateIn>
     <StudiesTeaser />
-
-    <AnimateIn className='intro-stuff mb-4'>
-      <h1>News</h1>
-    </AnimateIn>
     <NewsTeaser />
 
   </Container>

@@ -14,9 +14,9 @@ export default class StudiesIndexPage extends Component {
           {label: 'Index', path: '/'},
           {label: 'Studies', path: '/studies'},
         ]}>
-        <Container className='py-4 px-xs-4 px-sm-5' fluid>
-          <AnimateIn className='mb-5'>
-            <h1>Case Studies <span className='text-muted'>&mdash; these are meant to give you a more intimate look into how I think and the way my process unfolds.</span></h1>
+        <Container className='px-3'>
+          <AnimateIn className='my-7'>
+            <h1>Case Studies <span className='text-muted'>&mdash; a more intimate look into how I think and the way my process unfolds.</span></h1>
           </AnimateIn>
           <section className='mb-5'>
             <StudiesRoll />

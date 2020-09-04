@@ -14,8 +14,8 @@ class NewsIndexPage extends Component {
           {label: 'Index', path: '/'},
           {label: 'News', path: '/news'},
         ]}>
-        <Container className='py-4 px-xs-4 px-sm-5' fluid>
-          <AnimateIn className='mb-5'>
+        <Container className='px-3'>
+          <AnimateIn className='my-7'>
             <h1>News <span className='text-muted'>&mdash; updates and milestones across all areas of my design and academic lives.</span></h1>
           </AnimateIn>
 

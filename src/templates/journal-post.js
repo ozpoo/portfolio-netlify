@@ -10,7 +10,6 @@ import Content, { HTMLContent } from '../components/Content'
 
 import { Container } from 'react-bootstrap'
 
-
 export const JournalPostTemplate = ({
   content,
   contentComponent,
@@ -22,7 +21,7 @@ export const JournalPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <Container className='py-4 px-xs-4 px-sm-5' fluid>
+    <Container className='py-4 px-3'>
       {helmet || ''}
 
       <section className='mb-5'>

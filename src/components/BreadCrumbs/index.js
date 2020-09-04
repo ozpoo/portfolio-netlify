@@ -1,13 +1,13 @@
+import './style.sass'
+
 import React from 'react'
 import { Link } from 'gatsby'
 
-import {
-  Container
-} from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 
 const BreadCrumbs = (props) => {
   return (
-    <Container className='global-breadcrumbs py-3 px-xs-4 px-sm-5' fluid>
+    <div className='global-breadcrumbs py-3 px-3'>
       <div className='d-flex'>
         {props.crumbs.map((crumb, index) => (
           ((props.crumbs.length - index) > 1) ?
@@ -20,7 +20,7 @@ const BreadCrumbs = (props) => {
           )
         )}
       </div>
-    </Container>
+    </div>
   )
 }
 

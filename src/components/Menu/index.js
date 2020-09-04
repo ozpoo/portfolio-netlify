@@ -37,7 +37,7 @@ class Menu extends Component {
     const { bell, shutter } = this.state
     return (
       <div className='global-nav'>
-        <Container className='px-3 py-3 d-flex flex-md-column justify-content-between h-100'>
+        <div className='py-3 d-flex flex-md-column justify-content-between h-100'>
           <div>
             {/*<Search />*/}
             <ul className='global-nav-list list-unstyled pt-5'>
@@ -89,13 +89,14 @@ class Menu extends Component {
           </div>
 
           <div>
-            <ul className='list-unstyled m-0'>
+            <ul className='list-unstyled ml-3'>
               <li>
                 <TheSwitch shutter={shutter} />
               </li>
             </ul>
           </div>
-        </Container>
+
+        </div>
       </div>
     )
   }

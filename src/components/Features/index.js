@@ -41,7 +41,7 @@ class FeatureGrid extends Component {
             <div className='feature'>
               <Card style={{background: '#47e2c9'}}>
                 <div className='content'>
-                  <Card.Header as='h2'>Work</Card.Header>
+                  <Card.Header as='h3'>Work</Card.Header>
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
@@ -57,7 +57,7 @@ class FeatureGrid extends Component {
             <div className='feature'>
               <Card>
                 <div className='content'>
-                  <Card.Header as='h2'>Filler</Card.Header>
+                  <Card.Header as='h3'>Filler</Card.Header>
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
@@ -85,7 +85,7 @@ class FeatureGrid extends Component {
             <div className='feature'>
               <Card style={{background: '#cee25c'}}>
                 <div className='content'>
-                  <Card.Header as='h2'>Studies</Card.Header>
+                  <Card.Header as='h3'>Studies</Card.Header>
                     <Card.Body>
                       <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                     </Card.Body>
@@ -101,7 +101,7 @@ class FeatureGrid extends Component {
             <div className='feature'>
               <Card>
                 <div className='content'>
-                  <Card.Header as='h2'>Filler</Card.Header>
+                  <Card.Header as='h3'>Filler</Card.Header>
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
@@ -129,7 +129,7 @@ class FeatureGrid extends Component {
             <div className='feature'>
               <Card style={{background: '#ff694d'}}>
                 <div className='content'>
-                  <Card.Header as='h2'>News</Card.Header>
+                  <Card.Header as='h3'>News</Card.Header>
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
@@ -145,7 +145,7 @@ class FeatureGrid extends Component {
             <div className='feature'>
               <Card>
                 <div className='content'>
-                  <Card.Header as='h2'>Filler</Card.Header>
+                  <Card.Header as='h3'>Filler</Card.Header>
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
@@ -173,7 +173,7 @@ class FeatureGrid extends Component {
             <div className='feature'>
               <Card style={{background: '#ecb23d'}}>
                 <div className='content'>
-                  <Card.Header as='h2'>Journal</Card.Header>
+                  <Card.Header as='h3'>Journal</Card.Header>
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>
@@ -189,7 +189,7 @@ class FeatureGrid extends Component {
             <div className='feature'>
               <Card>
                 <div className='content'>
-                  <Card.Header as='h2'>Filler</Card.Header>
+                  <Card.Header as='h3'>Filler</Card.Header>
                   <Card.Body>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum libero pharetra a mollis vitae augue.</p>
                   </Card.Body>

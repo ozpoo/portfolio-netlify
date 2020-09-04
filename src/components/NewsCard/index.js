@@ -38,7 +38,7 @@ class NewsCard extends Component {
       <AnimateIn>
         <Tilt>
           <Card as={Link} onMouseEnter={() => hover && hover.play()} onClick={() => bell && bell.play()} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-news-card' : 'global-news-card'}>
-            <Card.Body as='h5' className='m-0'>
+            <Card.Body>
               {post.frontmatter.title}
               <span className='text-muted'> &mdash; {post.frontmatter.tags && post.frontmatter.tags.join(' & ')}</span>
             </Card.Body>

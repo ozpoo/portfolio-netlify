@@ -43,8 +43,8 @@ class Index extends Component {
           {label: 'Index', path: '/'},
           {label: 'Contact', path: '/contact'},
         ]}>
-        <Container className='py-4 px-xs-4 px-sm-5' fluid>
-          <AnimateIn className='mb-5'>
+        <Container className='px-3'>
+          <AnimateIn className='my-7'>
             <h1>Contact</h1>
           </AnimateIn>
           <AnimateIn className='mb-5'>

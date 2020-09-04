@@ -14,8 +14,8 @@ export const AboutPageTemplate = ({ title, intro_text, content, contentComponent
 
 
   return (
-    <Container className='py-4 px-xs-4 px-sm-5' fluid>
-      <AnimateIn className='mb-5'>
+    <Container className='px-3'>
+      <AnimateIn className='my-7'>
         <h1 dangerouslySetInnerHTML={{__html: intro_text}} />
       </AnimateIn>
       <Row>

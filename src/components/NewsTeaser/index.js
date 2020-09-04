@@ -46,7 +46,7 @@ export default () => (
     query={graphql`
       query NewsTeaserQuery {
         allMarkdownRemark(
-          limit: 3,
+          limit: 6,
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "news-post" } } }
         ) {

@@ -19,9 +19,9 @@ class Footer extends Component {
         }
       )
     : false
-
+    
     return (
-      <Container className='global-footer py-4 px-xs-4 px-sm-5' fluid>
+      <Container className='global-footer py-4 px-3'>
         <Row>
           <Col xs={12} md={4}>
             <AnimateIn className='mb-4'>

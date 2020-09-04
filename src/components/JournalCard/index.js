@@ -39,6 +39,7 @@ class WordCard extends Component {
       <AnimateIn>
         <Tilt>
           <Card as={Link} onMouseEnter={() => hover && hover.play()} onClick={() => bell && bell.play()} to={post.fields.slug} className={post.frontmatter.featuredpost ? 'is-featured global-journal-card' : 'global-journal-card'}>
+
             <div className='aspect-ratio-box'>
               {post.frontmatter.featuredimage ? (
                 <PreviewCompatibleImage
@@ -56,7 +57,7 @@ class WordCard extends Component {
                   }} />
               )}
             </div>
-            <Card.Body as='h5' className='m-0'>
+            <Card.Body className='m-0'>
               {post.frontmatter.title}
               <span className='text-muted'> &mdash; {post.frontmatter.tags && post.frontmatter.tags.join(' & ')}</span>
             </Card.Body>
