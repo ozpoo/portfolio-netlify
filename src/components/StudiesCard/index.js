@@ -64,7 +64,7 @@ class StudiesCard extends Component {
                 )}
               </Col>
               <Col>
-                <Card.Body as='h5' className='m-0'>
+                <Card.Body className='m-0'>
                   {post.frontmatter.title}
                   <span className='text-muted'> &mdash; {post.frontmatter.tags && post.frontmatter.tags.join(' & ')}</span>
                 </Card.Body>
