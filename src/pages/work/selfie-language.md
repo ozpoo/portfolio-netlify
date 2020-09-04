@@ -6,4 +6,6 @@ featuredimage: /img/43412232_194413838112394_307832678308117591_n.jpg
 tags:
   - Research
   - Writing
+  - Data Cognition
+  - Book
 ---
