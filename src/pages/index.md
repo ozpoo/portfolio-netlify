@@ -1,11 +1,13 @@
 ---
 templateKey: index-page
-intro_text: Hey<span class="text-muted"> I'm </span>Oz<span class="text-muted">
-  &mdash;  an</span> award winning design-gineer <span
+title: Index
+intro_text: Hey,<span class="text-muted"> I'm </span>Oz<span
+  class="text-muted">! &mdash;  an</span> award winning design-gineer <span
   class="text-muted">working at the intersection of</span> graphic design<span
   class="text-muted">,</span> human centered design (UX)<span
   class="text-muted">,</span> web design (UI)<span class="text-muted">,
   and</span> software engineering<span class="text-muted">.</span>
+slides: ---
 sections:
   - image: /img/barc_nelson1601_0083_low_600x1800.jpg
     title: Work
