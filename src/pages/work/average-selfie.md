@@ -1,14 +1,15 @@
 ---
 templateKey: work-post
 title: Average Selfie
-description: Descrippy
-date: 2020-09-04T00:45:49.197Z
-featuredimage: /img/avery.jpg
+description: Meet Avery, the average selfie! The idea to create Avery (an
+  average selfie) came to me while I was
 tags:
   - Artificial Intelligence (AI)
   - Exhibition
   - Data Cognition
   - Software Engineering
+date: 2020-09-04T00:45:49.197Z
+featuredimage: /img/avery.jpg
 ---
 Meet Avery, the average selfie! The idea to create Avery (an average selfie) came to me while I was sifting through hundreds of thousands of selfies posted on Instagram during my MFA Thesis research. The goal going into this data research was to find patterns, trends, and — in general — be inspired to create new ways we can understand the quantum amounts of data being shared online each day.
 
@@ -18,7 +19,7 @@ Wonder no more because it happened! By creating a cloud based aggregation functi
 
 In order to make this slightly more scientific and quantifiable I placed a few parameters on when I would gather data and how often. My hopes is this would give some variation on the data sets (as to weed out anomalous moments of data) and bring variety into the faces, places, and times that people were posting their selfies.
 
-![All four composite selfies or "Averys" gathered and created by different data sets](/img/average_face_composite_post.jpg "All four composite selfies or \"Averys\" gathered and created by different data sets")
+![All four composite selfies or "Averys" gathered and created by different data sets](/img/average_face_composite_post.jpg "All four composite selfies or \\"Averys\\" gathered and created by different data sets")
 
 ## Data Set 01
 
