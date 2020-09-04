@@ -12,102 +12,102 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "news"
-    label: "News"
-    folder: "src/pages/news"
+  - name: 'news'
+    label: 'News'
+    folder: 'src/pages/news'
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text", required: false}
-      - {label: "Keywords", name: "keywords", widget: "string", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'news-post'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Description', name: 'description', widget: 'text', required: false}
+      - {label: 'Keywords', name: 'keywords', widget: 'string', required: false}
+      - {label: 'Tags', name: 'tags', widget: 'list', required: false}
+      - {label: 'Publish Date', name: 'date', widget: 'datetime'}
+      - {label: 'Featured Image', name: 'featuredimage', widget: image, required: false}
+      - {label: 'Body', name: 'body', widget: 'markdown', required: false}
 
-  - name: "journal"
-    label: "Journal"
-    folder: "src/pages/journal"
+  - name: 'journal'
+    label: 'Journal'
+    folder: 'src/pages/journal'
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "journal-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", pattern: ['^.{50,160}$', "Must have at least 20 characters"], name: "description", widget: "text", required: false}
-      - {label: "Keywords", name: "keywords", widget: "string", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'journal-post'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Description', pattern: ['^.{50,160}$', 'Must have at least 20 characters'], name: 'description', widget: 'text', required: false}
+      - {label: 'Keywords', name: 'keywords', widget: 'string', required: false}
+      - {label: 'Tags', name: 'tags', widget: 'list', required: false}
+      - {label: 'Publish Date', name: 'date', widget: 'datetime'}
+      - {label: 'Featured Image', name: 'featuredimage', widget: image, required: false}
+      - {label: 'Body', name: 'body', widget: 'markdown', required: false}
 
-  - name: "thesis"
-    label: "Thesis"
-    folder: "src/pages/thesis"
+  - name: 'thesis'
+    label: 'Thesis'
+    folder: 'src/pages/thesis'
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thesis-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", pattern: ['^.{50,160}$', "Must have at least 20 characters"], name: "description", widget: "text", required: false}
-      - {label: "Keywords", name: "keywords", widget: "string", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'thesis-post'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Description', pattern: ['^.{50,160}$', 'Must have at least 20 characters'], name: 'description', widget: 'text', required: false}
+      - {label: 'Keywords', name: 'keywords', widget: 'string', required: false}
+      - {label: 'Tags', name: 'tags', widget: 'list', required: false}
+      - {label: 'Publish Date', name: 'date', widget: 'datetime'}
+      - {label: 'Featured Image', name: 'featuredimage', widget: image, required: false}
+      - {label: 'Body', name: 'body', widget: 'markdown', required: false}
 
-  - name: "studies"
-    label: "Studies"
-    folder: "src/pages/studies"
+  - name: 'studies'
+    label: 'Studies'
+    folder: 'src/pages/studies'
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "studies-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", pattern: ['^.{50,160}$', "Must have at least 20 characters"], name: "description", widget: "text", required: false}
-      - {label: "Keywords", name: "keywords", widget: "string", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'studies-post'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Description', pattern: ['^.{50,160}$', 'Must have at least 20 characters'], name: 'description', widget: 'text', required: false}
+      - {label: 'Keywords', name: 'keywords', widget: 'string', required: false}
+      - {label: 'Tags', name: 'tags', widget: 'list', required: false}
+      - {label: 'Publish Date', name: 'date', widget: 'datetime'}
+      - {label: 'Featured Image', name: 'featuredimage', widget: image, required: false}
+      - {label: 'Body', name: 'body', widget: 'markdown', required: false}
 
-  - name: "work"
-    label: "Work"
-    folder: "src/pages/work"
+  - name: 'work'
+    label: 'Work'
+    folder: 'src/pages/work'
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "work-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", pattern: ['^.{50,160}$', "Must have at least 20 characters"], name: "description", widget: "text", required: false}
-      - {label: "Keywords", name: "keywords", widget: "string", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'work-post'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Description', pattern: ['^.{50,160}$', 'Must have at least 20 characters'], name: 'description', widget: 'text', required: false}
+      - {label: 'Keywords', name: 'keywords', widget: 'string', required: false}
+      - {label: 'Tags', name: 'tags', widget: 'list', required: false}
+      - {label: 'Publish Date', name: 'date', widget: 'datetime'}
+      - {label: 'Featured Image', name: 'featuredimage', widget: image, required: false}
+      - {label: 'Body', name: 'body', widget: 'markdown', required: false}
 
-  - name: "pages"
-    label: "Pages"
+  - name: 'pages'
+    label: 'Pages'
     files:
-      - file: "src/pages/index.md"
-        label: "Index"
-        name: "index"
+      - file: 'src/pages/index.md'
+        label: 'Index'
+        name: 'index'
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", pattern: ['^.{50,160}$', "Must have at least 20 characters"], name: "description", widget: "text", required: false}
-          - {label: "Keywords", name: "keywords", widget: "string", required: false}
+          - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page'}
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Description', pattern: ['^.{50,160}$', 'Must have at least 20 characters'], name: 'description', widget: 'text', required: false}
+          - {label: 'Keywords', name: 'keywords', widget: 'string', required: false}
           - {label: Intro Text, name: intro_text, widget: text}
           - {label: Slides, name: slides, widget: slides}
           - {label: Sections, name: sections, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}, {label: List, name: list, widget: list, fields: [{label: Title, name: title, widget: string},{label: Description, name: description, widget: text}]}]}
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+      - file: 'src/pages/about/index.md'
+        label: 'About'
+        name: 'about'
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", pattern: ['^.{50,160}$', "Must have at least 20 characters"], name: "description", widget: "text", required: false}
-          - {label: "Keywords", name: "keywords", widget: "string", required: false}
-          - {label: "Intro Text", name: "intro_text", widget: "text"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'about-page'}
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Description', pattern: ['^.{50,160}$', 'Must have at least 20 characters'], name: 'description', widget: 'text', required: false}
+          - {label: 'Keywords', name: 'keywords', widget: 'string', required: false}
+          - {label: 'Intro Text', name: 'intro_text', widget: 'text'}
+          - {label: 'Body', name: 'body', widget: 'markdown'}
