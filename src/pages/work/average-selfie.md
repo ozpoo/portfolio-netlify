@@ -1,8 +1,7 @@
 ---
 templateKey: work-post
 title: Average Selfie
-description: Meet Avery, the average selfie! The idea to create Avery (an
-  average selfie) came to me while I was
+description: ""
 tags:
   - Artificial Intelligence (AI)
   - Exhibition
