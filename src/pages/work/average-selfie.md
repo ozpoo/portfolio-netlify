@@ -16,9 +16,13 @@ Projects like [Google's "Average" typeface](https://fonts.google.com/specimen/Av
 
 Wonder no more because it happened! By creating a cloud based aggregation function built on top of the public Instagram API I was able to make use of Artificial Intelligence to take four sample sets and create averages of their forms. I hope you enjoy the results below.
 
-In order to make this slightly more scientific and quantifiable I placed a few parameters on when I would gather data and how often. My hopes is this would give some variation on the data sets (as to weed out anomalous moments of data) and bring variety into the faces, places, and times that people were posting their selfies.
+## Data Samples
 
-![All four composite "Averys" — each created by different data sets](/img/average_face_composite_post.jpg "All four composite \"Averys\" — each created by different data sets")
+![A sample of what a selfie data set looks like](/img/christopher-gower-291246.jpg "A sample of what a selfie data set looks like")
+
+Above is a sample from one of the collected data sets to give you an idea of what the collected selfies looked like. In order to make this slightly more scientific and quantifiable I placed a few parameters on when I would gather data and how often. My hopes is this would give some variation on the data sets (as to weed out anomalous moments of data) and bring variety into the faces, places, and times that people were posting their selfies.
+
+![All four composite "Averys" — each created by different data sets](/img/average_face_composite_post.jpg "All four composite \\"Averys\\" — each created by different data sets")
 
 ## Data Set 01
 
