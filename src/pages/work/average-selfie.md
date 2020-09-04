@@ -1,6 +1,7 @@
 ---
 templateKey: work-post
 title: Average Selfie
+description: Descrippy
 date: 2020-09-04T00:45:49.197Z
 featuredimage: /img/avery.jpg
 tags:
