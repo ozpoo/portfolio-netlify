@@ -4,6 +4,7 @@ title: The Infestation
 date: 2020-08-20T02:44:33.181Z
 featuredimage: /img/infestation-levels.jpg
 tags:
-  - Poster
+  - Print
   - Writing
+  - Research
 ---
